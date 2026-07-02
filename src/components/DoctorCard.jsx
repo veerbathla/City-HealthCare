@@ -1,62 +1,51 @@
 import React from "react";
-import { FaUserMd, FaBriefcaseMedical, FaHospital } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaHospital, FaArrowRight } from "react-icons/fa";
 
 const DoctorCard = ({ doctor }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:-translate-y-2">
+    <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full">
 
-      <div className="flex">
+      <div className="flex flex-col items-center px-8 pt-8 pb-8">
 
-        {/* Left Side */}
-        <div className="w-40 bg-gray-50 flex flex-col items-center p-4">
+        {/* Doctor Image */}
+        <img
+          src={doctor.image}
+          alt={doctor.name}
+          className="w-44 h-52 object-cover rounded-xl"
+        />
 
-          <img
-            src={doctor.image}
-            alt={doctor.name}
-            className="w-28 h-36 object-cover rounded-xl"
-          />
+        {/* Doctor Name */}
+        <h2 className="mt-6 text-2xl font-bold text-center text-gray-800">
+          {doctor.name}
+        </h2>
 
-          <button className="mt-4 w-full bg-[#009CD0] hover:bg-[#007aa5] text-white text-sm font-semibold py-2 rounded-lg transition">
-            Book Appointment
-          </button>
+        {/* Designation */}
+        <p className="mt-2 text-center text-[#009CD0] font-medium leading-relaxed">
+          {doctor.designation}
+        </p>
 
+        {/* Hospital */}
+        <div className="flex items-center gap-2 mt-5 text-gray-600">
+          <FaHospital className="text-[#009CD0]" />
+          <span>City HealthCare Hospital</span>
         </div>
 
-        {/* Right Side */}
-        <div className="flex-1 p-5 flex flex-col justify-between">
+        {/* Buttons */}
+        <div className="w-full mt-8 space-y-3">
 
-          <div>
+          <Link to={`/doctors/${doctor.slug}`}>
+            <button className="w-full bg-[#009CD0] hover:bg-[#0083af] text-white font-semibold py-3 rounded-lg transition">
+              Book Appointment
+            </button>
+          </Link>
 
-            <h3 className="text-2xl font-bold text-gray-800">
-              {doctor.name}
-            </h3>
-
-            <div className="mt-4 space-y-3">
-
-              <div className="flex items-center gap-3 text-gray-600">
-                <FaUserMd className="text-[#009CD0]" />
-                <span>{doctor.department}</span>
-              </div>
-
-              <div className="flex items-center gap-3 text-gray-600">
-                <FaBriefcaseMedical className="text-[#009CD0]" />
-                <span>{doctor.experience} Experience</span>
-              </div>
-
-            </div>
-
-          </div>
-
-          {/* Bottom */}
-          <div className="border-t pt-3 mt-6 flex items-center gap-3">
-
-            <FaHospital className="text-[#009CD0]" />
-
-            <span className="font-medium text-gray-700">
-              City Healthcare Hospital
-            </span>
-
-          </div>
+          <Link to={`/doctors/${doctor.slug}`}>
+            <button className=" mt-4 w-full border border-[#009CD0] text-[#009CD0] hover:bg-[#009CD0] hover:text-white font-semibold py-3 rounded-lg transition flex items-center justify-center gap-2">
+              View Profile
+              <FaArrowRight size={13} />
+            </button>
+          </Link>
 
         </div>
 

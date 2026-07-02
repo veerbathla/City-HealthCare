@@ -2,10 +2,12 @@ import { Routes, Route } from "react-router-dom";
 
 import TopNavbar from "./components/Navbar/TopNavbar";
 import MainNavbar from "./components/Navbar/MainNavbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Doctors from "./pages/Doctors";
-import Footer from "./components/Footer";
+import DoctorDetails from "./pages/DoctorDetails";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -13,11 +15,21 @@ function App() {
       <TopNavbar />
       <MainNavbar />
 
-      {/* Bottom navbar ke liye space */}
+      {/* Main Content */}
       <main className="pb-16 lg:pb-0">
         <Routes>
           <Route path="/" element={<Home />} />
+
+          {/* Doctors Listing */}
           <Route path="/doctors" element={<Doctors />} />
+
+          {/* Individual Doctor Profile */}
+          <Route
+            path="/doctors/:slug"
+            element={<DoctorDetails />}
+          />
+
+          <Route path="/about" element={<About />}/>
         </Routes>
       </main>
 
