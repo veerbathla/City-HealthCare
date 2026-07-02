@@ -8,7 +8,7 @@ const simratKaur = {
   // Basic Information
   // ==========================
   name: "Dr. Simrat Kaur",
-  image:simratkaurimage,
+ image: simratKaurimage,
   designation:
     "Consultant Oral & Maxillofacial Surgeon & Cosmetic Facial Specialist",
   department: "Dentistry",
