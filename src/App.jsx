@@ -13,10 +13,14 @@ function App() {
       <TopNavbar />
       <MainNavbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/doctors" element={<Doctors />} />
-      </Routes>
+      {/* Bottom navbar ke liye space */}
+      <main className="pb-16 lg:pb-0">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/doctors" element={<Doctors />} />
+        </Routes>
+      </main>
+
       <Footer />
     </>
   );
