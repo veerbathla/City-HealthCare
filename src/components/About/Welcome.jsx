@@ -5,8 +5,8 @@ const Welcome = () => {
     <div>
         {/* ================= WELCOME SECTION ================= */}
 
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+<section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-2">
 
     <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -16,7 +16,7 @@ const Welcome = () => {
 
         <div className="overflow-hidden rounded-3xl shadow-2xl">
           <img
-            src="/images/about-hospital.jpg"
+            src="/doctor1.jpeg"
             alt="City HealthCare Hospital"
             className="w-full h-[600px] object-cover"
           />
@@ -43,7 +43,7 @@ const Welcome = () => {
 
       <div>
 
-        <span className="inline-block bg-blue-100 text-blue-700 font-semibold px-4 py-2 rounded-full text-sm tracking-wide">
+        <span className="inline-block bg-blue-50 text-[#0096D6] font-semibold px-4 py-2 rounded-full text-sm tracking-wide">
           ABOUT CITY HEALTHCARE
         </span>
 
