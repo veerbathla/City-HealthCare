@@ -169,7 +169,7 @@ const Footer = () => {
               </div>
 
               <a
-                href="https://maps.google.com"
+                href="https://maps.app.goo.gl/hHF26aXwqRGBHb869"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block mt-3 bg-white text-[#0096D6] font-semibold px-5 py-3 rounded-xl hover:bg-slate-100 transition"
