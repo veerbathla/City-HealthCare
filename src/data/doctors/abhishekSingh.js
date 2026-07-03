@@ -1,4 +1,4 @@
-import doctor1 from "../../assets/doctors/doctor1.jpeg";
+import abhishek from "../../assets/doctors/abhishek.jpeg";
 
 const abhishekSingh = {
   id: 1,
@@ -8,7 +8,7 @@ const abhishekSingh = {
   // Basic Information
   // ==========================
   name: "Dr. Abhishek Singh",
-  image: doctor1,
+  image: abhishek,
   designation: "Consultant Neurosurgeon & Director",
   department: "Neurosurgery",
   speciality: "Endoscopic Spine Surgery",

@@ -1,4 +1,4 @@
-import doctor1 from "../../assets/doctors/doctor1.jpeg";
+import abhishek from "../../assets/doctors/abhishek.jpeg";
 
 const harpreetSingh = {
   id: 7,
@@ -8,7 +8,7 @@ const harpreetSingh = {
   // Basic Information
   // ==========================
   name: "Dr. Harpreet Singh",
-  image: doctor1,
+  image: abhishek,
   designation: "Consultant Physiotherapist & Rehabilitation Specialist",
   department: "Physiotherapy",
   speciality: "Neuro, Orthopaedic & Sports Rehabilitation",
@@ -20,9 +20,7 @@ const harpreetSingh = {
   // ==========================
   // About
   // ==========================
-  about: `Dr. Harpreet Singh is a highly dedicated Consultant Physiotherapist and Rehabilitation Specialist at City HealthCare Neuro Research and Infertility Centre, Sirsa. He specializes in restoring movement, improving physical function, and enhancing the quality of life for patients recovering from neurological disorders, orthopaedic injuries, chronic pain, and surgeries.
-
-Using evidence-based manual therapy, therapeutic exercises, and advanced electrotherapy techniques, Dr. Harpreet develops personalized rehabilitation plans that focus not only on pain relief but also on long-term recovery, mobility, strength, and injury prevention.`,
+  about: `Dr. Harpreet Singh is a highly dedicated and advanced Consultant Physiotherapist at City HealthCare Multispeciality Hospital, Sirsa. Holding Bachelor’s degree in Physical Therapy (BPT), he specializes in restoring movement, improving physical function, and enhancing the overall quality of life for patients recovering from debilitating injuries, chronic pain, and surgeries. Dr. Singh incorporates evidence-based manual therapy, structural exercises, and high-end electrotherapy modalities to provide customized recovery blueprints. His patient-centric philosophy focuses not just on temporary pain relief, but on long-term physical conditioning, functional independence, and injury prevention. `,
 
   // ==========================
   // Education

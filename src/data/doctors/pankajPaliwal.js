@@ -1,4 +1,4 @@
-import doctor1 from "../../assets/doctors/doctor1.jpeg";
+import pankaj from "../../assets/doctors/pankaj.jpeg";
 
 const pankajPaliwal = {
   id: 4,
@@ -8,7 +8,7 @@ const pankajPaliwal = {
   // Basic Information
   // ==========================
   name: "Dr. Pankaj Paliwal",
-  image: doctor1,
+  image: pankaj,
   designation:
     "Consultant Physician & Critical Care Internal Medicine Specialist",
   department: "General Medicine",
@@ -22,9 +22,7 @@ const pankajPaliwal = {
   // ==========================
   // About
   // ==========================
-  about: `Dr. Pankaj Paliwal is a highly experienced Consultant Physician specializing in General Medicine and Critical Care at City HealthCare Neuro Research and Infertility Centre, Sirsa. He provides comprehensive medical care for acute illnesses, chronic diseases, and medical emergencies with a patient-centered, evidence-based approach.
-
-Widely recognized as a Snake Bite & Poisoning Expert, Dr. Paliwal is known for his rapid diagnosis and life-saving management of toxicological emergencies. His expertise extends across infectious diseases, respiratory disorders, lifestyle diseases, gastrointestinal conditions, and geriatric care, helping patients achieve complete recovery and long-term wellness.`,
+  about: `Dr. Pankaj Paliwal is an extensively trained and deeply dedicated Consultant Physician specializing in General Medicine and Critical Care at City HealthCare Multispeciality Hospital, Sirsa. He serves as the primary shield for adult healthcare, managing a comprehensive spectrum of acute illnesses, chronic lifestyle disorders, and complex medical emergencies. Beyond routine internal medicine, Dr. Paliwal holds a highly specialized reputation in the region as a life-saving  Snake Bite & Poisoning Expert. His rapid diagnostic skills and mastery over emergency toxicological protocols make him a crucial lifeline during critical, time-sensitive medical emergencies. Dr. Paliwal is committed to delivering evidence-based, compassionate care to ensure the complete recovery and long-term wellness of his patients. `,
 
   // ==========================
   // Education

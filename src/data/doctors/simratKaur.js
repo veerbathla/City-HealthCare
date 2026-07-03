@@ -23,9 +23,7 @@ const simratKaur = {
   // ==========================
   // About
   // ==========================
-  about: `Dr. Simrat Kaur is a highly qualified Oral and Maxillofacial Surgeon at City HealthCare Neuro Research and Infertility Centre, Sirsa. She specializes in diagnosing and treating diseases, injuries, and defects affecting the mouth, teeth, jaws, and face while combining functional restoration with aesthetic excellence.
-
-As a Fellow of the Association of Oral and Maxillofacial Surgeons of India (FAOMSI), she provides advanced surgical care for facial trauma, dental implants, jaw surgeries, and cosmetic smile enhancement. Her patient-focused approach ensures precise, pain-free treatment using modern technology and evidence-based techniques.`,
+  about: `Dr. Simrat Kaur is a highly qualified and exceptionally skilled Oral and Maxillofacial Surgeon practicing at City HealthCare Multispeciality Hospital, Sirsa. She bridges the gap between medicine and dentistry, specializing in the diagnosis, surgical treatment, and reconstruction of diseases, injuries, and defects involving both the functional and aesthetic aspects of the mouth, teeth, jaws, and face. As a prestigious Fellow of the Association of Oral and Maxillofacial Surgeons of India (FAOMSI), Dr. Kaur brings advanced surgical expertise to the region. Whether treating critical facial fractures from severe trauma or performing delicate root canals and cosmetic smile makeovers, she is dedicated to delivering precise, pain-free treatments utilizing the highest clinical standards. `,
 
   // ==========================
   // Education

@@ -1,4 +1,4 @@
-import doctor1 from "../../assets/doctors/doctor1.jpeg";
+import abhishek from "../../assets/doctors/abhishek.jpeg";
 
 const kshiteejDhull = {
   id: 6,
@@ -8,7 +8,7 @@ const kshiteejDhull = {
   // Basic Information
   // ==========================
   name: "Dr. Kshiteej Dhull",
-  image: doctor1,
+  image: abhishek,
   designation: "Consultant Plastic, Reconstructive & Aesthetic Surgeon",
   department: "Plastic Surgery",
   speciality: "Plastic, Reconstructive & Aesthetic Surgery",
@@ -22,9 +22,7 @@ const kshiteejDhull = {
   // ==========================
   // About
   // ==========================
-  about: `Dr. Kshiteej Dhull is a highly accomplished Consultant Plastic, Reconstructive and Aesthetic Surgeon at City HealthCare Neuro Research and Infertility Centre, Sirsa. With advanced surgical training and expertise in reconstructive as well as cosmetic procedures, he combines technical precision with an artistic approach to restore both function and appearance.
-
-His clinical expertise ranges from complex trauma reconstruction and burn surgery to advanced cosmetic procedures including facial rejuvenation, body contouring, breast surgery, and scar revision. Dr. Dhull is dedicated to helping patients regain confidence while achieving the best possible functional and aesthetic outcomes.`,
+  about: `Dr. Kshiteej Dhull is a highly accomplished and extensively trained Consultant Plastic Surgeon at City HealthCare Multispeciality Hospital, Sirsa. Holding advanced degrees in surgery (MS) and the highest super-specialty qualification in plastic surgery (MCh), he brings supreme technical precision, scientific innovation, and artistic vision to the region. Dr. Dhull’s clinical focus encompasses the entire spectrum of modern plastic surgery—ranging from critical, life-altering reconstructive surgeries for facial trauma to high-end aesthetic and cosmetic enhancements. Known for his meticulous surgical technique and compassionate patient care, he is dedicated to restoring both optimal physical function and natural aesthetic appearance to his patients. `,
 
   // ==========================
   // Education

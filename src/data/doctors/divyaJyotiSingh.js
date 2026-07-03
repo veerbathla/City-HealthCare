@@ -1,4 +1,4 @@
-import doctor1 from "../../assets/doctors/doctor1.jpeg";
+import divya from "../../assets/doctors/divya.jpeg";
 
 const divyaJyotiSingh = {
   id: 2,
@@ -8,7 +8,7 @@ const divyaJyotiSingh = {
   // Basic Information
   // ==========================
   name: "Dr. Divya Jyoti Singh",
-  image: doctor1,
+  image: divya,
   designation:
     "Senior Consultant Gynaecologist, Obstetrician & Infertility Specialist",
   department: "Obstetrics & Gynaecology",
@@ -25,7 +25,7 @@ const divyaJyotiSingh = {
   // ==========================
   about: `Dr. Divya Jyoti Singh is a highly accomplished and compassionate Gynaecologist, Obstetrician, and Infertility Specialist dedicated to women's comprehensive healthcare. With advanced qualifications including MRCOG-1 from London, she brings international medical standards and evidence-based treatments to Sirsa.
 
-She is widely trusted for managing high-risk pregnancies, infertility, and complex gynaecological conditions. Dr. Divya believes that a woman's health is the foundation of a happy family and focuses on helping couples achieve natural conception whenever possible through accurate diagnosis and personalized treatment.`,
+Dr. Divya believes that a woman’s health is the foundation of a happy family.She is widely trusted for managing high-risk pregnancies, infertility, and complex gynaecological conditions. Dr. Divya believes that a woman's health is the foundation of a happy family and focuses on helping couples achieve natural conception whenever possible through accurate diagnosis and personalized treatment.`,
 
   // ==========================
   // Education

@@ -1,4 +1,4 @@
-import doctor1 from "../../assets/doctors/doctor1.jpeg";
+import vikas from "../../assets/doctors/vikas.jpeg";
 
 const vikasKamboj = {
   id: 3,
@@ -8,7 +8,7 @@ const vikasKamboj = {
   // Basic Information
   // ==========================
   name: "Dr. Vikas Kamboj",
-  image: doctor1,
+  image: vikas,
   designation: "Consultant Orthopaedic, Trauma & Joint Replacement Surgeon",
   department: "Orthopaedics",
   speciality: "Joint Replacement & Trauma Surgery",
@@ -23,9 +23,7 @@ const vikasKamboj = {
   // ==========================
   // About
   // ==========================
-  about: `Dr. Vikas Kamboj is a highly skilled Orthopaedic Surgeon specializing in joint replacement and complex trauma care. As a Consultant Orthopaedic Surgeon at City HealthCare Neuro Research and Infertility Centre, Sirsa, he provides advanced surgical and non-surgical treatment for patients suffering from joint pain, fractures, sports injuries, and musculoskeletal disorders.
-
-Recognized for his expertise in Advanced Knee & Hip Replacement and Complex Trauma Surgery, Dr. Kamboj follows modern, minimally invasive surgical techniques that help reduce pain, shorten recovery time, and restore mobility, enabling patients to return to their normal lives faster.`,
+  about: `Dr. Vikas Kamboj is a highly skilled and advanced Orthopaedic Surgeon specializing in joint reconstructions and complex trauma care. As a premier consultant at City HealthCare Multispeciality Hospital, Sirsa, he brings exceptional surgical precision to patients suffering from debilitating joint pain, sports injuries, and severe musculoskeletal trauma. Recognized as a leading Advance Knee / Hip Replacement and Complex Pelvis & Trauma Surgeon  in the region, Dr. Kamboj utilizes modern, minimally invasive surgical protocols designed to minimize post-operative recovery time, eliminate pain, and restore complete mobility. His dual focus on advanced arthroplasty (joint replacement) and rapid-response trauma care makes him a vital pillar of the City HealthCare specialist team. `,
 
   // ==========================
   // Education
