@@ -79,11 +79,11 @@ const Footer = () => {
 
               <li><NavLink to="/about" className="hover:underline">About Us</NavLink></li>
 
-              <li><NavLink to="/specialities" className="hover:underline">Specialities</NavLink></li>
+              <li><NavLink to="/" className="hover:underline">Specialities</NavLink></li>
 
               <li><NavLink to="/doctors" className="hover:underline">Doctors</NavLink></li>
 
-              <li><NavLink to="/blogs" className="hover:underline">Blogs</NavLink></li>
+              <li><NavLink to="/blog" className="hover:underline">Blogs</NavLink></li>
 
               <li><NavLink to="/contact" className="hover:underline">Contact</NavLink></li>
 

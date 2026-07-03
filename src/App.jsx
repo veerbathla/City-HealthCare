@@ -10,6 +10,7 @@ import DoctorDetails from "./pages/DoctorDetails";
 import About from "./pages/About";
 import DepartmentDetails from "./pages/DepartmentDetails";
 import Contact from "./pages/Contact";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
 
            {/* Contact */}
           <Route path="/contact" element={<Contact />} />
+
+             {/* Blog */}
+          <Route path="/blog" element={<BlogPage />} />
 
           {/* Doctor Details */}
           <Route
