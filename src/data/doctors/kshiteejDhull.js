@@ -56,16 +56,32 @@ const kshiteejDhull = {
   // Expertise
   // ==========================
   expertise: [
-    "Plastic Surgery",
-    "Reconstructive Surgery",
-    "Cosmetic Surgery",
-    "Facial Trauma Reconstruction",
-    "Burn Reconstruction",
-    "Microvascular Surgery",
-    "Flap Surgery",
-    "Hand & Tendon Reconstruction",
-    "Congenital Deformity Correction",
-    "Scar Revision Surgery",
+   { title:"Facial Trauma & Soft Tissue Injury Care:",
+    description:"Expert repair of complex facial cuts, lacerations, and soft tissue loss from road accidents or injuries, focusing on minimal scar visibility. "},
+    {title:"Burn Reconstruction",
+      description:"Acute management of burn injuries and secondary corrections for post-burn contractures, scars, and skin tighteness. "
+    },
+    {title:"Microvascular & Flap Surgery",
+      description:" Advanced tissue transfer procedures to reconstruct deep wounds, compound fractures, or defects following tumor removals. "},
+     {title:"Hand & Tendon Reconstruction",
+      description:"Specialist repair of accidental hand injuries, severed fingers, nerve compressios, and tendon damages. "
+    },
+     {title:"Congenital Deformity Correction",
+      description:"Surgical repair of birth defects such as cleft lip and cleft palate. "},
+     {title:"Facial Rejuvenation:",
+      description:"Surgical facelifts, eyelid surgeries (blepharoplasty), and nose reshaping (rhinoplasty). "},
+     {title:"Body Contouring",
+      description:" High-definition Liposuction (fat removal), tummy tucks (abdominoplasty), and post-weight-loss body transformations."
+    },
+     {title:"Breast Surgery",
+      description:"Cosmetic breast augmentation (enlargement), breast reduction, breast lifting, and correction of gynecomastia (male breast reduction). "},
+     {title:"Scar Revision Treatments",
+      description:" Advanced surgical and non-surgical therapies to dramatically fade old, prominent, or keloid scars."
+    },
+    {title:"Non-Surgical Aesthetics",
+      description:"Precision administration of anti-aging injections, dermal fillers, and advanced skin rejuvenation therapies."
+    },
+
   ],
 
   // ==========================

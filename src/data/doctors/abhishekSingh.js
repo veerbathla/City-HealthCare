@@ -22,9 +22,7 @@ const abhishekSingh = {
   // ==========================
   // About
   // ==========================
-  about: `Dr. Abhishek Singh is a highly advanced and extensively experienced Neurosurgeon dedicated to providing world-class neurological and spine care. As the Director and Chief Neurosurgeon at City HealthCare Neuro Research and Infertility Centre, Sirsa, he has established himself as a trusted pioneer in advanced neurosurgical and spinal procedures.
-
-He is Haryana's exclusive Monoportal Endoscopic Spine Surgeon, bringing cutting-edge minimally invasive spine surgery to the region. He also holds the distinction of performing Haryana's Awake Craniotomy for brain tumour patients. His commitment to international standards is reflected through his membership in the British Association of Spine Surgeons (BASS), London.`,
+  about: `Dr. Abhishek Singh is a highly advanced and extensively experienced Neurosurgeon dedicated to providing world-class neurological and spine care to the people of Haryana. As the Director and Chief Neurosurgeon at City HealthCare Neuro Research and Infertility Centre, Sirsa, he has established himself as a trusted pioneer in advanced surgical interventions. He holds the distinct reputation of being Haryana’s exclusive (Monoportal) Endoscopic Spine Surgeon (हरियाणा के एकमात्र मोनोपोर्टल एंडोस्कोपपक स्पाइन सर्टन), bringing minimally invasive, cutting-edge spinal care to the region. He also hold the record of Awake Craniotomy for brain tumor patient in Haryana. His global perspective and commitment to international medical standards are backed by his prestigious membership in the British Association of Spine Surgeons (BASS), London. `,
 
   // ==========================
   // Education
@@ -64,13 +62,21 @@ He is Haryana's exclusive Monoportal Endoscopic Spine Surgeon, bringing cutting-
   // Expertise
   // ==========================
   expertise: [
-    "Endoscopic Spine Surgery",
-    "Brain Tumour Surgery",
-    "Microscopic Brain Surgery",
-    "Awake Craniotomy",
-    "Complex Spine Reconstruction",
-    "Peripheral Nerve Surgery",
-    "Neuro Research",
+   { title:"Endoscopic Spine Surgery",
+    description:" Minimally invasive treatment for slipped discs, sciatica, and spinal stenosis with faster recovery times."
+    },
+    {title:"Brain  Surgery",
+      description:"Microscopic and endoscopic brain tumor removals, trauma/head injury management, and cerebrovascular surgeries, Awake Craniotomies. "
+    },
+    {title:"Complex Spine Reconstruction",
+      description:"Treatment for spinal fractures, deformities, and chronic back/neck pain. "
+    },
+    {title:"Peripheral Nerve Surgery",
+      description:""
+    },
+    {title:"Neuro Research",
+      description:"Actively driving clinical research in advanced neurological care at City HealthCare. "
+    }
   ],
 
   // ==========================

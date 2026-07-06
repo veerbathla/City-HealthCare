@@ -51,7 +51,7 @@ const HospitalHighlights = () => {
         </div>
 
         <h3 className="text-5xl font-bold text-blue-700 mt-8">
-          8+
+          10+
         </h3>
 
         <h4 className="text-xl font-semibold mt-4 text-gray-900">
@@ -146,7 +146,7 @@ const HospitalHighlights = () => {
         </div>
 
         <div>
-          <h3 className="text-4xl font-bold text-white">8+</h3>
+          <h3 className="text-4xl font-bold text-white">10+</h3>
           <p className="text-blue-100 mt-2">
             Medical Departments
           </p>

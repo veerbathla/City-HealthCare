@@ -62,18 +62,43 @@ const simratKaur = {
   // ==========================
   // Expertise
   // ==========================
-  expertise: [
-    "Oral & Maxillofacial Surgery",
-    "Facial Trauma Management",
-    "Dental Implant Surgery",
-    "Wisdom Tooth Surgery",
-    "Jaw Fracture Surgery",
-    "Root Canal Treatment (RCT)",
-    "Cosmetic Dentistry",
-    "Smile Designing",
-    "TMJ Disorder Management",
-    "Pediatric Dentistry",
-  ],
+    expertise: [
+   { title:"Facial Trauma & Injury Management",
+    description:"Emergency treatment and surgical fixation of jaw fractures, cheekbone fractures, orbital (eye socket) injuries, and facial lacerations. "
+    },
+    {title:"Surgical Tooth Extractions",
+      description:"High-precision removal of impacted wisdom teeth and complex root fragments buried deep within the jawbone. "
+    },
+    {title:"Cysts & Tumors of the Jaw",
+      description:"Safe surgical excision of benign pathologies, cysts, and tumors of the oral and maxillofacial region."
+    },
+     {title:"Jaw Joint Disorders (TMJ)",
+      description:"Comprehensive management of jaw locking, popping sounds, and chronic jaw joint pain. "
+    },
+     {title:"Advanced Dental Implants",
+      description:"Permanent and natural-looking replacement of missing teeth using premium implant systems. ",},
+     {title:"Respiratory & Lung Disorders",
+      description:"Advanced care for Asthma, Chronic Obstructive Pulmonary Disease (COPD), Bronchitis, and severe respiratory tract infections. "
+    },
+     {title:"Root Canal Treatment (RCT)",
+      description:"Painless, automated root canal therapies to save decayed or infected teeth. "},
+     {title:"Cosmetic Dentistry & Smile Designing",
+      description:"Dental veneers, laminates, and advanced teeth whitening procedures for a flawless smile." },
+     {title:"Crowns, Bridges & Dentures",
+      description:"Premium quality ceramic, zirconia, and metalfree crowns to restore structural chewing power."},
+    
+    {title:"Orthodontics (Braces & Aligners)",
+      description:"Corrective treatment for crooked, crowded, or misaligned teeth using traditional braces or invisible aligners. "},
+    
+
+      {title:"Pediatric (Child) Dentistry",
+      description: "Special cavity protection, sealants, and kidfriendly dental care. "},
+    
+
+      {title:"Gum Disease Treatments",
+      description:"Deep scaling, root planing, and flap surgeries to treat bleeding or receding gums. "}
+    
+    ],
 
   // ==========================
   // Conditions Treated

@@ -206,13 +206,6 @@ const Pillars = () => {
         patients.
       </p>
 
-      <button className="mt-8 bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold inline-flex items-center gap-3 hover:bg-gray-100 transition">
-
-        Learn More
-
-        <FaArrowRight />
-
-      </button>
 
     </div>
 

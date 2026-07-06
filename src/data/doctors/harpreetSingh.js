@@ -51,17 +51,36 @@ const harpreetSingh = {
   // ==========================
   // Expertise
   // ==========================
-  expertise: [
-    "Neurological Rehabilitation",
-    "Orthopaedic Rehabilitation",
-    "Sports Injury Rehabilitation",
-    "Post-Surgical Rehabilitation",
-    "Stroke & Paralysis Rehabilitation",
-    "Spine Rehabilitation",
-    "Women's Health Physiotherapy",
-    "Manual Therapy",
-    "Pain Management",
-    "Electrotherapy",
+   expertise: [
+   { title:"Advanced Neurological Rehabilitation ",
+    description:"Specialized physical therapy designed to retrain the brain and nervous system following major neurological events"},
+    {title:"Stroke & Paralysis Recovery",
+      description:"Facilitating motor relearning, balance training, and gait restoration. "
+    },
+    {title:"Spine & Nerve Care",
+      description:" Rehabilitation for slipped discs, sciatica, spinal cord injuries, and peripheral nerve injuries. "},
+     {title:"Movement Disorders",
+      description:"Therapeutic management for Parkinson’s disease, Multiple Sclerosis, and balance imbalances. "
+    },
+     {title:"Orthopaedic & Post-Surgical Rehabilitation",
+      description:"Targeted therapies to restore joint mobility, bone strength, and muscular flexibility"},
+     {title:"Post-Joint Replacement Rehab",
+      description:"Structured recovery protocols following Total Knee Replacement (TKR) and Total Hip Replacement (THR). "},
+     {title:"Post-Fracture & Trauma Care",
+      description:" Reducing stiffness and building muscle strength after fracture fixations or casting. "
+    },
+     {title:"Chronic Pain Management",
+      description:"Long-term relief for Osteoarthritis, Cervical Spondylosis, Lumbar Spondylitis, and frozen shoulder. "},
+     {title:"Sports Injury & Musculoskeletal Care",
+      description:" Advanced physical therapies to get athletes safely back to peak performance: • Treatment for Ligament Tears (ACL, PCL, MCL), meniscus injuries, ankle sprains, and muscle strains. • Management of Tennis Elbow, Planter Fasciitis, and Rotator Cuff (shoulder) injuries. "
+    },
+    {title:"Antenatal & Postnatal Exercises",
+      description:"Tailored exercise programs to assist safe pregnancy and accelerate postpartum abdominal/pelvic floor structural recovery. "
+    },
+    {title:"Advanced Therapeutic Modalities Available ",
+      description:"Our physiotherapy department is fully equipped with advanced, state-of-the-art modalities including: IFT  (Interferential Therapy) &  TENS for advanced pain modulation. Ultrasound Therapy (UST) for deep tissue healing. Electronic Traction (Cervical & Lumbar) for spinal decompression. Manual Therapy: Joint mobilization, myofascial release (MFR), and therapeutic taping. LWD:  Long Wave Diathermy  "
+    },
+
   ],
 
   // ==========================

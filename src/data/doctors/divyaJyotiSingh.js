@@ -23,9 +23,7 @@ const divyaJyotiSingh = {
   // ==========================
   // About
   // ==========================
-  about: `Dr. Divya Jyoti Singh is a highly accomplished and compassionate Gynaecologist, Obstetrician, and Infertility Specialist dedicated to women's comprehensive healthcare. With advanced qualifications including MRCOG-1 from London, she brings international medical standards and evidence-based treatments to Sirsa.
-
-Dr. Divya believes that a woman’s health is the foundation of a happy family.She is widely trusted for managing high-risk pregnancies, infertility, and complex gynaecological conditions. Dr. Divya believes that a woman's health is the foundation of a happy family and focuses on helping couples achieve natural conception whenever possible through accurate diagnosis and personalized treatment.`,
+  about: `Dr. Divya Jyoti Singh is a highly accomplished and compassionate Gynaecologist, Obstetrician, and Infertility Specialist dedicated to women’s comprehensive health. With advanced qualifications including the prestigious  MRCOG-1 from London, she brings international medical standards and modern, evidence-based treatments to Sirsa. Dr. Divya believes that a woman’s health is the foundation of a happy family. She is widely trusted for her expertise in turning high-risk pregnancies into safe deliveries, helping couples overcome infertility through accurate medical treatments without rushing into IVF, and managing complex gynaecological conditions. `,
 
   // ==========================
   // Education
@@ -62,16 +60,16 @@ Dr. Divya believes that a woman’s health is the foundation of a happy family.S
   // ==========================
   // Expertise
   // ==========================
-  expertise: [
-    "High-Risk Pregnancy Management",
-    "Normal & Caesarean Deliveries",
-    "Infertility Treatment",
-    "Natural Conception Management",
-    "Laparoscopic Gynaecological Surgery",
-    "PCOS/PCOD Management",
-    "Hormonal Disorders",
-    "Family Planning",
-    "Cancer Screening",
+ expertise: [
+   { title:"24/7 Delivery Services",
+    description:" Modern facilities equipped for both normal and Caesarean (Csection) deliveries. "
+    },
+    {title:"High-Risk Pregnancy Management",
+      description:"Comprehensive management of pregnancy-induced hypertension (BP), gestational diabetes (sugar), and other maternal health complications. "
+    },
+    {title:"Post-Delivery Recovery & Intimate Care:",
+      description:"Specialized medical support for postpregnancy weakness and structural or physiological intimate health issues (dryness, pain, or infections)."
+    }
   ],
 
   // ==========================

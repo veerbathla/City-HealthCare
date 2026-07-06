@@ -6,9 +6,50 @@ import {
   FaGlobe,
   FaTimes,
 } from "react-icons/fa";
+import doctors from "../../data/doctors";
+import { departments } from "../../data/departments";
+import { useNavigate } from "react-router-dom";
 
 const TopNavbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [search, setSearch] = useState("");
+  const [results, setResults] = useState([]);
+
+  const navigate = useNavigate();
+
+  const handleSearch = (value) => {
+  setSearch(value);
+
+  if (!value.trim()) {
+    setResults([]);
+    return;
+  }
+
+  const keyword = value.toLowerCase();
+
+  const doctorResults = doctors.filter((doctor) => {
+    return (
+      doctor.name.toLowerCase().includes(keyword) ||
+      doctor.department.toLowerCase().includes(keyword) ||
+      doctor.speciality.toLowerCase().includes(keyword)
+    );
+  });
+
+  const departmentResults = departments.filter((department) => {
+    return (
+      department.name.toLowerCase().includes(keyword)
+    );
+  });
+
+  console.log([
+  ...doctorResults.map((item) => ({ ...item, type: "doctor" })),
+  ...departmentResults.map((item) => ({ ...item, type: "department" })),
+]);
+  setResults([
+    ...doctorResults.map((item) => ({ ...item, type: "doctor" })),
+    ...departmentResults.map((item) => ({ ...item, type: "department" })),
+  ]);
+};
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
@@ -30,11 +71,50 @@ const TopNavbar = () => {
             {/* Desktop Search */}
             <div className="hidden lg:block relative">
               <input
-                type="text"
-                placeholder="Search Doctors..."
-                className="border rounded-full pl-11 pr-5 py-2.5 w-72 focus:outline-none focus:ring-2 focus:ring-teal-600"
-              />
+  type="text"
+  value={search}
+  onChange={(e) => handleSearch(e.target.value)}
+  placeholder="Search Doctors or Departments..."
+  className="border rounded-full pl-11 pr-5 py-2.5 w-72 focus:outline-none focus:ring-2 focus:ring-teal-600"
+/>
+{results.length > 0 && (
+  <div className="absolute top-full left-0 mt-2 w-full bg-white border rounded-xl shadow-lg max-h-80 overflow-y-auto z-50">
 
+    {results.map((item) => (
+      <div
+        key={item.slug}
+        onClick={() => {
+          if (item.type === "doctor") {
+            navigate(`/doctors/${item.slug}`);
+          } else {
+           navigate(`/departments/${item.slug}`);
+          }
+
+          setSearch("");
+          setResults([]);
+        }}
+        className="flex items-center gap-3 p-3 hover:bg-gray-100 cursor-pointer"
+      >
+        <img
+          src={item.image}
+          alt={item.name}
+          className="w-12 h-12 rounded-full object-cover"
+        />
+
+        <div>
+          <h3 className="font-semibold">{item.name}</h3>
+
+          <p className="text-sm text-gray-500">
+            {item.type === "doctor"
+              ? item.designation
+              : "Department"}
+          </p>
+        </div>
+      </div>
+    ))}
+
+  </div>
+)}
               <FaSearch className="absolute left-4 top-3.5 text-gray-500" />
             </div>
 
@@ -105,11 +185,13 @@ const TopNavbar = () => {
           <div className="relative">
 
             <input
-              autoFocus
-              type="text"
-              placeholder="Search Doctors..."
-              className="w-full border rounded-full py-3 pl-11 pr-12 focus:outline-none focus:ring-2 focus:ring-teal-600"
-            />
+  autoFocus
+  type="text"
+  value={search}
+  onChange={(e) => handleSearch(e.target.value)}
+  placeholder="Search Doctors or Departments..."
+  className="w-full border rounded-full py-3 pl-11 pr-12 focus:outline-none focus:ring-2 focus:ring-teal-600"
+/>
 
             <FaSearch className="absolute left-4 top-4 text-gray-500" />
 
@@ -124,6 +206,7 @@ const TopNavbar = () => {
 
         </div>
       )}
+      
     </header>
   );
 };

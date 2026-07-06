@@ -10,7 +10,11 @@ import {
   FaWalking,
   FaArrowRight,
 } from "react-icons/fa";
+
+import { useNavigate } from 'react-router-dom';
 const SpecializedDeparments = () => {
+
+  const Navigate=useNavigate();
   return (
     <div>
 
@@ -218,8 +222,10 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      <button className="bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold flex items-center gap-3 hover:bg-slate-100 transition">
-
+      <button className="bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold flex items-center gap-3 hover:bg-slate-100 transition" onClick={()=>{
+        Navigate('/speciality');
+      }}>
+      
         Explore All Departments
 
         <FaArrowRight />

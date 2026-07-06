@@ -9,6 +9,8 @@ import {
   FaTimes,
   FaChevronRight,
   FaChevronDown,
+  FaWhatsapp,
+  FaStethoscope
 } from "react-icons/fa";
 import { departments } from "../../data/departments";
 const MainNavbar = () => {
@@ -18,12 +20,11 @@ const MainNavbar = () => {
   const navItems = [
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
-    { title: "Speciality", path: "/" },
+    { title: "Speciality", path: "/speciality" },
     { title: "Doctors", path: "/doctors" },
     { title: "Blog", path: "/blog" },
     { title: "Contact", path: "/contact" },
   ];
-
 
   return (
     <>
@@ -40,23 +41,23 @@ const MainNavbar = () => {
                 {item.title === "Speciality" ? (
                   <>
                     <NavLink
-                      to="/"
-                      // className={({ isActive }) =>
-                      //   `relative font-medium transition-all
-                      //   after:absolute
-                      //   after:left-0
-                      //   after:-bottom-5
-                      //   after:h-[3px]
-                      //   after:bg-white
-                      //   after:rounded-full
-                      //   after:transition-all
-                      //   after:duration-300
-                      //   ${
-                      //     isActive
-                      //       ? "after:w-full"
-                      //       : "after:w-0 group-hover:after:w-full"
-                      //   }`
-                      // }
+                      to="/departments"
+                      className={({ isActive }) =>
+                        `relative font-medium transition-all
+                         after:absolute
+                        after:left-0
+                        after:-bottom-5
+                        after:h-[3px]
+                         after:bg-white
+                         after:rounded-full
+                         after:transition-all
+                        after:duration-300
+                         ${
+                           isActive
+                             ? "after:w-full"
+                             : "after:w-0 group-hover:after:w-full"
+                         }`
+                      }
                     >
                       Speciality
                     </NavLink>
@@ -129,25 +130,35 @@ const MainNavbar = () => {
           menuOpen ? "max-h-[80vh]" : "max-h-0"
         }`}
       >
-        <div className="pt-0 pb-2">
+        <div className="pb-2">
           {navItems.map((item) => {
             if (item.title === "Speciality") {
               return (
                 <div key={item.title}>
-                  <button
-                    onClick={() =>
-                      setMobileSpecialityOpen(!mobileSpecialityOpen)
-                    }
-                    className="w-full flex justify-between items-center px-5 py-4 border-b hover:bg-gray-50"
-                  >
-                    <span>Speciality</span>
+                  <div className="flex border-b">
+                    {/* Open Speciality Page */}
+                    <NavLink
+                      to="/speciality"
+                      onClick={() => setMenuOpen(false)}
+                      className="flex-1 px-5 py-4 hover:bg-gray-50"
+                    >
+                      Speciality
+                    </NavLink>
 
-                    {mobileSpecialityOpen ? (
-                      <FaChevronDown className="text-gray-400 text-xs" />
-                    ) : (
-                      <FaChevronRight className="text-gray-400 text-xs" />
-                    )}
-                  </button>
+                    {/* Expand Departments */}
+                    <button
+                      onClick={() =>
+                        setMobileSpecialityOpen(!mobileSpecialityOpen)
+                      }
+                      className="px-5 flex items-center justify-center hover:bg-gray-100"
+                    >
+                      {mobileSpecialityOpen ? (
+                        <FaChevronDown className="text-gray-500" />
+                      ) : (
+                        <FaChevronRight className="text-gray-500" />
+                      )}
+                    </button>
+                  </div>
 
                   <div
                     className={`overflow-hidden transition-all duration-300 ${
@@ -157,7 +168,7 @@ const MainNavbar = () => {
                     {departments.map((dept) => (
                       <NavLink
                         key={dept.id}
-                        to={`/speciality/${dept.slug}`}
+                        to={`/departments/${dept.slug}`}
                         onClick={() => {
                           setMenuOpen(false);
                           setMobileSpecialityOpen(false);
@@ -180,7 +191,6 @@ const MainNavbar = () => {
                 className="flex justify-between items-center px-5 py-4 border-b hover:bg-gray-50"
               >
                 <span>{item.title}</span>
-
                 <FaChevronRight className="text-gray-400 text-xs" />
               </NavLink>
             );
@@ -201,45 +211,43 @@ const MainNavbar = () => {
       <nav className="lg:hidden fixed bottom-3 left-3 right-3 z-50">
         <div className="grid grid-cols-5 bg-[#0096D6] rounded-2xl shadow-2xl h-14 overflow-hidden">
           {/* Menu */}
-
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex flex-col items-center justify-center text-white text-[10px] active:scale-95 transition"
+            className="flex flex-col items-center justify-center text-white text-[10px]"
           >
             {menuOpen ? <FaTimes size={17} /> : <FaBars size={17} />}
             <span className="mt-1">Menu</span>
           </button>
 
-          {/* Call */}
-
+          {/* WhatsApp */}
           <a
-            href="tel:+911800123456"
+            href="https://wa.me/919876543210"
+            target="_blank"
+            rel="noreferrer"
             className="flex flex-col items-center justify-center text-white text-[10px]"
           >
-            <FaPhoneAlt size={17} />
-            <span className="mt-1">Call</span>
+            <FaWhatsapp size={18} />
+            <span className="mt-1">WhatsApp</span>
           </a>
 
-          {/* Book */}
-
+          {/* Speciality */}
           <NavLink
-            to="/appointment"
+            to="/speciality"
             className={({ isActive }) =>
-              `flex flex-col items-center justify-center text-[10px] transition ${
+              `flex flex-col items-center justify-center text-[10px] ${
                 isActive ? "text-yellow-300" : "text-white"
               }`
             }
           >
-            <FaCalendarCheck size={17} />
-            <span className="mt-1">Book</span>
+            <FaStethoscope size={17} />
+            <span className="mt-1">Speciality</span>
           </NavLink>
 
           {/* Doctors */}
-
           <NavLink
             to="/doctors"
             className={({ isActive }) =>
-              `flex flex-col items-center justify-center text-[10px] transition ${
+              `flex flex-col items-center justify-center text-[10px] ${
                 isActive ? "text-yellow-300" : "text-white"
               }`
             }
@@ -249,11 +257,10 @@ const MainNavbar = () => {
           </NavLink>
 
           {/* Home */}
-
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `flex flex-col items-center justify-center text-[10px] transition ${
+              `flex flex-col items-center justify-center text-[10px] ${
                 isActive ? "text-yellow-300" : "text-white"
               }`
             }

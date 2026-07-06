@@ -11,6 +11,7 @@ import About from "./pages/About";
 import DepartmentDetails from "./pages/DepartmentDetails";
 import Contact from "./pages/Contact";
 import BlogPage from "./pages/BlogPage";
+import Departments from "./pages/Speciality";
 
 function App() {
   return (
@@ -29,26 +30,20 @@ function App() {
 
           {/* Doctors */}
           <Route path="/doctors" element={<Doctors />} />
+          <Route path="/doctors/:slug" element={<DoctorDetails />} />
 
-           {/* Contact */}
+          {/* Departments */}
+          <Route path="/departments" element={<Departments />} />
+          <Route
+            path="/departments/:slug"
+            element={<DepartmentDetails />}
+          />
+
+          {/* Contact */}
           <Route path="/contact" element={<Contact />} />
 
-             {/* Blog */}
+          {/* Blog */}
           <Route path="/blog" element={<BlogPage />} />
-
-          {/* Doctor Details */}
-          <Route
-            path="/doctors/:slug"
-            element={<DoctorDetails />}
-          />
-
-          {/* Department Details */}
-          <Route
-            path="/speciality/:slug"
-            element={<DepartmentDetails />}
-
-
-          />
         </Routes>
       </main>
 

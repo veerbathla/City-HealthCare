@@ -75,27 +75,34 @@ const DoctorDetails = () => {
       {/* Expertise */}
 
       <div className="mt-14">
+  <h2 className="text-2xl font-bold text-gray-900 mb-6">
+    Areas of Expertise
+  </h2>
 
-        <h2 className="text-2xl font-bold mb-5">
-          Expertise
-        </h2>
+  <div className="grid gap-5 md:grid-cols-2">
+    {doctor.expertise.map((item, index) => (
+      <div
+        key={index}
+        className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+      >
+        <div className="flex items-start gap-4">
+          {/* Blue Accent */}
+          <div className="w-1 self-stretch rounded-full bg-[#0096D6]" />
 
-        <ul className="grid md:grid-cols-2 gap-3">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900">
+              {item.title}
+            </h3>
 
-          {doctor.expertise.map((item, index) => (
-
-            <li
-              key={index}
-              className="bg-gray-100 p-3 rounded-lg"
-            >
-              {item}
-            </li>
-
-          ))}
-
-        </ul>
-
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              {item.description}
+            </p>
+          </div>
+        </div>
       </div>
+    ))}
+  </div>
+</div>
 
       {/* Procedures */}
 

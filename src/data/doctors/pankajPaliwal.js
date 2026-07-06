@@ -52,16 +52,34 @@ const pankajPaliwal = {
   // Expertise
   // ==========================
   expertise: [
-    "General Medicine",
-    "Critical Care",
-    "Internal Medicine",
-    "Snake Bite Management",
-    "Poisoning & Overdose Treatment",
-    "Emergency Toxicology",
-    "Chronic Disease Management",
-    "Respiratory Disease Management",
-    "Infectious Disease Treatment",
-    "Geriatric Care",
+   { title:"Snake Bite Management",
+    description:" Advanced, protocol-driven administration of anti-snake venom (ASV) and ventilator support for neurotoxic and haemotoxic bites. "
+    },
+    {title:"Poisoning & Overdose Care",
+      description:"Rapid resuscitation, gastric decontamination, and antidote therapies for accidental, chemical, or agricultural poisoning cases.  "
+    },
+    {title:"Sting & Environmental Toxin Care",
+      description:"Management of severe scorpion stings, insect bites, and allergic anaphylaxis.  "
+    },
+     {title:"Chronic Lifestyle Disorders",
+      description:"Comprehensive management of Diabetes (High Sugar), Hypertension (High Blood Pressure), and Thyroid Disorder."
+    },
+     {title:"Infectious & Seasonal Diseases",
+      description:"Targeted treatment for Dengue, Malaria, Typhoid, Chikungunya, Influenza, and unexplained prolonged fevers."
+    },
+     {title:"Respiratory & Lung Disorders",
+      description:"Advanced care for Asthma, Chronic Obstructive Pulmonary Disease (COPD), Bronchitis, and severe respiratory tract infections. "
+    },
+     {title:"Gastrointestinal & Liver Health",
+      description:" Treatment for Fatty Liver, Gastritis, Acid Reflux (GERD), Jaundice, and chronic abdominal issues."
+    },
+     {title:"Cardiovascular & Kidney Care",
+      description:"Initial screening, medical management, and stabilization of heart conditions and kidney-related ailments."
+    },
+     {title:"Geriatric (Elderly) Care",
+      description:"Holistic management of age-related multiple health issues, general weakness, and joint pain."
+    },
+
   ],
 
   // ==========================

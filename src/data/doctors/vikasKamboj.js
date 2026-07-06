@@ -60,17 +60,19 @@ const vikasKamboj = {
   // ==========================
   // Expertise
   // ==========================
-  expertise: [
-    "Advanced Knee Replacement",
-    "Total Knee Replacement (TKR)",
-    "Partial Knee Replacement",
-    "Advanced Hip Replacement",
-    "Joint Reconstruction Surgery",
-    "Complex Trauma Surgery",
-    "Fracture Management",
-    "Pelvis & Acetabulum Surgery",
-    "Sports Injury Management",
-    "Orthopaedic Consultation",
+ expertise: [
+   { title:"Advanced Knee Replacement (Total & Partial)",
+    description:"Cutting-edge arthroplasty techniques for severe arthritis, ensuring anatomical alignment and natural joint movement. "
+    },
+    {title:"Advanced Hip Replacement Surgery",
+      description:"High-precision total hip reconstruction to restore pain-free walking and flexibility. "
+    },
+    {title:"Complex Trauma & Fracture Management",
+      description:" Expert handling of high-impact accidental injuries, non-healing fractures, and complex bone reconstructions. "
+    },
+     {title:"Chronic Joint Pain & Deformity Correction",
+      description:"Specialized therapies and corrective treatments for osteoarthritis, osteoporosis, and spine-related joint issues. "
+    }
   ],
 
   // ==========================
