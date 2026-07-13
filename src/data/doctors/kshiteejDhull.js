@@ -1,4 +1,4 @@
-import abhishek from "../../assets/doctors/abhishek.jpeg";
+import dhull from "../../assets/doctors/dhull.jpeg";
 
 const kshiteejDhull = {
   id: 6,
@@ -8,7 +8,7 @@ const kshiteejDhull = {
   // Basic Information
   // ==========================
   name: "Dr. Kshiteej Dhull",
-  image: abhishek,
+  image: dhull,
   designation: "Consultant Plastic, Reconstructive & Aesthetic Surgeon",
   department: "Plastic Surgery",
   speciality: "Plastic, Reconstructive & Aesthetic Surgery",

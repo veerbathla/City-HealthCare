@@ -1,4 +1,4 @@
-import abhishek from "../../assets/doctors/abhishek.jpeg";
+import girish from "../../assets/doctors/girish.jpeg";
 
 const girishSharma = {
   id: 8,
@@ -8,7 +8,7 @@ const girishSharma = {
   // Basic Information
   // ==========================
   name: "Dr. Girish Sharma",
-  image: abhishek,
+  image: girish,
   designation: "Consultant Anesthesiologist & Critical Care Specialist",
   department: "Anesthesiology & Critical Care",
   speciality: "Anesthesia, Critical Care & Pain Management",
