@@ -13,6 +13,8 @@ import {
   FaStethoscope
 } from "react-icons/fa";
 import { departments } from "../../data/departments";
+
+
 const MainNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileSpecialityOpen, setMobileSpecialityOpen] = useState(false);
@@ -83,15 +85,15 @@ const MainNavbar = () => {
                       z-50
                     "
                     >
-                      {departments.map((dept) => (
-                        <NavLink
-                          key={dept.id}
-                          to={`/speciality/${dept.slug}`}
-                          className="block px-5 py-3 text-gray-700 hover:bg-[#0096D6] hover:text-white transition"
-                        >
-                          {dept.name}
-                        </NavLink>
-                      ))}
+                    {departments.map((dept) => (
+  <NavLink
+    key={dept.id}
+    to={`/doctors/${dept.doctorSlug}`}
+    className="block px-5 py-3 text-gray-700 hover:bg-[#0096D6] hover:text-white transition"
+  >
+    {dept.name}
+  </NavLink>
+))}
                     </div>
                   </>
                 ) : (
@@ -165,19 +167,19 @@ const MainNavbar = () => {
                       mobileSpecialityOpen ? "max-h-96" : "max-h-0"
                     }`}
                   >
-                    {departments.map((dept) => (
-                      <NavLink
-                        key={dept.id}
-                        to={`/departments/${dept.slug}`}
-                        onClick={() => {
-                          setMenuOpen(false);
-                          setMobileSpecialityOpen(false);
-                        }}
-                        className="block pl-10 pr-5 py-3 border-b bg-gray-50 hover:bg-[#0096D6] hover:text-white transition"
-                      >
-                        {dept.name}
-                      </NavLink>
-                    ))}
+  {departments.map((dept) => (
+  <NavLink
+    key={dept.id}
+    to={`/doctors/${dept.doctorSlug}`}
+    onClick={() => {
+      setMenuOpen(false);
+      setMobileSpecialityOpen(false);
+    }}
+    className="block pl-10 pr-5 py-3 border-b bg-gray-50 hover:bg-[#0096D6] hover:text-white transition"
+  >
+    {dept.name}
+  </NavLink>
+))}
                   </div>
                 </div>
               );

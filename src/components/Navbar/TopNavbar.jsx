@@ -66,16 +66,16 @@ const TopNavbar = () => {
           />
 
           {/* Right Side */}
-          <div className="flex items-center gap-2 lg:gap-7">
+          <div className="flex items-center gap-2 lg:gap-5 flex-1 justify-end">
 
             {/* Desktop Search */}
-            <div className="hidden lg:block relative">
+            <div className="hidden lg:block relative flex-1 max-w-2xl mr-6">
               <input
   type="text"
   value={search}
   onChange={(e) => handleSearch(e.target.value)}
   placeholder="Search Doctors or Departments..."
-  className="border rounded-full pl-11 pr-5 py-2.5 w-72 focus:outline-none focus:ring-2 focus:ring-teal-600"
+ className="w-full border rounded-full pl-11 pr-5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal-600"
 />
 {results.length > 0 && (
   <div className="absolute top-full left-0 mt-2 w-full bg-white border rounded-xl shadow-lg max-h-80 overflow-y-auto z-50">
