@@ -22,7 +22,7 @@ const MainNavbar = () => {
   const navItems = [
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
-    { title: "Speciality", path: "/speciality" },
+    { title: "Speciality", path: "/doctors" },
     { title: "Doctors", path: "/doctors" },
     { title: "Blog", path: "/blog" },
     { title: "Contact", path: "/contact" },
@@ -43,7 +43,7 @@ const MainNavbar = () => {
                 {item.title === "Speciality" ? (
                   <>
                     <NavLink
-                      to="/departments"
+                      to="/doctors"
                       className={({ isActive }) =>
                         `relative font-medium transition-all
                          after:absolute
@@ -140,7 +140,7 @@ const MainNavbar = () => {
                   <div className="flex border-b">
                     {/* Open Speciality Page */}
                     <NavLink
-                      to="/speciality"
+                      to="/doctors"
                       onClick={() => setMenuOpen(false)}
                       className="flex-1 px-5 py-4 hover:bg-gray-50"
                     >
@@ -234,7 +234,7 @@ const MainNavbar = () => {
 
           {/* Speciality */}
           <NavLink
-            to="/speciality"
+            to="/doctors"
             className={({ isActive }) =>
               `flex flex-col items-center justify-center text-[10px] ${
                 isActive ? "text-yellow-300" : "text-white"

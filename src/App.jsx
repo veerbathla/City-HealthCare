@@ -13,6 +13,9 @@ import Contact from "./pages/Contact";
 import BlogPage from "./pages/BlogPage";
 import Departments from "./pages/Speciality";
 
+import "./i18n";
+
+
 function App() {
   return (
     <>
