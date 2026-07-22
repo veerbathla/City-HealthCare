@@ -1,14 +1,14 @@
-import abhishek from "../../assets/doctors/abhishek.jpeg";
+import harpreet from "../../assets/doctors/harpreet.jpeg";
 
 const harpreetSingh = {
   id: 7,
-  slug: "dr-harpreet-singh",
-
+  doctorSlug: "dr-harpreet-singh",
+  slug: "physiotherapy",
   // ==========================
   // Basic Information
   // ==========================
   name: "Dr. Harpreet Singh",
-  image: abhishek,
+  image: harpreet,
   designation: "Consultant Physiotherapist & Rehabilitation Specialist",
   department: "Physiotherapy",
   speciality: "Neuro, Orthopaedic & Sports Rehabilitation",

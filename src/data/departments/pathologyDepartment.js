@@ -1,5 +1,5 @@
 export const pathologyDepartment = {
-  id: 4,
+  id: 9,
 
   slug: "pathology",
 

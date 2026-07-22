@@ -2,8 +2,8 @@ import girish from "../../assets/doctors/girish.jpeg";
 
 const girishSharma = {
   id: 8,
-  slug: "dr-girish-sharma",
-
+  doctorSlug: "dr-girish-sharma",
+  slug: "anaesthesiology",
   // ==========================
   // Basic Information
   // ==========================

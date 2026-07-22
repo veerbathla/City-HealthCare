@@ -2,8 +2,8 @@ import pankaj from "../../assets/doctors/pankaj.jpeg";
 
 const pankajPaliwal = {
   id: 4,
-  slug: "dr-pankaj-paliwal",
-
+  doctorSlug: "dr-pankaj-paliwal",
+   slug: "internal-medicine",
   // ==========================
   // Basic Information
   // ==========================

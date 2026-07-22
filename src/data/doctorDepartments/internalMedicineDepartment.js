@@ -1,5 +1,5 @@
 export const internalMedicineDepartment = {
-  id: 4,
+  id: 8,
   slug: "internal-medicine",
   doctorSlug: "dr-pankaj-paliwal",
   name: "Internal Medicine",

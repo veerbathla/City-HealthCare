@@ -1,5 +1,5 @@
 export const plasticSurgeryDepartment = {
-  id: 6,
+  id: 5,
   slug: "plastic-surgery",
   doctorSlug: "dr-kshiteej-dhull",
   name: "Plastic Surgery",

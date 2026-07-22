@@ -1,7 +1,92 @@
 {
   "home": "Home",
-  "about": "About",
+  "about": "About Us",
   "contact": "Contact",
   "appointment": "Book Appointment",
-  "hero_title": "Your Health Our Priority"
+  "search": "Search Doctors...",
+  "ambulance": "Ambulance",
+  "emergency": "Emergency",
+  "department": "Department",
+
+  "speciality": "Speciality",
+  "doctors": "Doctors",
+  "blog": "Blog",
+  "menu": "Menu",
+  "whatsapp": "WhatsApp",
+
+  "quickLinks": "Quick Links",
+  "footerDescription": "Providing world-class healthcare with experienced doctors, advanced medical facilities and compassionate patient care.",
+  "departments": "Departments",
+  "cardiology": "Cardiology",
+  "neurology": "Neurology",
+  "orthopedics": "Orthopedics",
+  "gynecology": "Gynecology",
+  "pediatrics": "Pediatrics",
+  "generalMedicine": "General Medicine",
+  "contactUs": "Contact Us",
+  "viewOnGoogleMaps": "View on Google Maps",
+  "copyright": "City Healthcare Hospital. All Rights Reserved.",
+  "designedBy": "Designed & Developed by",
+
+
+
+
+  "heroTitle1": "Your Health",
+"heroTitle2": "Our Priority",
+"heroDescription": "Providing world-class healthcare with experienced doctors, advanced technology and compassionate care.",
+"callNow": "Call Now",
+
+
+
+"findUs": "Find Us & Patient Reviews",
+"patientReviewDesc": "Trusted healthcare with excellent patient satisfaction.",
+
+
+
+"meetOurSpecialists": "Meet Our Specialists",
+"ourExpertDoctors": "Our Expert Doctors",
+"doctorSectionDesc": "Highly experienced specialists dedicated to your health.",
+"viewAll": "View All",
+"viewAllDoctors": "View All Doctors",
+
+"hospitalName": "City Healthcare Hospital",
+"viewProfile": "View Profile",
+
+
+"aboutHero": {
+  "badge": "Trusted Multispecialty Hospital in Sirsa",
+  "heading1": "Compassion Meets",
+  "heading2": "Advanced Healthcare",
+  "description": "Welcome to City HealthCare, Sirsa's premier multispecialty healthcare destination where world-class medical innovation meets compassionate, patient-first care. Our elite team of specialists, advanced diagnostics, and integrated treatment approach ensure exceptional care for every patient under one roof.",
+  "feature1Title": "24×7 Trauma Care",
+  "feature1Desc": "Rapid emergency response with multidisciplinary specialists.",
+  "feature2Title": "Advanced Diagnostics",
+  "feature2Desc": "CT Scan, Digital X-Ray, Ultrasound, NCV, EEG, EMG and more.",
+  "feature3Title": "Expert Specialists",
+  "feature3Desc": "Dedicated consultants delivering comprehensive care.",
+  "emergencyContact": "Emergency Contact"
+},
+
+
+
+"welcome": {
+  "badge": "ABOUT CITY HEALTHCARE",
+  "title1": "Welcome to",
+  "title2": "City HealthCare",
+
+  "para1": "Welcome to City HealthCare, Sirsa’s premier multispecialty healthcare destination where world-class medical innovation meets compassionate, patient-first care.",
+
+  "para2": "Built on a foundation of clinical excellence, we bridge the gap between complex tertiary specialties and everyday wellness by bringing advanced medical services under one roof. Our integrated approach combines highly experienced specialists with cutting-edge technology, ensuring every patient receives timely, accurate, and personalized treatment.",
+
+  "para3": "From life-saving trauma care and advanced diagnostics to minimally invasive surgeries and rehabilitation, our focus is to deliver comprehensive healthcare that prioritizes safety, precision, and compassion at every step of the healing journey.",
+
+  "emergencyTitle": "24×7",
+  "emergencyDesc": "Emergency & Trauma Care with dedicated specialists always ready to serve.",
+
+  "card1Title": "Elite In-House Collaboration",
+  "card1Desc": "Top specialists work together with our advanced diagnostics to provide faster decisions and seamless patient care.",
+
+  "card2Title": "Advanced Infrastructure",
+  "card2Desc": "Fully equipped CT Scan, Digital X-Ray, Ultrasound, Pathology and Neurophysiology labs under one roof."
+}
 }

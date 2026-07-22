@@ -2,8 +2,8 @@ import dhull from "../../assets/doctors/dhull.jpeg";
 
 const kshiteejDhull = {
   id: 6,
-  slug: "dr-kshiteej-dhull",
-
+  doctorSlug: "dr-kshiteej-dhull",
+slug: "plastic-surgery",
   // ==========================
   // Basic Information
   // ==========================

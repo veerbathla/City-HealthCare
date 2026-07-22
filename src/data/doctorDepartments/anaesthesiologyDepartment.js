@@ -1,5 +1,5 @@
 export const anaesthesiologyDepartment = {
-  id: 8,
+  id: 7,
   slug: "anaesthesiology",
   doctorSlug: "dr-girish-sharma",
   name: "Anaesthesiology & Critical Care",

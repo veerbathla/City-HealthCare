@@ -1,14 +1,14 @@
 export const dermatologyDepartment = {
-  id: 5,
-  slug: "dermatology",
+  id: 4,
+  slug: "maxillo-facial-and-dental",
   doctorSlug: "dr-simrat-kaur",
-  name: "Dermatology",
+  name: "Maxillo-facial & Dental",
   shortDescription:
     "Complete skin, hair, nail and cosmetic dermatology treatments.",
   icon: "✨",
   image: "/departments/dermatology.jpg",
   seo: {
     title: "Dermatology | City HealthCare",
-    description: "Expert Dermatology services at City HealthCare, Sirsa.",
+    description: "Expert Maxillo-facial & Dental services at City HealthCare, Sirsa.",
   },
 };

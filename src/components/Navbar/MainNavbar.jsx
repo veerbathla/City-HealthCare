@@ -3,30 +3,68 @@ import { NavLink } from "react-router-dom";
 import {
   FaHome,
   FaUserMd,
-  FaCalendarCheck,
-  FaPhoneAlt,
   FaBars,
   FaTimes,
   FaChevronRight,
   FaChevronDown,
   FaWhatsapp,
-  FaStethoscope
+  FaStethoscope,
 } from "react-icons/fa";
-import { departments } from "../../data/departments";
 
+import { departments } from "../../data/departments";
+import { doctorDepartments } from "../../data/doctorDepartments";
+import { useTranslation } from "react-i18next";
 
 const MainNavbar = () => {
+  const { t } = useTranslation();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileSpecialityOpen, setMobileSpecialityOpen] = useState(false);
 
   const navItems = [
-    { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Speciality", path: "/doctors" },
-    { title: "Doctors", path: "/doctors" },
-    { title: "Blog", path: "/blog" },
-    { title: "Contact", path: "/contact" },
+    { key: "home", path: "/" },
+    { key: "about", path: "/about" },
+    { key: "speciality", path: "/departments" },
+    { key: "doctors", path: "/doctors" },
+    { key: "blog", path: "/blog" },
+    { key: "contact", path: "/contact" },
   ];
+
+ const specialityDropdown = [
+  // Neurosurgery
+  doctorDepartments.find(d => d.slug === "neurosurgery"),
+
+  // Full departments
+  departments.find(d => d.slug === "obstetrics-gynaecology"),
+  departments.find(d => d.slug === "orthopaedics"),
+
+  // Doctor departments
+  doctorDepartments.find(d => d.slug === "internal-medicine"),
+  doctorDepartments.find(d => d.slug === "maxillo-facial-and-dental"),
+  doctorDepartments.find(d => d.slug === "plastic-surgery"),
+  doctorDepartments.find(d => d.slug === "physiotherapy"),
+  doctorDepartments.find(d => d.slug === "general-laparoscopic-surgery"),
+  doctorDepartments.find(d => d.slug === "anaesthesiology"),
+
+  // Full departments
+  departments.find(d => d.slug === "pathology"),
+  departments.find(d => d.slug === "radiology-clinical-imaging"),
+
+  // Doctor departments
+  doctorDepartments.find(d => d.slug === "endocrinology-metabolism"),
+
+  // Full departments
+  departments.find(
+    d => d.slug === "neuro-investigation-clinical-neurophysiology"
+  ),
+].filter(Boolean);
+
+console.log(specialityDropdown);
+console.log("Departments");
+console.log(departments.map(d => d.slug));
+
+console.log("Doctor Departments");
+console.log(doctorDepartments.map(d => d.slug));
 
   return (
     <>
@@ -37,63 +75,49 @@ const MainNavbar = () => {
           <ul className="flex justify-center items-center gap-12 h-16 text-white">
             {navItems.map((item) => (
               <li
-                key={item.title}
-                className={item.title === "Speciality" ? "relative group" : ""}
+                key={item.key}
+                className={item.key === "speciality" ? "relative group" : ""}
               >
-                {item.title === "Speciality" ? (
+                {item.key === "speciality" ? (
                   <>
                     <NavLink
-                      to="/doctors"
+                      to="/departments"
                       className={({ isActive }) =>
                         `relative font-medium transition-all
-                         after:absolute
+                        after:absolute
                         after:left-0
                         after:-bottom-5
                         after:h-[3px]
-                         after:bg-white
-                         after:rounded-full
-                         after:transition-all
+                        after:bg-white
+                        after:rounded-full
+                        after:transition-all
                         after:duration-300
-                         ${
-                           isActive
-                             ? "after:w-full"
-                             : "after:w-0 group-hover:after:w-full"
-                         }`
+                        ${
+                          isActive
+                            ? "after:w-full"
+                            : "after:w-0 group-hover:after:w-full"
+                        }`
                       }
                     >
-                      Speciality
+                      {t("speciality")}
                     </NavLink>
 
-                    <div
-                      className="
-                      absolute
-                      top-full
-                      left-1/2
-                      -translate-x-1/2
-                      mt-5
-                      w-64
-                      bg-white
-                      rounded-xl
-                      shadow-2xl
-                      overflow-hidden
-                      opacity-0
-                      invisible
-                      group-hover:opacity-100
-                      group-hover:visible
-                      transition-all
-                      duration-300
-                      z-50
-                    "
-                    >
-                    {departments.map((dept) => (
-  <NavLink
-    key={dept.id}
-    to={`/doctors/${dept.doctorSlug}`}
-    className="block px-5 py-3 text-gray-700 hover:bg-[#0096D6] hover:text-white transition"
-  >
-    {dept.name}
-  </NavLink>
-))}
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-5 w-80 bg-white rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+                      <div className="max-h-[420px] overflow-y-auto py-2">
+                        {specialityDropdown.map((dept) => (
+                          <NavLink
+                            key={dept.slug}
+                            to={
+                              dept.hero
+                                ? `/speciality/${dept.slug}`
+                                : `/doctors/${dept.doctorSlug}`
+                            }
+                            className="block px-5 py-3 text-gray-700 hover:bg-[#0096D6] hover:text-white transition"
+                          >
+                            {dept.name}
+                          </NavLink>
+                        ))}
+                      </div>
                     </div>
                   </>
                 ) : (
@@ -116,7 +140,7 @@ const MainNavbar = () => {
                       }`
                     }
                   >
-                    {item.title}
+                    {t(item.key)}
                   </NavLink>
                 )}
               </li>
@@ -124,33 +148,36 @@ const MainNavbar = () => {
           </ul>
         </div>
       </nav>
-
-      {/* ===================== MOBILE DRAWER ===================== */}
+            {/* ===================== MOBILE DRAWER ===================== */}
 
       <div
         className={`lg:hidden fixed left-0 right-0 bottom-20 bg-white shadow-2xl z-40 transition-all duration-300 overflow-hidden ${
           menuOpen ? "max-h-[80vh]" : "max-h-0"
         }`}
       >
-        <div className="pb-2">
+        <div className="pb-2 overflow-y-auto max-h-[80vh]">
+
           {navItems.map((item) => {
-            if (item.title === "Speciality") {
+
+            if (item.key === "speciality") {
               return (
-                <div key={item.title}>
+                <div key={item.key}>
+
                   <div className="flex border-b">
-                    {/* Open Speciality Page */}
+
                     <NavLink
-                      to="/doctors"
+                      to="/departments"
                       onClick={() => setMenuOpen(false)}
                       className="flex-1 px-5 py-4 hover:bg-gray-50"
                     >
-                      Speciality
+                      {t("speciality")}
                     </NavLink>
 
-                    {/* Expand Departments */}
                     <button
                       onClick={() =>
-                        setMobileSpecialityOpen(!mobileSpecialityOpen)
+                        setMobileSpecialityOpen(
+                          !mobileSpecialityOpen
+                        )
                       }
                       className="px-5 flex items-center justify-center hover:bg-gray-100"
                     >
@@ -160,65 +187,85 @@ const MainNavbar = () => {
                         <FaChevronRight className="text-gray-500" />
                       )}
                     </button>
+
                   </div>
 
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      mobileSpecialityOpen ? "max-h-96" : "max-h-0"
+                    className={`overflow-y-auto transition-all duration-300 ${
+                      mobileSpecialityOpen
+                        ? "max-h-[420px]"
+                        : "max-h-0"
                     }`}
                   >
-  {departments.map((dept) => (
-  <NavLink
-    key={dept.id}
-    to={`/doctors/${dept.doctorSlug}`}
-    onClick={() => {
-      setMenuOpen(false);
-      setMobileSpecialityOpen(false);
-    }}
-    className="block pl-10 pr-5 py-3 border-b bg-gray-50 hover:bg-[#0096D6] hover:text-white transition"
-  >
-    {dept.name}
-  </NavLink>
-))}
+
+                    {specialityDropdown.map((dept) => (
+
+                      <NavLink
+                        key={dept.slug}
+                        to={
+                          dept.hero
+                            ? `/speciality/${dept.slug}`
+                            : `/doctors/${dept.doctorSlug}`
+                        }
+                        onClick={() => {
+                          setMenuOpen(false);
+                          setMobileSpecialityOpen(false);
+                        }}
+                        className="block pl-10 pr-5 py-3 border-b bg-gray-50 hover:bg-[#0096D6] hover:text-white transition"
+                      >
+                        {dept.name}
+                      </NavLink>
+
+                    ))}
+
                   </div>
+
                 </div>
               );
             }
 
             return (
               <NavLink
-                key={item.title}
+                key={item.key}
                 to={item.path}
                 onClick={() => setMenuOpen(false)}
                 className="flex justify-between items-center px-5 py-4 border-b hover:bg-gray-50"
               >
-                <span>{item.title}</span>
+                <span>{t(item.key)}</span>
+
                 <FaChevronRight className="text-gray-400 text-xs" />
               </NavLink>
             );
+
           })}
 
           <div className="m-4 border border-red-500 rounded-lg p-4">
-            <p className="text-gray-500 text-sm">Emergency</p>
+            <p className="text-gray-500 text-sm">
+              {t("emergency")}
+            </p>
 
-            <a href="tel:108" className="text-red-600 text-2xl font-bold">
+            <a
+              href="tel:108"
+              className="text-red-600 text-2xl font-bold"
+            >
               108
             </a>
           </div>
+
         </div>
       </div>
-
-      {/* ===================== MOBILE BOTTOM NAV ===================== */}
+            {/* ===================== MOBILE BOTTOM NAV ===================== */}
 
       <nav className="lg:hidden fixed bottom-3 left-3 right-3 z-50">
         <div className="grid grid-cols-5 bg-[#0096D6] rounded-2xl shadow-2xl h-14 overflow-hidden">
+
           {/* Menu */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="flex flex-col items-center justify-center text-white text-[10px]"
           >
             {menuOpen ? <FaTimes size={17} /> : <FaBars size={17} />}
-            <span className="mt-1">Menu</span>
+            <span className="mt-1">{t("menu")}</span>
           </button>
 
           {/* WhatsApp */}
@@ -229,12 +276,12 @@ const MainNavbar = () => {
             className="flex flex-col items-center justify-center text-white text-[10px]"
           >
             <FaWhatsapp size={18} />
-            <span className="mt-1">WhatsApp</span>
+            <span className="mt-1">{t("whatsapp")}</span>
           </a>
 
           {/* Speciality */}
           <NavLink
-            to="/doctors"
+            to="/departments"
             className={({ isActive }) =>
               `flex flex-col items-center justify-center text-[10px] ${
                 isActive ? "text-yellow-300" : "text-white"
@@ -242,7 +289,7 @@ const MainNavbar = () => {
             }
           >
             <FaStethoscope size={17} />
-            <span className="mt-1">Speciality</span>
+            <span className="mt-1">{t("speciality")}</span>
           </NavLink>
 
           {/* Doctors */}
@@ -255,7 +302,7 @@ const MainNavbar = () => {
             }
           >
             <FaUserMd size={17} />
-            <span className="mt-1">Doctors</span>
+            <span className="mt-1">{t("doctors")}</span>
           </NavLink>
 
           {/* Home */}
@@ -268,10 +315,12 @@ const MainNavbar = () => {
             }
           >
             <FaHome size={17} />
-            <span className="mt-1">Home</span>
+            <span className="mt-1">{t("home")}</span>
           </NavLink>
+
         </div>
       </nav>
+
     </>
   );
 };

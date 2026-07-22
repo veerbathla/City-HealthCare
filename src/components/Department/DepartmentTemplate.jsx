@@ -29,6 +29,8 @@ const DepartmentTemplate = ({ department }) => {
     department.investigationsFor ||
     department.symptomsEvaluated ||
     [];
+    console.log(department);
+console.log(department.hero);
 
   return (
     <main className="bg-white overflow-hidden">

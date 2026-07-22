@@ -299,15 +299,15 @@
 
 export const neurologyDepartment = {
   id: 1,
-  slug: "neurology",
+  slug: "neurosurgery",
   doctorSlug: "dr-abhishek-singh",
-  name: "Neurology",
+  name: "Neurosurgery",
   shortDescription:
     "Advanced diagnosis and treatment of brain, spine, nerve and neurological disorders.",
   icon: "🧠",
   image: "/departments/neurology.jpg",
   seo: {
-    title: "Neurology | City HealthCare",
-    description: "Expert Neurology Department at City HealthCare, Sirsa.",
+    title: "Neurosurgery | City HealthCare",
+    description: "Expert Neurosurgery Department at City HealthCare, Sirsa.",
   },
 };

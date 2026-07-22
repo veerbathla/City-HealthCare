@@ -1,5 +1,5 @@
 export const radiologyDepartment = {
-  id: 5,
+  id: 10,
 
   slug: "radiology-clinical-imaging",
 

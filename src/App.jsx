@@ -5,16 +5,18 @@ import MainNavbar from "./components/Navbar/MainNavbar";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
+import About from "./pages/About";
+
 import Doctors from "./pages/Doctors";
 import DoctorDetails from "./pages/DoctorDetails";
-import About from "./pages/About";
+
+import Departments from "./pages/Departments";
 import DepartmentDetails from "./pages/DepartmentDetails";
+
 import Contact from "./pages/Contact";
 import BlogPage from "./pages/BlogPage";
-import Departments from "./pages/Speciality";
 
 import "./i18n";
-
 
 function App() {
   return (
@@ -22,9 +24,9 @@ function App() {
       <TopNavbar />
       <MainNavbar />
 
-      {/* Main Content */}
       <main className="pb-16 lg:pb-0">
         <Routes>
+
           {/* Home */}
           <Route path="/" element={<Home />} />
 
@@ -37,8 +39,10 @@ function App() {
 
           {/* Departments */}
           <Route path="/departments" element={<Departments />} />
+
+          {/* Full Department Details */}
           <Route
-            path="/departments/:slug"
+            path="/speciality/:slug"
             element={<DepartmentDetails />}
           />
 
@@ -47,6 +51,10 @@ function App() {
 
           {/* Blog */}
           <Route path="/blog" element={<BlogPage />} />
+
+          {/* 404 */}
+          <Route path="*" element={<Home />} />
+
         </Routes>
       </main>
 

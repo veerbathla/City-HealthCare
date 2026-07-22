@@ -2,8 +2,8 @@ import divya from "../../assets/doctors/divya.jpeg";
 
 const divyaJyotiSingh = {
   id: 2,
-  slug: "dr-divya-jyoti-singh",
-
+  doctorSlug: "dr-divya-jyoti-singh",
+  slug: "obstetrics-gynaecology",
   // ==========================
   // Basic Information
   // ==========================

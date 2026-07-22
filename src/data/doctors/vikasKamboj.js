@@ -2,8 +2,8 @@ import vikas from "../../assets/doctors/vikas.jpeg";
 
 const vikasKamboj = {
   id: 3,
-  slug: "dr-vikas-kamboj",
-
+  doctorSlug: "dr-vikas-kamboj",
+  slug: "orthopaedics",
   // ==========================
   // Basic Information
   // ==========================

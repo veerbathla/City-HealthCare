@@ -1,5 +1,5 @@
 export const endocrinologyDepartment = {
-  id: 3,
+  id: 11,
 
   slug: "endocrinology-metabolism",
 

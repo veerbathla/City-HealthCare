@@ -10,6 +10,7 @@ import doctors from "../../data/doctors";
 import { departments } from "../../data/departments";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
 const TopNavbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [search, setSearch] = useState("");
@@ -48,6 +49,8 @@ const TopNavbar = () => {
       ...departmentResults.map((item) => ({ ...item, type: "department" })),
     ]);
   };
+
+  const { t, i18n } = useTranslation();
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
@@ -144,11 +147,17 @@ const TopNavbar = () => {
             {/* Language */}
             <div className="flex items-center border rounded-full px-2 lg:px-4 py-2">
               <FaGlobe className="text-sm" />
-
-              <select className="bg-transparent outline-none text-xs lg:text-sm cursor-pointer ml-1">
-                <option>EN</option>
-                <option>हिंदी</option>
-                <option>ਪੰਜਾਬੀ</option>
+              <select
+                className="bg-transparent outline-none text-xs lg:text-sm cursor-pointer ml-1"
+                value={i18n.language}
+                onChange={(e) => {
+                  i18n.changeLanguage(e.target.value);
+                  localStorage.setItem("language", e.target.value);
+                }}
+              >
+                <option value="en">EN</option>
+                <option value="hi">हिन्दी</option>
+                <option value="pa">ਪੰਜਾਬੀ</option>
               </select>
             </div>
 

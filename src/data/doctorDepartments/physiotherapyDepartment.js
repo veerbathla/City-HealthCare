@@ -1,5 +1,5 @@
 export const physiotherapyDepartment = {
-  id: 7,
+  id: 6,
   slug: "physiotherapy",
   doctorSlug: "dr-harpreet-singh",
   name: "Physiotherapy & Rehabilitation",

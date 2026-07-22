@@ -2,8 +2,8 @@ import abhishek from "../../assets/doctors/abhishek.jpeg";
 
 const abhishekSingh = {
   id: 1,
-  slug: "dr-abhishek-singh",
-
+  doctorSlug: "dr-abhishek-singh",
+  slug: "neurosurgery",
   // ==========================
   // Basic Information
   // ==========================

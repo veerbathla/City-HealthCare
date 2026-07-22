@@ -5,20 +5,16 @@ import en from "./locales/en/translation.json";
 import hi from "./locales/hi/translation.json";
 import pa from "./locales/pa/translation.json";
 
+const savedLanguage = localStorage.getItem("language") || "en";
+
 i18n.use(initReactI18next).init({
   resources: {
-    en: {
-      translation: en,
-    },
-    hi: {
-      translation: hi,
-    },
-    pa: {
-      translation: pa,
-    },
+    en: { translation: en },
+    hi: { translation: hi },
+    pa: { translation: pa },
   },
 
-  lng: "en",
+  lng: savedLanguage,
   fallbackLng: "en",
 
   interpolation: {
