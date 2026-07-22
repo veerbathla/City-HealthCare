@@ -1,4 +1,4 @@
-import divya from "../../assets/doctors/divya.jpeg";
+import simrat from "../../assets/doctors/simrat.jpeg";
 
 const simratKaur = {
   id: 5,
@@ -8,7 +8,7 @@ const simratKaur = {
   // Basic Information
   // ==========================
   name: "Dr. Simrat Kaur",
- image: divya,
+ image: simrat,
   designation:
     "Consultant Oral & Maxillofacial Surgeon & Cosmetic Facial Specialist",
   department: "Dentistry",
