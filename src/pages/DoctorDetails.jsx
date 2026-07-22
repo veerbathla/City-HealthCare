@@ -204,6 +204,7 @@ const DoctorDetails = () => {
     );
   }
 
+
   return (
     <div className="bg-slate-50">
 
