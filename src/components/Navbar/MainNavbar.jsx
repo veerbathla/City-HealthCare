@@ -30,32 +30,28 @@ const MainNavbar = () => {
     { key: "contact", path: "/contact" },
   ];
 
- const specialityDropdown = [
+const specialityDropdown = [
   // Neurosurgery
-  doctorDepartments.find(d => d.slug === "neurosurgery"),
+  doctorDepartments.find((d) => d.slug === "neurosurgery"),
 
   // Full departments
-  departments.find(d => d.slug === "obstetrics-gynaecology"),
-  departments.find(d => d.slug === "orthopaedics"),
+  departments.find((d) => d.slug === "obstetrics-gynaecology"),
+  departments.find((d) => d.slug === "orthopaedics"),
 
   // Doctor departments
-  doctorDepartments.find(d => d.slug === "internal-medicine"),
-  doctorDepartments.find(d => d.slug === "maxillo-facial-and-dental"),
-  doctorDepartments.find(d => d.slug === "plastic-surgery"),
-  doctorDepartments.find(d => d.slug === "physiotherapy"),
-  doctorDepartments.find(d => d.slug === "general-laparoscopic-surgery"),
-  doctorDepartments.find(d => d.slug === "anaesthesiology"),
+  doctorDepartments.find((d) => d.slug === "internal-medicine"),
+  doctorDepartments.find((d) => d.slug === "maxillo-facial-and-dental"),
+  doctorDepartments.find((d) => d.slug === "plastic-surgery"),
+  doctorDepartments.find((d) => d.slug === "physiotherapy"),
+  doctorDepartments.find((d) => d.slug === "general-laparoscopic-surgery"),
+  doctorDepartments.find((d) => d.slug === "anaesthesiology"),
+  doctorDepartments.find((d) => d.slug === "endocrinology"), // ✅ Updated
 
   // Full departments
-  departments.find(d => d.slug === "pathology"),
-  departments.find(d => d.slug === "radiology-clinical-imaging"),
-
-  // Doctor departments
-  doctorDepartments.find(d => d.slug === "endocrinology-metabolism"),
-
-  // Full departments
+  departments.find((d) => d.slug === "pathology"),
+  departments.find((d) => d.slug === "radiology-clinical-imaging"),
   departments.find(
-    d => d.slug === "neuro-investigation-clinical-neurophysiology"
+    (d) => d.slug === "neuro-investigation-clinical-neurophysiology"
   ),
 ].filter(Boolean);
 

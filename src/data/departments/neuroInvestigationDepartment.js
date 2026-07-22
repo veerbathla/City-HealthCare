@@ -1,5 +1,7 @@
+
+
 export const neuroInvestigationDepartment = {
-  id: 12,
+  id: 1,
 
   slug: "neuro-investigation-clinical-neurophysiology",
 

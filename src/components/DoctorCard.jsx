@@ -70,11 +70,11 @@ const DoctorCard = ({ doctor }) => {
     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full shadow-sm hover:shadow-xl transition duration-300">
       <div className="flex flex-col items-center px-8 py-8 h-full">
         {/* Doctor Image */}
-        <div className="w-44 h-56 flex items-end justify-center">
+       <div className="w-56 h-72 flex items-end justify-center">
   <img
     src={doctor.image}
     alt={doctor.name}
-    className="max-w-full max-h-full object-contain"
+    className="w-full h-full object-contain"
   />
 </div>
 
