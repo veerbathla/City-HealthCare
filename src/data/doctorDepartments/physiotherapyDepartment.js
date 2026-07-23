@@ -1,3 +1,5 @@
+import physio from "../../assets/departments/physio.jpg";
+
 export const physiotherapyDepartment = {
   id: 6,
   slug: "physiotherapy",
@@ -5,8 +7,7 @@ export const physiotherapyDepartment = {
   name: "Physiotherapy & Rehabilitation",
   shortDescription:
     "Pain management, rehabilitation and physical therapy services.",
-  icon: "🏃",
-  image: "/departments/physiotherapy.jpg",
+  image: physio,
   seo: {
     title: "Physiotherapy | City HealthCare",
     description:

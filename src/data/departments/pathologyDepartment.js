@@ -6,7 +6,7 @@ export const pathologyDepartment = {
   slug: "pathology",
 
   name: "Pathology",
-
+   shortDescription:"Comprehensive laboratory diagnostic services delivering accurate, reliable, and timely test results to support early diagnosis, effective treatment, and better patient outcomes.",
   hero: {
     title: "Department of Pathology",
     subtitle:

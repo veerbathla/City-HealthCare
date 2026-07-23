@@ -1,3 +1,5 @@
+import ansthesia from "../../assets/departments/ansthesia.jpg";
+
 export const anaesthesiologyDepartment = {
   id: 7,
   slug: "anaesthesiology",
@@ -5,8 +7,7 @@ export const anaesthesiologyDepartment = {
   name: "Anaesthesiology & Critical Care",
   shortDescription:
     "Safe anaesthesia, ICU and critical care management.",
-  icon: "💉",
-  image: "/departments/anaesthesiology.jpg",
+  image: ansthesia,
   seo: {
     title: "Anaesthesiology & Critical Care | City HealthCare",
     description:

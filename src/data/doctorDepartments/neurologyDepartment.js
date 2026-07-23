@@ -297,6 +297,9 @@
 //   },
 // };
 
+
+
+import neurology from "../../assets/departments/neurology.jpg";
 export const neurologyDepartment = {
   id: 1,
   slug: "neurosurgery",
@@ -304,8 +307,7 @@ export const neurologyDepartment = {
   name: "Neurosurgery",
   shortDescription:
     "Advanced diagnosis and treatment of brain, spine, nerve and neurological disorders.",
-  icon: "🧠",
-  image: "/departments/neurology.jpg",
+  image: neurology,
   seo: {
     title: "Neurosurgery | City HealthCare",
     description: "Expert Neurosurgery Department at City HealthCare, Sirsa.",

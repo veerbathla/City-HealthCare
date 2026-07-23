@@ -6,7 +6,7 @@ export const neuroInvestigationDepartment = {
   slug: "neuro-investigation-clinical-neurophysiology",
 
   name: "Neuro Investigation & Clinical Neurophysiology",
-
+   shortDescription:"Advanced neurodiagnostic services for accurate evaluation of brain, spinal cord, nerve, and muscle disorders using modern imaging and neurophysiology technologies.",
   hero: {
     title: "Department of Neuro Investigation & Clinical Neurophysiology",
     subtitle:

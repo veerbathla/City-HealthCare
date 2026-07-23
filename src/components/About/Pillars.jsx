@@ -7,6 +7,9 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 
+import aboutt1 from "../../assets/about/aboutt1.jpg";
+import aboutt2 from "../../assets/about/aboutt2.jpg";
+import aboutt3 from "../../assets/about/aboutt3.jpg";
 const Pillars = () => {
   return (
     <div>
@@ -45,11 +48,13 @@ const Pillars = () => {
 
       <div className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white border">
 
-        <img
-          src="/images/trauma.jpg"
-          alt="Trauma Center"
-          className="w-full h-60 object-cover group-hover:scale-105 transition duration-700"
-        />
+        <div className="w-full h-60 flex items-center justify-center bg-gray-50 overflow-hidden">
+  <img
+    src={aboutt1}
+    alt="Trauma Center"
+    className="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-700"
+  />
+</div>
 
         <div className="p-8">
 
@@ -95,11 +100,13 @@ const Pillars = () => {
 
       <div className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white border">
 
-        <img
-          src="/images/diagnostics.jpg"
-          alt="Diagnostics"
-          className="w-full h-60 object-cover group-hover:scale-105 transition duration-700"
-        />
+        <div className="w-full h-60 flex items-center justify-center bg-gray-50 overflow-hidden">
+  <img
+    src={aboutt2}
+    alt="Trauma Center"
+    className="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-700"
+  />
+</div>
 
         <div className="p-8">
 
@@ -144,12 +151,13 @@ const Pillars = () => {
 
       <div className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white border">
 
-        <img
-          src="/images/team.jpg"
-          alt="Integrated Care"
-          className="w-full h-60 object-cover group-hover:scale-105 transition duration-700"
-        />
-
+       <div className="w-full h-60 flex items-center justify-center bg-gray-50 overflow-hidden">
+  <img
+    src={aboutt1}
+    alt="Trauma Center"
+    className="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-700"
+  />
+</div>
         <div className="p-8">
 
           <div className="w-16 h-16 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center text-3xl mb-6">

@@ -6,7 +6,7 @@ export const radiologyDepartment = {
   slug: "radiology-clinical-imaging",
 
   name: "Radiology & Clinical Imaging",
-
+  shortDescription:"Advanced diagnostic imaging services including CT Scan and Digital X-Ray, providing fast, accurate, and reliable imaging for early diagnosis, emergency care, and effective treatment planning.",
   hero: {
     title: "Department of Radiology & Clinical Imaging",
     subtitle:

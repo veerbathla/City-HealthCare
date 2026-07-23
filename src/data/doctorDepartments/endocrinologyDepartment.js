@@ -308,7 +308,7 @@
 //   },
 // };
 
-
+import endo from "../../assets/departments/endo.jpg";
 export const endocrinologyDepartment = {
   id: 9,
   slug: "endocrinology",
@@ -316,8 +316,8 @@ export const endocrinologyDepartment = {
   name: "Endocrinology & Metabolism",
   shortDescription:
     "Expert care for diabetes, thyroid, hormonal and metabolic disorders.",
-  icon: "🩺",
-  image: "/departments/endocrinology.jpg",
+
+  image:endo,
   seo: {
     title: "Endocrinology & Metabolism | City HealthCare",
     description:

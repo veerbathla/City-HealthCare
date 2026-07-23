@@ -1,3 +1,6 @@
+import general from "../../assets/departments/general.jpg";
+
+
 export const internalMedicineDepartment = {
   id: 8,
   slug: "internal-medicine",
@@ -5,8 +8,7 @@ export const internalMedicineDepartment = {
   name: "Internal Medicine",
   shortDescription:
     "Comprehensive diagnosis and treatment of adult medical conditions.",
-  icon: "🩺",
-  image: "/departments/internal-medicine.jpg",
+  image: general,
   seo: {
     title: "Internal Medicine | City HealthCare",
     description: "Expert Internal Medicine services at City HealthCare, Sirsa.",

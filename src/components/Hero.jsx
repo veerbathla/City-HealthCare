@@ -172,9 +172,7 @@
 // export default Hero;
 
 
-
-
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import hero3 from "../assets/hero/hero3.jpg";
 import hero4 from "../assets/hero/hero4.jpg";
@@ -184,7 +182,6 @@ const images = [hero3, hero4];
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Auto change image every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
@@ -194,12 +191,25 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full bg-black">
+    <section className="relative w-full bg-white overflow-hidden">
+      {/* Images */}
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`City HealthCare ${index + 1}`}
+          draggable={false}
+          className={`absolute inset-0 w-full h-auto object-contain transition-opacity duration-1000 ${
+            currentImage === index ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
+
+      {/* Invisible image to maintain height */}
       <img
         src={images[currentImage]}
-        alt="City HealthCare"
-        className="w-full h-auto block"
-        draggable={false}
+        alt=""
+        className="w-full h-auto opacity-0 pointer-events-none select-none"
       />
     </section>
   );

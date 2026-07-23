@@ -53,8 +53,6 @@
 
 // export default LocationReviews;
 
-
-
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -64,15 +62,22 @@ const LocationReviews = () => {
   return (
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-<div className="flex justify-center mb-12">
-  <img
-    src="CityhealthCare.jpg" 
-    alt="Logo"
-    className="w-40 sm:w-52 md:w-64 lg:w-72 h-auto"
-  />
-</div>
-       
+  {/* Heading */}
+  <div className="flex flex-col items-center mb-12">
+    <img
+      src="CityhealthCare.jpg"
+      alt="Logo"
+      className="w-40 sm:w-52 md:w-64 lg:w-72 h-auto"
+    />
+
+    <p className="mt-5 text-center text-lg sm:text-xl md:text-2xl font-medium text-gray-700">
+      Trusted Healthcare with{" "}<br/>
+      <span className="text-[#0096D6] font-semibold">
+        Excellent Patient Satisfaction
+      </span>
+    </p>
+  </div>
+
 
         {/* Content */}
         <div className="grid lg:grid-cols-2 gap-10">
@@ -96,10 +101,7 @@ const LocationReviews = () => {
               Google Reviews
             </h3>
 
-            <script
-              src="https://elfsightcdn.com/platform.js"
-              async
-            ></script>
+            <script src="https://elfsightcdn.com/platform.js" async></script>
 
             <div
               className="elfsight-app-5b68d072-134e-4f0e-8391-7a0ae0ebd383"

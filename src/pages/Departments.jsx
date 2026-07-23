@@ -4,8 +4,7 @@ import DepartmentCard from "../components/DepartmentCard";
 import { departments } from "../data/departments";
 import { doctorDepartments } from "../data/doctorDepartments";
 
-
-import hero4 from "../assets/hero/hero4.jpg";
+import hero3 from "../assets/hero/hero3.jpg";
 
 const Departments = () => {
   const allDepartments = [
@@ -18,50 +17,39 @@ const Departments = () => {
 
     // Doctor Departments
     doctorDepartments.find((d) => d.slug === "internal-medicine"),
-    doctorDepartments.find(
-      (d) => d.slug === "maxillo-facial-and-dental"
-    ),
+    doctorDepartments.find((d) => d.slug === "maxillo-facial-and-dental"),
     doctorDepartments.find((d) => d.slug === "plastic-surgery"),
     doctorDepartments.find((d) => d.slug === "physiotherapy"),
-    doctorDepartments.find(
-      (d) => d.slug === "general-laparoscopic-surgery"
-    ),
+    doctorDepartments.find((d) => d.slug === "general-laparoscopic-surgery"),
     doctorDepartments.find((d) => d.slug === "anaesthesiology"),
 
     // Full Departments
     departments.find((d) => d.slug === "pathology"),
-    departments.find(
-      (d) => d.slug === "radiology-clinical-imaging"
-    ),
+    departments.find((d) => d.slug === "radiology-clinical-imaging"),
 
     // Doctor Department
-    doctorDepartments.find(
-      (d) => d.slug === "endocrinology-metabolism"
-    ),
+    doctorDepartments.find((d) => d.slug === "endocrinology-metabolism"),
 
     // Full Department
     departments.find(
-      (d) =>
-        d.slug ===
-        "neuro-investigation-clinical-neurophysiology"
+      (d) => d.slug === "neuro-investigation-clinical-neurophysiology"
     ),
   ].filter(Boolean);
 
   return (
     <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
+   <section className="relative w-full bg-black flex items-center justify-center">
+  <img
+    src={hero3}
+    alt="Our Departments"
+    className="w-full h-auto max-h-[650px] object-contain"
+  />
 
+  <div className="absolute inset-0 bg-black/35"></div>
 
-<section
-  className="relative h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px] bg-cover bg-center"
-  style={{ backgroundImage: `url(${hero4})` }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/45"></div>
-
-  {/* Content */}
-  <div className="relative z-10 flex items-center justify-center h-full px-6">
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white text-center">
+  <div className="absolute inset-0 flex items-center justify-center px-6">
+    <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white text-center">
       Our Departments
     </h1>
   </div>
@@ -112,10 +100,10 @@ const Departments = () => {
             and ensure you receive the best possible care.
           </p>
 
-          <a
+          <a>
             href="/contact"
             className="inline-flex items-center mt-10 px-8 py-4 rounded-full bg-white text-[#0096D6] font-semibold hover:bg-gray-100 transition"
-          >
+          
             Contact Us
           </a>
         </div>

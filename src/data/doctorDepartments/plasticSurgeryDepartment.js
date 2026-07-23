@@ -1,3 +1,5 @@
+import plastic from "../../assets/departments/plastic.jpg";
+
 export const plasticSurgeryDepartment = {
   id: 5,
   slug: "plastic-surgery",
@@ -5,8 +7,7 @@ export const plasticSurgeryDepartment = {
   name: "Plastic Surgery",
   shortDescription:
     "Reconstructive, cosmetic and aesthetic surgical procedures.",
-  icon: "🩹",
-  image: "/departments/plastic-surgery.jpg",
+  image:plastic,
   seo: {
     title: "Plastic Surgery | City HealthCare",
     description: "Expert Plastic Surgery services at City HealthCare, Sirsa.",

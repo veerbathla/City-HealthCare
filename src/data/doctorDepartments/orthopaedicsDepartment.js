@@ -1,3 +1,6 @@
+import ortho from "../../assets/departments/ortho.jpg";
+
+
 export const orthopaedicsDepartment = {
   id: 3,
   slug: "orthopaedics",
@@ -5,8 +8,7 @@ export const orthopaedicsDepartment = {
   name: "Orthopaedics",
   shortDescription:
     "Advanced bone, joint, trauma and replacement surgery services.",
-  icon: "🦴",
-  image: "/departments/orthopaedics.jpg",
+  image: ortho,
   seo: {
     title: "Orthopaedics | City HealthCare",
     description: "Expert Orthopaedic care at City HealthCare, Sirsa.",

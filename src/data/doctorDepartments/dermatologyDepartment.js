@@ -1,3 +1,6 @@
+import dental from "../../assets/departments/dental.jpg";
+
+
 export const dermatologyDepartment = {
   id: 4,
   slug: "maxillo-facial-and-dental",
@@ -5,8 +8,8 @@ export const dermatologyDepartment = {
   name: "Maxillo-facial & Dental",
   shortDescription:
     "Complete skin, hair, nail and cosmetic dermatology treatments.",
-  icon: "✨",
-  image: "/departments/dermatology.jpg",
+
+  image: dental,
   seo: {
     title: "Dermatology | City HealthCare",
     description: "Expert Maxillo-facial & Dental services at City HealthCare, Sirsa.",

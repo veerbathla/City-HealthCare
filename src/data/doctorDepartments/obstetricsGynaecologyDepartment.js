@@ -1,3 +1,6 @@
+import gynac from "../../assets/departments/gynac.jpg";
+
+
 export const obstetricsGynaecologyDepartment = {
   id: 2,
   slug: "obstetrics-gynaecology",
@@ -6,7 +9,7 @@ export const obstetricsGynaecologyDepartment = {
   shortDescription:
     "Comprehensive women's healthcare, infertility and maternity services.",
   icon: "🤰",
-  image: "/departments/obg.jpg",
+  image:gynac,
   seo: {
     title: "Obstetrics & Gynaecology | City HealthCare",
     description:

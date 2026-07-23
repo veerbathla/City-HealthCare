@@ -24,7 +24,7 @@ const AdvancedInfrastructure = () => {
       </span>
 
       <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-6">
-        Everything You Need
+        Everything You Need<br/>
         <span className="text-[#0096D6]"> Under One Roof</span>
       </h2>
 

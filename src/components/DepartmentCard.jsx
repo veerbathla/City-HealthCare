@@ -6,36 +6,46 @@ const DepartmentCard = ({ department }) => {
   const {
     name,
     image,
-    icon,
     shortDescription,
     hero,
+    overview,
     slug,
     doctorSlug,
   } = department;
 
+  // Works for both schemas:
+  // Schema 1 (e.g. gynac, orthopaedics) -> department.image
+  // Schema 2 (e.g. pathology, radiology, neuro) -> department.hero.image
+  const displayImage = hero?.image ?? image ?? "";
+
+  // Works for both schemas:
+  // Schema 1 -> shortDescription
+  // Schema 2 -> overview.description (array or string)
+  const description =
+    shortDescription ||
+    (Array.isArray(overview?.description)
+      ? overview.description[0]
+      : overview?.description) ||
+    "";
+
   // Decide destination automatically
-  const link = hero
-    ? `/speciality/${slug}`
-    : `/doctors/${doctorSlug}`;
+  const link = hero ? `/speciality/${slug}` : `/doctors/${doctorSlug}`;
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
 
       {/* Image */}
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-56 overflow-hidden bg-gray-100">
         <img
-          src={image}
+          src={displayImage}
           alt={name}
           className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          onError={(e) => {
+            console.warn("Image failed to load:", slug, displayImage);
+          }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-
-        <div className="absolute bottom-5 left-5">
-          <div className="w-14 h-14 rounded-full bg-[#0096D6] text-white flex items-center justify-center text-2xl shadow-lg">
-            {icon}
-          </div>
-        </div>
       </div>
 
       {/* Content */}
@@ -46,7 +56,7 @@ const DepartmentCard = ({ department }) => {
         </h3>
 
         <p className="mt-4 text-gray-600 leading-7 flex-1 line-clamp-4">
-          {shortDescription}
+          {description}
         </p>
 
         <Link
