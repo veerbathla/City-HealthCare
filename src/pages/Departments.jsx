@@ -4,6 +4,9 @@ import DepartmentCard from "../components/DepartmentCard";
 import { departments } from "../data/departments";
 import { doctorDepartments } from "../data/doctorDepartments";
 
+
+import hero4 from "../assets/hero/hero4.jpg";
+
 const Departments = () => {
   const allDepartments = [
     // Doctor Departments
@@ -47,19 +50,22 @@ const Departments = () => {
   return (
     <main className="bg-gray-50 min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-[#0096D6] to-cyan-600 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold">
-            Our Medical Departments
-          </h1>
 
-          <p className="mt-6 max-w-3xl mx-auto text-lg text-white/90 leading-8">
-            Explore our specialized departments led by experienced
-            consultants and supported by modern technology to
-            provide comprehensive healthcare under one roof.
-          </p>
-        </div>
-      </section>
+
+<section
+  className="relative h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px] bg-cover bg-center"
+  style={{ backgroundImage: `url(${hero4})` }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/45"></div>
+
+  {/* Content */}
+  <div className="relative z-10 flex items-center justify-center h-full px-6">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white text-center">
+      Our Departments
+    </h1>
+  </div>
+</section>
 
       {/* Intro */}
       <section className="py-20">

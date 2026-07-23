@@ -13,7 +13,7 @@ const ContactSection = ({ contact }) => {
   if (!contact) return null;
 
   return (
-    <section className="py-20 bg-[#0096D6]">
+    <section className="py-2 bg-[#0096D6]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Heading */}

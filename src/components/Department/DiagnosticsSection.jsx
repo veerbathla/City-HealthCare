@@ -19,7 +19,7 @@ const DiagnosticsSection = ({ diagnostics }) => {
   if (!diagnostics?.tests?.length) return null;
 
   return (
-    <section className="py-20 bg-[#F8FCFE]">
+    <section className="py-2 bg-[#F8FCFE]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Heading */}

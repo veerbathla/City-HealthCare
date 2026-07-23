@@ -1,4 +1,4 @@
-
+import neuroinvestigation from "../../assets/departments/neuroinvestigation.jpg";
 
 export const neuroInvestigationDepartment = {
   id: 1,
@@ -11,7 +11,7 @@ export const neuroInvestigationDepartment = {
     title: "Department of Neuro Investigation & Clinical Neurophysiology",
     subtitle:
       "Advanced in-house neuro-diagnostics and precision neurological mapping for accurate diagnosis of brain, spinal cord, muscle, and nerve disorders.",
-    image: "/doctors.jpg",
+    image: neuroinvestigation,
   },
 
   overview: {

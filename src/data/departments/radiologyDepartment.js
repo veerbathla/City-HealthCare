@@ -1,3 +1,5 @@
+import radiology from "../../assets/departments/radiology.jpg";
+
 export const radiologyDepartment = {
   id: 3,
 
@@ -9,7 +11,7 @@ export const radiologyDepartment = {
     title: "Department of Radiology & Clinical Imaging",
     subtitle:
       "Advanced diagnostic imaging with high-resolution CT Scan and Digital X-Ray for accurate diagnosis and emergency care.",
-    image:"/doctors.jpg",
+    image:radiology,
   },
 
   overview: {

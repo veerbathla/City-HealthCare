@@ -11,7 +11,7 @@ const FAQSection = ({ faqs = [] }) => {
   };
 
   return (
-    <section className="py-20 bg-[#F8FCFE]">
+    <section className="py-2 bg-[#F8FCFE]">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
 
         {/* Heading */}

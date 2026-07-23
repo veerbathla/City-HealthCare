@@ -25,7 +25,7 @@ const FacilitiesSection = ({ facilities = [] }) => {
   if (facilities.length === 0) return null;
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-2 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Heading */}

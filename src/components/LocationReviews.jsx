@@ -65,15 +65,14 @@ const LocationReviews = () => {
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-[#009CD0]">
-            {t("findUs")}
-          </h2>
-
-          <p className="mt-3 text-gray-600">
-            {t("patientReviewDesc")}
-          </p>
-        </div>
+<div className="flex justify-center mb-12">
+  <img
+    src="CityhealthCare.jpg" 
+    alt="Logo"
+    className="w-40 sm:w-52 md:w-64 lg:w-72 h-auto"
+  />
+</div>
+       
 
         {/* Content */}
         <div className="grid lg:grid-cols-2 gap-10">

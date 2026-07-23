@@ -176,10 +176,10 @@
 
 import { useEffect, useState } from "react";
 
-import hero1 from "../assets/hero/hero1.jpeg";
-import hero2 from "../assets/hero/hero2.jpeg";
+import hero3 from "../assets/hero/hero3.jpg";
+import hero4 from "../assets/hero/hero4.jpg";
 
-const images = [hero1, hero2];
+const images = [hero3, hero4];
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);

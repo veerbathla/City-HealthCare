@@ -28,12 +28,12 @@ const WhyChooseUs = ({ data, whyChooseUs }) => {
     return null;
 
   return (
-    <section className="py-20 bg-[#F8FCFE]">
+    <section className="pt-0  pb-2 bg-[#F8FCFE]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Heading */}
 
-        <div className="text-center mb-14">
+        <div className="text-center mb-8">
 
           <span className="uppercase tracking-[3px] text-[#0096D6] font-semibold">
             Why Choose Us

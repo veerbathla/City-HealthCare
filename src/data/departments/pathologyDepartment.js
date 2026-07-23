@@ -1,3 +1,5 @@
+import pathology from "../../assets/departments/pathology.jpg";
+
 export const pathologyDepartment = {
   id: 2,
 
@@ -9,7 +11,7 @@ export const pathologyDepartment = {
     title: "Department of Pathology",
     subtitle:
       "Comprehensive laboratory diagnostics delivering accurate, reliable, and timely reports for better clinical decision-making.",
-    image:"/doctors.jpg",
+    image:pathology,
   },
 
   overview: {
