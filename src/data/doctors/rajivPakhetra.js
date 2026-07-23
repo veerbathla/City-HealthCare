@@ -61,30 +61,71 @@ const rajivPakhetra = {
   // Expertise
   // ==========================
   expertise: [
+
+    
     {
-      title: "Diabetes Management",
-      description:
-        "Comprehensive treatment for Type 1, Type 2, and Gestational Diabetes including insulin therapy, lifestyle modification, and continuous glucose monitoring.",
+      title: "The City HealthCare Advantage",
+      description:"Comprehensive In-House Collaboration Endocrine health rarely exists in isolation; it deeply impacts and is impacted by other bodily systems. Patients at City HealthCare benefit from a unique, integrated medical ecosystem ",
     },
     {
-      title: "Thyroid Disorders",
+      title: "In-House Infertility & Gynaecology Collaboration",
       description:
-        "Expert care for hypothyroidism, hyperthyroidism, thyroid nodules, thyroiditis, and goiters.",
+        "Hormonal imbalances are often the root cause of reproductive challenges. Our endocrinology team works hand-in-hand with our advanced Gynaecology & Infertility department to provide unified care for conditions like PCOD/PCOS, irregular cycles, and metabolic issues hindering natural conception",
     },
     {
-      title: "Women's Hormonal Health",
+      title: "Neuro-Endocrinology Integration",
       description:
-        "Management of PCOS/PCOD, menstrual irregularities, menopause, insulin resistance, and reproductive hormonal disorders.",
+        "The pituitary gland—the master gland controlling most hormones—rests at the base of the brain. For complex neuro-endocrine disorders or pituitary tumors, our department works in immediate, direct collaboration with our expert Neurosurgery team to coordinate medical management and precise surgical intervention. ",
     },
     {
-      title: "Pituitary & Adrenal Disorders",
+      title: "All-Under-One-Roof Diagnostics",
       description:
-        "Diagnosis and treatment of pituitary tumors, hyperprolactinemia, acromegaly, Addison's disease, Cushing's syndrome, and adrenal disorders.",
+        " Backed by our high-end, inhouse laboratory facilities, patients receive rapid and meticulous hormonal profiling, ensuring quick, accurate adjustments to therapeutic medications. ",
     },
     {
-      title: "Bone & Pediatric Endocrinology",
+      title: "Comprehensive Endocrine Conditions & Treatments",
       description:
-        "Treatment of osteoporosis, vitamin D deficiency, calcium disorders, growth delay, short stature, and puberty-related disorders.",
+        "Our department provides expert clinical management for a wide array of adult and pediatric endocrine disorders",
+    },
+    {
+      title: "Diabetes Mellitus & Metabolic Care ",
+      description:
+        "*Comprehensive management of Type 1 Diabetes, Type 2 Diabetes, and Gestational Diabetes (diabetes during pregnancy).\n* Personalized lifestyle modification, continuous glucose monitoring, insulin pump therapies, and aggressive screening to prevent diabetic neuropathy, nephropathy, and retinopathy. ",
+    },
+
+
+
+
+     {
+      title: "Thyroid Disorders ",
+      description:
+        "* Expert management of Hypothyroidism (underactive thyroid) and Hyperthyroidism (overactive thyroid).\n * Clinical evaluation and treatment protocols for thyroid nodules, thyroiditis, and goiters. ",
+    },
+
+     {
+      title: "Women’s Hormonal Health & Reproductive Endocrinology ",
+      description:
+        "* In-depth medical management of Polycystic Ovary Syndrome (PCOS / PCOD), addressing insulin resistance, irregular periods, hirsutism, and associated weight gain. * Hormonal therapies for menstrual irregularities, premature ovarian insufficiency, and menopause management. ",
+    },
+
+
+     {
+      title: "Pituitary & Adrenal Gland Disorders ",
+      description:
+        "* Diagnosis and medical care for pituitary tumors, hyperprolactinemia, acromegaly, and diabetes insipidus. \n* Treatment for adrenal insufficiency (Addison's disease), Cushing's syndrome, and adrenal mass evaluations. ",
+    },
+
+
+    {
+      title: "Bone & Mineral Metabolism ",
+      description:
+        "Advanced therapeutic management for Osteoporosis, severe vitamin D deficiencies, and parathyroid gland disorders affecting calcium balance.",
+    },
+
+
+    {
+      title: "Growth & Pediatric Endocrinology ",
+      description:"Clinical evaluation for childhood growth delays, short stature, and early (precocious) or delayed puberty. ",
     },
   ],
 

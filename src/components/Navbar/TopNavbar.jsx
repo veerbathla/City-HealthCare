@@ -124,7 +124,7 @@ const TopNavbar = () => {
 
             {/* Call */}
             <a
-              href="tel:+911800123456"
+              href="tel:+919728375033"
               className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-gray-100"
             >
               <FaPhoneAlt />

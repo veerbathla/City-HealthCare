@@ -174,8 +174,7 @@
 
 
 
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 import hero1 from "../assets/hero/hero1.jpeg";
 import hero2 from "../assets/hero/hero2.jpeg";
@@ -185,39 +184,24 @@ const images = [hero1, hero2];
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  const prevSlide = () => {
-    setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
+  // Auto change image every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000);
 
-  const nextSlide = () => {
-    setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative w-full bg-black">
-  <img
-    src={images[currentImage]}
-    alt="City HealthCare"
-    className="w-full h-auto block"
-    draggable={false}
-  />
-
-  {/* Left Arrow */}
-  <button
-    onClick={prevSlide}
-    className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/60 flex items-center justify-center text-white"
-  >
-    <ChevronLeft size={26} />
-  </button>
-
-  {/* Right Arrow */}
-  <button
-    onClick={nextSlide}
-    className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/60 flex items-center justify-center text-white"
-  >
-    <ChevronRight size={26} />
-  </button>
-</section>
+      <img
+        src={images[currentImage]}
+        alt="City HealthCare"
+        className="w-full h-auto block"
+        draggable={false}
+      />
+    </section>
   );
 };
 
