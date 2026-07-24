@@ -35,18 +35,20 @@ const DepartmentCard = ({ department }) => {
     <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
 
       {/* Image */}
-      <div className="relative h-56 overflow-hidden bg-gray-100">
-        <img
-          src={displayImage}
-          alt={name}
-          className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-          onError={(e) => {
-            console.warn("Image failed to load:", slug, displayImage);
-          }}
-        />
+     <div className="relative overflow-hidden bg-gray-100">
+  <div className="aspect-video">
+    <img
+      src={displayImage}
+      alt={name}
+      className="w-full h-full object-contain transition duration-500 group-hover:scale-105"
+      onError={() => {
+        console.warn("Image failed to load:", slug, displayImage);
+      }}
+    />
+  </div>
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-      </div>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+</div>
 
       {/* Content */}
       <div className="flex flex-col flex-1 p-7">

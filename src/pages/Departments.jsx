@@ -28,7 +28,7 @@ const Departments = () => {
     departments.find((d) => d.slug === "radiology-clinical-imaging"),
 
     // Doctor Department
-    doctorDepartments.find((d) => d.slug === "endocrinology-metabolism"),
+    doctorDepartments.find((d) => d.slug === "endocrinology"),
 
     // Full Department
     departments.find(

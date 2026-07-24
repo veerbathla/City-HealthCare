@@ -125,6 +125,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import about_01 from "../../assets/about/about_01.jpg"
 const Welcome = () => {
   const { t } = useTranslation();
 
@@ -140,7 +141,7 @@ const Welcome = () => {
             <div className="relative">
               <div className="overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="/doctor1.jpeg"
+                  src={about_01}
                   alt="City HealthCare Hospital"
                   className="w-full h-[600px] object-cover"
                 />
@@ -148,7 +149,7 @@ const Welcome = () => {
 
               {/* Floating Card */}
 
-              <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-xl p-6 w-72">
+              <div className="absolute -bottom-8 -left-0 bg-white rounded-2xl shadow-xl p-2 w-72">
                 <h3 className="text-4xl font-bold text-[#0096D6]">
                   {t("welcome.emergencyTitle")}
                 </h3>

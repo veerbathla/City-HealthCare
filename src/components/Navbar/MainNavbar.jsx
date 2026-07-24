@@ -264,16 +264,7 @@ console.log(doctorDepartments.map(d => d.slug));
             <span className="mt-1">{t("menu")}</span>
           </button>
 
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/919728375033"
-            target="_blank"
-            rel="noreferrer"
-            className="flex flex-col items-center justify-center text-white text-[10px]"
-          >
-            <FaWhatsapp size={18} />
-            <span className="mt-1">{t("whatsapp")}</span>
-          </a>
+         
 
           {/* Speciality */}
           <NavLink
@@ -287,6 +278,16 @@ console.log(doctorDepartments.map(d => d.slug));
             <FaStethoscope size={17} />
             <span className="mt-1">{t("speciality")}</span>
           </NavLink>
+           {/* WhatsApp */}
+          <a
+            href="https://wa.me/919728375033"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-col items-center justify-center text-white text-[10px]"
+          >
+            <FaWhatsapp size={18} />
+            <span className="mt-1">{t("whatsapp")}</span>
+          </a>
 
           {/* Doctors */}
           <NavLink

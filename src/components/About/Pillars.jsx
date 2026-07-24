@@ -153,7 +153,7 @@ const Pillars = () => {
 
        <div className="w-full h-60 flex items-center justify-center bg-gray-50 overflow-hidden">
   <img
-    src={aboutt1}
+    src={aboutt3}
     alt="Trauma Center"
     className="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-700"
   />

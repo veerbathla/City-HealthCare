@@ -1,4 +1,4 @@
-import pankaj from "../../assets/doctors/pankaj.jpeg";
+import pankaj from "../../assets/doctors/pankaj.png";
 
 const pankajPaliwal = {
   id: 4,

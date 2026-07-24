@@ -30,7 +30,7 @@ const DepartmentTemplate = ({ department }) => {
     department.symptomsEvaluated ||
     [];
     console.log(department);
-console.log(department.hero);
+    console.log(department.hero);
 
   return (
     <main className="bg-white overflow-hidden">

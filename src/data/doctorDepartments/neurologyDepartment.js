@@ -299,7 +299,7 @@
 
 
 
-import neurology from "../../assets/departments/neurology.jpg";
+import neuro from "../../assets/departments/neuro.jpg";
 export const neurologyDepartment = {
   id: 1,
   slug: "neurosurgery",
@@ -307,7 +307,7 @@ export const neurologyDepartment = {
   name: "Neurosurgery",
   shortDescription:
     "Advanced diagnosis and treatment of brain, spine, nerve and neurological disorders.",
-  image: neurology,
+  image: neuro,
   seo: {
     title: "Neurosurgery | City HealthCare",
     description: "Expert Neurosurgery Department at City HealthCare, Sirsa.",

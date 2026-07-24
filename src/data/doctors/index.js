@@ -7,6 +7,7 @@ import kshiteejDhull from "./kshiteejDhull";
 import harpreetSingh from "./harpreetSingh";
 import girishSharma from "./girishSharma";
 import rajivPakhetra from "./rajivPakhetra";
+import mohitSuthar from "./mohitSuthar";
 
 const doctors = [
   abhishekSingh,
@@ -17,7 +18,8 @@ const doctors = [
   kshiteejDhull,
   harpreetSingh,
   girishSharma,
-  rajivPakhetra
+  rajivPakhetra,
+  mohitSuthar
 ];
 
 export default doctors;

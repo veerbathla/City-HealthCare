@@ -1,4 +1,4 @@
-import simrat from "../../assets/doctors/simrat.jpeg";
+import simrat from "../../assets/doctors/simrat.png";
 
 const simratKaur = {
   id: 5,

@@ -96,11 +96,11 @@
 // export default DoctorSection;
 
 
-
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import "swiper/css";
@@ -110,14 +110,13 @@ import doctors from "../data/doctors";
 
 const DoctorSection = () => {
   const { t } = useTranslation();
+  const [swiper, setSwiper] = useState(null);
 
   return (
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-5">
-
         {/* Heading */}
         <div className="flex items-center justify-between mb-12">
-
           <div>
             <p className="text-[#009CD0] uppercase tracking-widest font-semibold">
               {t("meetOurSpecialists")}
@@ -138,21 +137,17 @@ const DoctorSection = () => {
           >
             {t("viewAll")} →
           </NavLink>
-
         </div>
 
         {/* Swiper */}
-
         <Swiper
+          onSwiper={setSwiper}
           modules={[Autoplay]}
           spaceBetween={25}
           slidesPerView={3}
-          loop={true}
+          loop
           speed={700}
-          grabCursor={true}
-          allowTouchMove={true}
-          simulateTouch={true}
-          touchStartPreventDefault={false}
+          grabCursor
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -179,8 +174,24 @@ const DoctorSection = () => {
           ))}
         </Swiper>
 
-        {/* Mobile Button */}
+        {/* Navigation Buttons */}
+        <div className="flex justify-center items-center gap-4 mt-8">
+          <button
+            onClick={() => swiper?.slidePrev()}
+            className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-[#009CD0] hover:text-white transition"
+          >
+            <ChevronLeft size={18} />
+          </button>
 
+          <button
+            onClick={() => swiper?.slideNext()}
+            className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-[#009CD0] hover:text-white transition"
+          >
+            <ChevronRight size={18} />
+          </button>
+        </div>
+
+        {/* Mobile Button */}
         <div className="mt-10 flex justify-center md:hidden">
           <NavLink
             to="/doctors"
@@ -189,7 +200,6 @@ const DoctorSection = () => {
             {t("viewAllDoctors")}
           </NavLink>
         </div>
-
       </div>
     </section>
   );

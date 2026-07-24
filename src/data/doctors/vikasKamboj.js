@@ -1,4 +1,4 @@
-import vikas from "../../assets/doctors/vikas.jpeg";
+import vikas from "../../assets/doctors/vikas.png";
 
 const vikasKamboj = {
   id: 3,

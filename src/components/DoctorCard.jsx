@@ -57,7 +57,6 @@
 
 // export default DoctorCard;
 
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaHospital, FaArrowRight } from "react-icons/fa";
@@ -70,13 +69,13 @@ const DoctorCard = ({ doctor }) => {
     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full shadow-sm hover:shadow-xl transition duration-300">
       <div className="flex flex-col items-center px-8 py-8 h-full">
         {/* Doctor Image */}
-       <div className="w-56 h-72 flex items-end justify-center">
-  <img
-    src={doctor.image}
-    alt={doctor.name}
-    className="w-full h-full object-contain"
-  />
-</div>
+        <div className="w-56 h-72 flex items-end justify-center">
+          <img
+            src={doctor.image}
+            alt={doctor.name}
+            className="w-full h-full object-contain"
+          />
+        </div>
 
         {/* Doctor Name */}
         <h2 className="mt-6 text-2xl font-bold text-center text-gray-800">
@@ -95,26 +94,26 @@ const DoctorCard = ({ doctor }) => {
         </div>
 
         {/* Buttons */}
-<div className="w-full mt-8 space-y-4">
-  <Link
-    to={`/doctors/${doctor.doctorSlug}`}
-    className="block"
-  >
-    <button className="w-full bg-[#009CD0] hover:bg-[#0083af] text-white font-semibold py-3 rounded-lg transition">
-      {t("appointment")}
-    </button>
-  </Link>
+        <div className="w-full mt-8 space-y-4">
+          <Link
+            to={`/doctors/${doctor.doctorSlug}`}
+            className="block"
+          >
+            <button className="w-full bg-[#009CD0] hover:bg-[#0083af] text-white font-semibold py-3 rounded-lg transition">
+              {t("appointment")}
+            </button>
+          </Link>
 
-  <Link
-    to={`/doctors/${doctor.doctorSlug}`}
-    className="block"
-  >
-    <button className="w-full border border-[#009CD0] text-[#009CD0] hover:bg-[#009CD0] hover:text-white font-semibold py-3 rounded-lg transition flex items-center justify-center gap-2">
-      {t("viewProfile")}
-      <FaArrowRight size={13} />
-    </button>
-  </Link>
-</div>
+          <Link
+            to={`/doctors/${doctor.doctorSlug}`}
+            className="block"
+          >
+            <button className="w-full border border-[#009CD0] text-[#009CD0] hover:bg-[#009CD0] hover:text-white font-semibold py-3 rounded-lg transition flex items-center justify-center gap-2">
+              {t("viewProfile")}
+              <FaArrowRight size={13} />
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

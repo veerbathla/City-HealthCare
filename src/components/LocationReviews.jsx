@@ -56,6 +56,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import {
+  FaFacebookF,
+  FaInstagram,
+} from "react-icons/fa";
+
 const LocationReviews = () => {
   const { t } = useTranslation();
 
@@ -65,7 +70,7 @@ const LocationReviews = () => {
   {/* Heading */}
   <div className="flex flex-col items-center mb-12">
     <img
-      src="CityhealthCare.jpg"
+      src="logo1.png"
       alt="Logo"
       className="w-40 sm:w-52 md:w-64 lg:w-72 h-auto"
     />
@@ -76,6 +81,21 @@ const LocationReviews = () => {
         Excellent Patient Satisfaction
       </span>
     </p>
+ <div className="flex justify-center items-center gap-6 mt-6">
+  <a
+    href="https://www.facebook.com/share/1CyNi3cHyS/"
+    className="w-14 h-14 rounded-full bg-[#1877F2] text-white flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition duration-300"
+  >
+    <FaFacebookF />
+  </a>
+
+  <a
+    href="#"
+    className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#515BD4] text-white flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition duration-300"
+  >
+    <FaInstagram />
+  </a>
+</div>
   </div>
 
 

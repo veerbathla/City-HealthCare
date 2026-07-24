@@ -1,4 +1,4 @@
-import divya from "../../assets/doctors/divya.jpeg";
+import divya from "../../assets/doctors/divya.png";
 
 const divyaJyotiSingh = {
   id: 2,

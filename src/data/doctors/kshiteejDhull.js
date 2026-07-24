@@ -1,4 +1,4 @@
-import dhull from "../../assets/doctors/dhull.jpeg";
+import dhull from "../../assets/doctors/dhull.png";
 
 const kshiteejDhull = {
   id: 6,
