@@ -55,17 +55,19 @@ const Doctors = () => {
       </div>
 
       {/* Hero Slider */}
-      <div className="relative w-full h-[220px] sm:h-[320px] md:h-[450px] lg:h-[650px] overflow-hidden">
-        {heroImages.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Hero ${index + 1}`}
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
-              currentHero === index ? "opacity-100" : "opacity-0"
-            }`}
-          />
-        ))}
+    <div className="relative w-full h-[220px] sm:h-[320px] md:h-[450px] lg:h-[650px] overflow-hidden bg-white">
+  {heroImages.map((image, index) => (
+    <img
+      key={index}
+      src={image}
+      alt={`Hero ${index + 1}`}
+      className={`absolute inset-0 w-full h-full object-contain object-center transition-opacity duration-1000 ${
+        currentHero === index ? "opacity-100" : "opacity-0"
+      }`}
+    />
+  ))}
+
+
       </div>
 
       {/* Search + Filter */}

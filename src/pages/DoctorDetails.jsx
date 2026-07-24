@@ -402,11 +402,6 @@ const DoctorDetails = () => {
                     {item}
                   </h3>
 
-                  <p className="mt-2 text-gray-600 text-sm leading-6">
-                    Advanced specialized training focused on delivering
-                    world-class neurological and spine care using modern,
-                    minimally invasive techniques.
-                  </p>
                 </div>
 
               </div>

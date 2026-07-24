@@ -90,7 +90,7 @@ const LocationReviews = () => {
   </a>
 
   <a
-    href="#"
+    href="https://www.instagram.com/city_health_centre?igsh=dHIzNnM0ZDgyeHhq"
     className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#515BD4] text-white flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition duration-300"
   >
     <FaInstagram />

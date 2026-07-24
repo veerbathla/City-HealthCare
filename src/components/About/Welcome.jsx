@@ -139,25 +139,25 @@ const Welcome = () => {
             {/* Left Images */}
 
             <div className="relative">
-              <div className="overflow-hidden rounded-3xl shadow-2xl">
-                <img
-                  src={about_01}
-                  alt="City HealthCare Hospital"
-                  className="w-full h-[600px] object-cover"
-                />
-              </div>
+            <div className="relative">
+ <div className="relative">
+  <div className="rounded-3xl shadow-2xl overflow-hidden bg-gray-100 flex items-center justify-center min-h-[280px] sm:min-h-[380px] md:min-h-[500px] lg:min-h-[600px]">
+    <img
+      src={about_01}
+      alt="City HealthCare Hospital"
+      className="max-w-full max-h-full object-contain"
+    />
+  </div>
+</div>
+</div>
 
               {/* Floating Card */}
 
-              <div className="absolute -bottom-8 -left-0 bg-white rounded-2xl shadow-xl p-2 w-72">
-                <h3 className="text-4xl font-bold text-[#0096D6]">
-                  {t("welcome.emergencyTitle")}
-                </h3>
-
-                <p className="text-gray-600 mt-2">
-                  {t("welcome.emergencyDesc")}
-                </p>
-              </div>
+           <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 lg:-bottom-8 lg:left-0 bg-white rounded-xl lg:rounded-2xl shadow-xl px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 w-fit">
+  <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#0096D6] leading-none">
+    {t("welcome.emergencyTitle")}
+  </h3>
+</div>
             </div>
 
             {/* Right Content */}

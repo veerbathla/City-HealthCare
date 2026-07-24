@@ -60,16 +60,52 @@ const divyaJyotiSingh = {
   // ==========================
   // Expertise
   // ==========================
- expertise: [
-   { title:"24/7 Delivery Services",
-    description:" Modern facilities equipped for both normal and Caesarean (Csection) deliveries. "
+  expertise: [
+    // Maternity & High-Risk Pregnancy Care
+    {
+      title: "24/7 Delivery Services",
+      description:
+        "Modern facilities equipped for both normal and Caesarean (C-section) deliveries.",
     },
-    {title:"High-Risk Pregnancy Management",
-      description:"Comprehensive management of pregnancy-induced hypertension (BP), gestational diabetes (sugar), and other maternal health complications. "
+    {
+      title: "High-Risk Pregnancy Management",
+      description:
+        "Comprehensive management of pregnancy-induced hypertension (BP), gestational diabetes (sugar), and other maternal health complications.",
     },
-    {title:"Post-Delivery Recovery & Intimate Care:",
-      description:"Specialized medical support for postpregnancy weakness and structural or physiological intimate health issues (dryness, pain, or infections)."
-    }
+    {
+      title: "Post-Delivery Recovery & Intimate Care",
+      description:
+        "Specialized medical support for post-pregnancy weakness and structural or physiological intimate health issues (dryness, pain, or infections).",
+    },
+
+    // Advanced Infertility Clinic
+    {
+      title: "Natural Conception First",
+      description:
+        "Focused on accurate diagnostics and customized medication to help couples conceive naturally. IVF is not the only option—discover hope through targeted medical therapies.",
+    },
+
+    // Advanced Gynae Surgeries & Conditions
+    {
+      title: "Laparoscopic (Keyhole) Surgery",
+      description:
+        "Minimally invasive, advanced keyhole surgeries for the uterus (fibroids/removal) and ovaries (cysts).",
+    },
+    {
+      title: "Hormonal Health (PCOS)",
+      description:
+        "Specialized management for irregular periods, metabolic issues, and hormonal imbalances.",
+    },
+    {
+      title: "Cancer Screening & Prevention",
+      description:
+        "Early detection of cervical and breast cancers using Pap Smears and digital mammography.",
+    },
+    {
+      title: "Family Planning",
+      description:
+        "Legal, safe Medical Termination of Pregnancy (MTP) services and expert contraceptive counseling.",
+    },
   ],
 
   // ==========================

@@ -3,7 +3,7 @@ import { dermatologyDepartment } from "./dermatologyDepartment";
 import { endocrinologyDepartment } from "./endocrinologyDepartment";
 import { generalSurgeryDepartment } from "./generalSurgeryDepartment";
 import { internalMedicineDepartment } from "./internalMedicineDepartment";
-import { neurologyDepartment } from "./neurologyDepartment";
+import { neurosurgeryDepartment } from "./neurosurgeryDepartment";
 import { physiotherapyDepartment } from "./physiotherapyDepartment";
 import { plasticSurgeryDepartment } from "./plasticSurgeryDepartment";
 
@@ -13,7 +13,7 @@ export const doctorDepartments = [
   endocrinologyDepartment,
   generalSurgeryDepartment,
   internalMedicineDepartment,
-  neurologyDepartment,
+  neurosurgeryDepartment,
   physiotherapyDepartment,
   plasticSurgeryDepartment,
 ];

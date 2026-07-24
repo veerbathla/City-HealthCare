@@ -30,7 +30,8 @@ const Departments = () => {
     // Doctor Department
     doctorDepartments.find((d) => d.slug === "endocrinology"),
 
-    // Full Department
+    // Full Departments
+    departments.find((d) => d.slug === "neurology"),
     departments.find(
       (d) => d.slug === "neuro-investigation-clinical-neurophysiology"
     ),

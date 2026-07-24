@@ -300,7 +300,7 @@
 
 
 import neuro from "../../assets/departments/neuro.jpg";
-export const neurologyDepartment = {
+export const neurosurgeryDepartment = {
   id: 1,
   slug: "neurosurgery",
   doctorSlug: "dr-abhishek-singh",
