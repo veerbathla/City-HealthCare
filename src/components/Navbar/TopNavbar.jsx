@@ -20,9 +20,7 @@ const TopNavbar = () => {
   const [search, setSearch] = useState("");
   const [results, setResults] = useState([]);
 
-  // -------------------------
-  // Search
-  // -------------------------
+  
   const handleSearch = (value) => {
     setSearch(value);
 
@@ -63,7 +61,7 @@ const TopNavbar = () => {
 
         <div className="flex h-16 lg:h-20 items-center justify-between gap-4">
 
-          {/* Logo */}
+         
 
           <div className="shrink-0">
             <img
@@ -73,11 +71,11 @@ const TopNavbar = () => {
             />
           </div>
 
-          {/* Right Section */}
+          
 
           <div className="flex flex-1 items-center justify-end gap-2 lg:gap-4">
 
-            {/* Desktop Search */}
+           
 
             <div className="relative hidden lg:block flex-1 max-w-xl xl:max-w-2xl">
 
@@ -90,8 +88,7 @@ const TopNavbar = () => {
               />
 
               <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                            {/* Search Results */}
-
+                           
               {results.length > 0 && (
                 <div className="absolute left-0 top-full z-50 mt-3 w-full overflow-hidden rounded-2xl border bg-white shadow-xl">
 
@@ -141,7 +138,7 @@ const TopNavbar = () => {
 
             </div>
 
-            {/* Mobile Search */}
+            
 
             <button
               onClick={() => setSearchOpen(true)}
@@ -150,7 +147,7 @@ const TopNavbar = () => {
               <FaSearch />
             </button>
 
-            {/* Emergency Call */}
+            
 
             <a
               href="tel:+919728375033"
@@ -175,7 +172,7 @@ const TopNavbar = () => {
 
             </a>
 
-            {/* Mobile Call Icon */}
+            
 
             <a
               href="tel:+919728375033"
@@ -184,7 +181,7 @@ const TopNavbar = () => {
               <FaPhoneAlt />
             </a>
 
-            {/* Language */}
+           
 
             <div className="flex items-center rounded-full border border-gray-200 px-3 py-2">
 
@@ -204,7 +201,7 @@ const TopNavbar = () => {
               </select>
 
             </div>
-                        {/* Ambulance Button */}
+                       
 
             <button
               className="
@@ -235,8 +232,7 @@ const TopNavbar = () => {
 
       </div>
 
-      {/* ================= Mobile Search ================= */}
-
+     
       {searchOpen && (
         <div className="border-t bg-white p-4 lg:hidden">
 
@@ -278,7 +274,7 @@ const TopNavbar = () => {
 
           </div>
 
-          {/* Mobile Search Results */}
+          
 
           {results.length > 0 && (
 
