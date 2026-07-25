@@ -40,7 +40,7 @@ const Doctors = () => {
 
   return (
     <section className="bg-slate-50 pt-14 pb-20">
-      {/* Heading */}
+      
       <div className="max-w-7xl mx-auto px-5">
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold text-[#009CD0]">
@@ -54,7 +54,7 @@ const Doctors = () => {
         </div>
       </div>
 
-      {/* Hero Slider */}
+     
     <div className="relative w-full h-[220px] sm:h-[320px] md:h-[450px] lg:h-[650px] overflow-hidden bg-white">
   {heroImages.map((image, index) => (
     <img
@@ -70,11 +70,11 @@ const Doctors = () => {
 
       </div>
 
-      {/* Search + Filter */}
+      
       <div className="max-w-7xl mx-auto px-5 mt-12">
         <div className="bg-white rounded-2xl shadow-md p-5 mb-10">
           <div className="grid md:grid-cols-2 gap-5">
-            {/* Search */}
+            
             <div className="relative">
               <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
 
@@ -87,7 +87,7 @@ const Doctors = () => {
               />
             </div>
 
-            {/* Filter */}
+            
             <div className="relative">
               <FaFilter className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
 
@@ -106,7 +106,7 @@ const Doctors = () => {
           </div>
         </div>
 
-        {/* Doctor Grid */}
+       
         {filteredDoctors.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {filteredDoctors.map((doctor) => (

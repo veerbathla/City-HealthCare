@@ -11,7 +11,7 @@ const Speciality = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
 
-      {/* ================= HERO ================= */}
+      
 
       <section className="bg-gradient-to-r from-[#0096D6] to-cyan-600 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
@@ -34,7 +34,7 @@ const Speciality = () => {
         </div>
       </section>
 
-      {/* ================= INTRO ================= */}
+      
 
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
@@ -56,7 +56,7 @@ const Speciality = () => {
         </div>
       </section>
 
-      {/* ================= DEPARTMENT GRID ================= */}
+      
 
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -93,7 +93,7 @@ const Speciality = () => {
 
                 </div>
 
-                {/* Content */}
+                
 
                 <div className="p-7">
 
@@ -122,7 +122,7 @@ const Speciality = () => {
         </div>
       </section>
 
-      {/* ================= CTA ================= */}
+      
 
       <section className="bg-[#0096D6] py-20">
         <div className="max-w-5xl mx-auto px-6 text-center text-white">

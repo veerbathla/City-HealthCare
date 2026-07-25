@@ -35,7 +35,7 @@ const Departments = () => {
 
   return (
     <main className="bg-gray-50 min-h-screen">
-      {/* Hero */}
+     
    <section className="relative w-full bg-black flex items-center justify-center">
   <img
     src={hero3}
@@ -52,7 +52,7 @@ const Departments = () => {
   </div>
 </section>
 
-      {/* Intro */}
+      
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <span className="text-[#0096D6] font-semibold uppercase tracking-widest">
@@ -71,7 +71,7 @@ const Departments = () => {
         </div>
       </section>
 
-      {/* Department Cards */}
+      
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -85,7 +85,7 @@ const Departments = () => {
         </div>
       </section>
 
-      {/* CTA */}
+     
       <section className="bg-[#0096D6] py-20">
         <div className="max-w-5xl mx-auto px-6 text-center text-white">
           <h2 className="text-4xl font-bold">

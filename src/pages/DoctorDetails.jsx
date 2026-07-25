@@ -36,13 +36,13 @@ const DoctorDetails = () => {
   return (
     <div className="bg-slate-50">
 
-      {/* ================= HERO ================= */}
+      
 
       <section className="max-w-7xl mx-auto px-5 py-14">
 
         <div className="grid lg:grid-cols-5 gap-10 items-center">
 
-          {/* Doctor Image */}
+          
 
           <div className="lg:col-span-2">
 
@@ -58,7 +58,7 @@ const DoctorDetails = () => {
 
           </div>
 
-          {/* Doctor Info */}
+          
 
           <div className="lg:col-span-3">
 
@@ -91,7 +91,7 @@ const DoctorDetails = () => {
 
             </p>
 
-            {/* Qualifications */}
+            
 
             {doctor.qualifications?.length > 0 && (
 
@@ -112,7 +112,7 @@ const DoctorDetails = () => {
 
             )}
 
-            {/* Experience */}
+           
 
             <div className="mt-7 flex flex-wrap gap-5">
 
@@ -166,7 +166,7 @@ const DoctorDetails = () => {
 
       </section>
 
-      {/* ================= ABOUT ================= */}
+     
 
       <section className="max-w-7xl mx-auto px-5 pb-12">
 
@@ -197,8 +197,7 @@ const DoctorDetails = () => {
 
       </section>
 
-      {/* ======== PART 2 STARTS FROM HERE ======== */}
-            {/* ================= EXPERTISE ================= */}
+     
 
       {doctor.expertise?.length > 0 && (
         <section className="max-w-7xl mx-auto px-5 py-6">
@@ -243,7 +242,7 @@ const DoctorDetails = () => {
         </section>
       )}
 
-      {/* ================= CONDITIONS TREATED ================= */}
+     
 
       {doctor.conditionsTreated?.length > 0 && (
         <section className="max-w-7xl mx-auto px-5 py-10">
@@ -284,7 +283,7 @@ const DoctorDetails = () => {
         </section>
       )}
 
-      {/* ================= PROCEDURES ================= */}
+      
 
       {doctor.procedures?.length > 0 && (
         <section className="max-w-7xl mx-auto px-5 py-6">
@@ -333,8 +332,7 @@ const DoctorDetails = () => {
         </section>
       )}
 
-      {/* ======== PART 3 STARTS FROM HERE ======== */}
-            {/* ================= EDUCATION ================= */}
+      
 
       {doctor.education?.length > 0 && (
         <section className="max-w-7xl mx-auto px-5 py-10">
@@ -373,7 +371,7 @@ const DoctorDetails = () => {
         </section>
       )}
 
-      {/* ================= FELLOWSHIP & TRAINING ================= */}
+      
 
       {doctor.training?.length > 0 && (
         <section className="max-w-7xl mx-auto px-5 py-6">
