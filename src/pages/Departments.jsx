@@ -10,21 +10,18 @@ const Departments = () => {
   const allDepartments = [
     // Doctor Departments
     doctorDepartments.find((d) => d.slug === "neurosurgery"),
-
-    // Full Departments
-    departments.find((d) => d.slug === "obstetrics-gynaecology"),
-    departments.find((d) => d.slug === "orthopaedics"),
-
-    // Doctor Departments
     doctorDepartments.find((d) => d.slug === "internal-medicine"),
     doctorDepartments.find((d) => d.slug === "maxillo-facial-and-dental"),
     doctorDepartments.find((d) => d.slug === "plastic-surgery"),
     doctorDepartments.find((d) => d.slug === "physiotherapy"),
     doctorDepartments.find((d) => d.slug === "general-laparoscopic-surgery"),
     doctorDepartments.find((d) => d.slug === "anaesthesiology"),
+    doctorDepartments.find((d) => d.slug === "pathology"),
+    doctorDepartments.find((d) => d.slug === "obstetrics-gynaecology"),
+    doctorDepartments.find((d) => d.slug === "orthopaedics"),
 
     // Full Departments
-    departments.find((d) => d.slug === "pathology"),
+    
     departments.find((d) => d.slug === "radiology-clinical-imaging"),
 
     // Doctor Department
@@ -36,6 +33,10 @@ const Departments = () => {
       (d) => d.slug === "neuro-investigation-clinical-neurophysiology"
     ),
   ].filter(Boolean);
+
+
+  console.log(doctorDepartments.map((d) => d.slug));
+
 
   return (
     <main className="bg-gray-50 min-h-screen">
