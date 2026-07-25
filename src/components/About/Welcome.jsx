@@ -120,12 +120,10 @@
 
 // export default Welcome
 
-
-
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import about_01 from "../../assets/about/about_01.jpg"
+import about_01 from "../../assets/about/about_01.jpg";
 const Welcome = () => {
   const { t } = useTranslation();
 
@@ -139,25 +137,25 @@ const Welcome = () => {
             {/* Left Images */}
 
             <div className="relative">
-            <div className="relative">
- <div className="relative">
-  <div className="rounded-3xl shadow-2xl overflow-hidden bg-gray-100 flex items-center justify-center min-h-[280px] sm:min-h-[380px] md:min-h-[500px] lg:min-h-[600px]">
-    <img
-      src={about_01}
-      alt="City HealthCare Hospital"
-      className="max-w-full max-h-full object-contain"
-    />
-  </div>
-</div>
-</div>
+              <div className="relative">
+                <div className="relative">
+                  <div className="rounded-3xl shadow-2xl overflow-hidden bg-gray-100 flex items-center justify-center min-h-[280px] sm:min-h-[380px] md:min-h-[500px] lg:min-h-[600px]">
+                    <img
+                      src={about_01}
+                      alt="City HealthCare Hospital"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
 
               {/* Floating Card */}
 
-           <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 lg:-bottom-8 lg:left-0 bg-white rounded-xl lg:rounded-2xl shadow-xl px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 w-fit">
-  <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#0096D6] leading-none">
-    {t("welcome.emergencyTitle")}
-  </h3>
-</div>
+              <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 lg:-bottom-8 lg:left-0 bg-white rounded-xl lg:rounded-2xl shadow-xl px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 w-fit">
+                <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#0096D6] leading-none">
+                  {t("welcome.emergencyTitle")}
+                </h3>
+              </div>
             </div>
 
             {/* Right Content */}
@@ -169,10 +167,7 @@ const Welcome = () => {
 
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-6 leading-tight">
                 {t("welcome.title1")}
-                <span className="text-[#0096D6]">
-                  {" "}
-                  {t("welcome.title2")}
-                </span>
+                <span className="text-[#0096D6]"> {t("welcome.title2")}</span>
               </h2>
 
               <p className="mt-8 text-gray-600 leading-8 text-lg">

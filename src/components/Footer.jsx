@@ -212,8 +212,6 @@
 
 // export default Footer;
 
-
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {
@@ -229,38 +227,31 @@ import {
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-
   const { t } = useTranslation();
 
   return (
     <footer className="bg-[#0096D6] text-white mt-20">
       <div className="max-w-7xl mx-auto px-6 py-14">
-
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
-
           {/* Hospital Info */}
 
           <div>
-
-            <h2 className="text-3xl font-bold">
-              City Healthcare
-            </h2>
+            <h2 className="text-3xl font-bold">City Healthcare</h2>
 
             <p className="mt-5 text-white/90 leading-7">
               {t("footerDescription")}
             </p>
 
             <div className="flex gap-4 mt-8">
-
               <a
-                href="#"
+                href="https://www.facebook.com/share/1CyNi3cHyS/"
                 className="w-10 h-10 rounded-full bg-white text-[#0096D6] flex items-center justify-center hover:scale-110 transition"
               >
                 <FaFacebookF />
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/city_health_centre?igsh=dHIzNnM0ZDgyeHhq"
                 className="w-10 h-10 rounded-full bg-white text-[#0096D6] flex items-center justify-center hover:scale-110 transition"
               >
                 <FaInstagram />
@@ -279,21 +270,15 @@ const Footer = () => {
               >
                 <FaYoutube />
               </a>
-
             </div>
-
           </div>
 
           {/* Quick Links */}
 
           <div>
-
-            <h3 className="text-2xl font-semibold mb-5">
-              {t("quickLinks")}
-            </h3>
+            <h3 className="text-2xl font-semibold mb-5">{t("quickLinks")}</h3>
 
             <ul className="space-y-3">
-
               <li>
                 <NavLink to="/" className="hover:underline">
                   {t("home")}
@@ -329,87 +314,62 @@ const Footer = () => {
                   {t("contact")}
                 </NavLink>
               </li>
-
             </ul>
-
           </div>
 
-                    {/* Departments */}
+          {/* Departments */}
 
           <div>
-
-            <h3 className="text-2xl font-semibold mb-5">
-              {t("departments")}
-            </h3>
+            <h3 className="text-2xl font-semibold mb-5">{t("departments")}</h3>
 
             <ul className="space-y-3">
-  <li>{t("neurosurgery")}</li>
-  <li>{t("gynecology")}</li>
-  <li>{t("orthopedics")}</li>
-  <li>{t("generalMedicine")}</li>
-  <li>{t("maxillofacialAndDental")}</li>
-  <li>{t("plasticSurgery")}</li>
-  <li>{t("physiotherapy")}</li>
-  <li>{t("anaesthesiology")}</li>
-  <li>{t("generalSurgery")}</li>
-  <li>{t("endocrinology")}</li>
-  <li>{t("radiology")}</li>
-  <li>{t("pathology")}</li>
-  <li>{t("neurology")}</li>
-  <li>{t("neuroInvestigation")}</li>
-</ul>
-
+              <li>{t("neurosurgery")}</li>
+              <li>{t("gynecology")}</li>
+              <li>{t("orthopedics")}</li>
+              <li>{t("generalMedicine")}</li>
+              <li>{t("maxillofacialAndDental")}</li>
+              <li>{t("plasticSurgery")}</li>
+              <li>{t("physiotherapy")}</li>
+              <li>{t("anaesthesiology")}</li>
+              <li>{t("generalSurgery")}</li>
+              <li>{t("endocrinology")}</li>
+              <li>{t("radiology")}</li>
+              <li>{t("pathology")}</li>
+              <li>{t("neurology")}</li>
+              <li>{t("neuroInvestigation")}</li>
+            </ul>
           </div>
 
           {/* Contact */}
 
           <div>
-
-            <h3 className="text-2xl font-semibold mb-5">
-              {t("contactUs")}
-            </h3>
+            <h3 className="text-2xl font-semibold mb-5">{t("contactUs")}</h3>
 
             <div className="space-y-5">
-
               <div className="flex gap-4">
-
                 <FaMapMarkerAlt className="mt-1 text-xl" />
 
-                <span>
-                  City Healthcare Hospital,
-                  Sirsa, Haryana - 125055
-                </span>
-
+                <span>City Healthcare Hospital, Sirsa, Haryana - 125055</span>
               </div>
 
               <div className="flex gap-4">
-
                 <FaPhoneAlt className="mt-1" />
 
-                <a href="tel:+919876543210">
-                  +91 98765 43210
-                </a>
-
+                <a href="tel:+919876543210">+91 98765 43210</a>
               </div>
 
               <div className="flex gap-4">
-
                 <FaEnvelope className="mt-1" />
 
                 <a href="mailto:info@cityhealthcare.com">
                   info@cityhealthcare.com
                 </a>
-
               </div>
 
               <div className="flex gap-4">
-
                 <FaAmbulance className="mt-1" />
 
-                <span>
-                  {t("emergency")} : 108
-                </span>
-
+                <span>{t("emergency")} : 108</span>
               </div>
 
               <a
@@ -420,37 +380,25 @@ const Footer = () => {
               >
                 {t("viewOnGoogleMaps")}
               </a>
-
             </div>
-
           </div>
-
         </div>
-
-
       </div>
 
-            {/* Bottom Footer */}
+      {/* Bottom Footer */}
 
       <div className="border-t border-white/20">
-
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
-
           <p className="text-white/90 text-center md:text-left">
             © {new Date().getFullYear()} {t("copyright")}
           </p>
 
           <p className="text-white/90 text-center">
             {t("designedBy")}{" "}
-            <span className="font-bold text-white">
-              Camsol Advertising
-            </span>
+            <span className="font-bold text-white">Camsol Advertising</span>
           </p>
-
         </div>
-
       </div>
-
     </footer>
   );
 };
