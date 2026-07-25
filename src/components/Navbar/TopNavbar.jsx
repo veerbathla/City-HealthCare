@@ -140,7 +140,7 @@ const TopNavbar = () => {
                 href="tel:+919728375033"
                 className="font-bold text-red-600 text-sm lg:text-base"
               >
-                +91 9728375033
+                +91 97283-75033
               </a>
             </div>
 
