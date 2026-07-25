@@ -233,7 +233,7 @@ const Footer = () => {
     <footer className="bg-[#0096D6] text-white mt-20">
       <div className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
-          {/* Hospital Info */}
+          
 
           <div>
             <h2 className="text-3xl font-bold">City Healthcare</h2>
@@ -273,7 +273,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
 
           <div>
             <h3 className="text-2xl font-semibold mb-5">{t("quickLinks")}</h3>
@@ -317,7 +317,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Departments */}
+          
 
           <div>
             <h3 className="text-2xl font-semibold mb-5">{t("departments")}</h3>
@@ -340,7 +340,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+          
 
           <div>
             <h3 className="text-2xl font-semibold mb-5">{t("contactUs")}</h3>
@@ -385,7 +385,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
+     
 
       <div className="border-t border-white/20">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">

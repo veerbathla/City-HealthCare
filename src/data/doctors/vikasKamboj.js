@@ -4,9 +4,7 @@ const vikasKamboj = {
   id: 3,
   doctorSlug: "dr-vikas-kamboj",
   slug: "orthopaedics",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
   name: "Dr. Vikas Kamboj",
   image: vikas,
   designation: "Consultant Orthopaedic, Trauma & Joint Replacement Surgeon",
@@ -20,14 +18,10 @@ const vikasKamboj = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Vikas Kamboj is a highly skilled and advanced Orthopaedic Surgeon specializing in joint reconstructions and complex trauma care. As a premier consultant at City HealthCare Multispeciality Hospital, Sirsa, he brings exceptional surgical precision to patients suffering from debilitating joint pain, sports injuries, and severe musculoskeletal trauma. Recognized as a leading Advance Knee / Hip Replacement and Complex Pelvis & Trauma Surgeon  in the region, Dr. Kamboj utilizes modern, minimally invasive surgical protocols designed to minimize post-operative recovery time, eliminate pain, and restore complete mobility. His dual focus on advanced arthroplasty (joint replacement) and rapid-response trauma care makes him a vital pillar of the City HealthCare specialist team. `,
 
-  // ==========================
-  // Education
-  // ==========================
+ 
   education: [
     {
       degree: "DNB (Orthopaedic Surgery)",
@@ -47,19 +41,13 @@ const vikasKamboj = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [],
 
-  // ==========================
-  // Publications
-  // ==========================
+ 
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+  
  expertise: [
    { title:"Advanced Knee Replacement (Total & Partial)",
     description:"Cutting-edge arthroplasty techniques for severe arthritis, ensuring anatomical alignment and natural joint movement. "
@@ -75,9 +63,7 @@ const vikasKamboj = {
     }
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Knee Arthritis",
     "Hip Arthritis",
@@ -93,9 +79,7 @@ const vikasKamboj = {
     "Spine-Related Joint Problems",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+  
   procedures: [
     "Total Knee Replacement",
     "Partial Knee Replacement",
@@ -107,9 +91,7 @@ const vikasKamboj = {
     "Orthopaedic Trauma Care",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+  
   highlights: [
     "Expert in Advanced Knee Replacement",
     "Specialist in Hip Replacement Surgery",
@@ -118,17 +100,13 @@ const vikasKamboj = {
     "Advanced Joint Reconstruction Specialist",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+  
   memberships: [
     "National Academy of Medical Sciences (MNAMS)",
     "Indian Orthopaedic Association",
   ],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+  
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -138,9 +116,7 @@ const vikasKamboj = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title:
       "Dr. Vikas Kamboj | Best Orthopaedic & Joint Replacement Surgeon in Sirsa",

@@ -8,7 +8,7 @@ const ConditionsSection = ({ conditions = [] }) => {
     <section className="py-2 bg-[#F8FCFE]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
+       
         <div className="text-center mb-14">
           <span className="uppercase tracking-[3px] text-[#0096D6] font-semibold">
             Conditions
@@ -27,7 +27,7 @@ const ConditionsSection = ({ conditions = [] }) => {
           </p>
         </div>
 
-        {/* Conditions Grid */}
+       
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 
           {conditions.map((condition, index) => (

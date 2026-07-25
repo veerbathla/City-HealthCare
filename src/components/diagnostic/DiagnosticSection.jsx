@@ -29,7 +29,7 @@ const DiagnosticSection = () => {
   return (
     <section className="py-24 bg-gradient-to-b from-sky-50 via-white to-white">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
+        
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-block rounded-full bg-[#0096D6]/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-[#0096D6]">
             Diagnostics
@@ -58,11 +58,11 @@ const DiagnosticSection = () => {
           ))}
         </div>
 
-        {/* Mobile Slider */}
+       
 <div className="md:hidden">
   <DiagnosticCard service={diagnosticServices[current]} />
 
-  {/* Navigation */}
+ 
   <div className="flex items-center justify-center gap-6 mt-5">
     <button
       onClick={prevSlide}

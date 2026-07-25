@@ -11,17 +11,17 @@ const OurPromises = () => {
     <div>
 
 
-{/* ================= OUR PROMISE ================= */}
+
 
 <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-800 relative overflow-hidden">
 
-  {/* Background Blur */}
+ 
   <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
   <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
 
   <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
 
-    {/* Heading */}
+   
 
     <div className="text-center max-w-3xl mx-auto">
 
@@ -46,11 +46,10 @@ const OurPromises = () => {
 
     </div>
 
-    {/* Promise Cards */}
 
     <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
 
-      {/* Card */}
+      
 
       <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:bg-white/15 transition">
 
@@ -67,7 +66,7 @@ const OurPromises = () => {
 
       </div>
 
-      {/* Card */}
+      
 
       <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:bg-white/15 transition">
 
@@ -84,7 +83,7 @@ const OurPromises = () => {
 
       </div>
 
-      {/* Card */}
+     
 
       <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:bg-white/15 transition">
 
@@ -101,7 +100,7 @@ const OurPromises = () => {
 
       </div>
 
-      {/* Card */}
+      
 
       <div className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:bg-white/15 transition">
 
@@ -120,7 +119,7 @@ const OurPromises = () => {
 
     </div>
 
-    {/* Quote Box */}
+   
 
     <div className="mt-20 bg-white rounded-3xl p-10 lg:p-14">
 

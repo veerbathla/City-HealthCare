@@ -157,28 +157,28 @@ const Hero = () => {
 
   return (
     <div className="bg-white">
-      {/* ================= HERO SECTION ================= */}
+      
 
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
 
-        {/* Background Image */}
+       
         <img
           src="/images/about-hero.jpg"
           alt="City HealthCare"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Overlay */}
+        
         <div className="absolute inset-0 bg-gradient-to-r from-[#002B5B]/95 via-[#004B8D]/80 to-[#0E7490]/60"></div>
 
-        {/* Decorative Blur */}
+        
         <div className="absolute top-24 right-20 w-80 h-80 bg-cyan-400/20 blur-[120px] rounded-full"></div>
         <div className="absolute bottom-10 left-10 w-72 h-72 bg-blue-500/20 blur-[120px] rounded-full"></div>
 
-        {/* Content */}
+        
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24">
 
-          {/* Badge */}
+        
 
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 text-white mb-8">
             <FaCheckCircle className="text-cyan-300" />
@@ -189,7 +189,7 @@ const Hero = () => {
 
           </div>
 
-          {/* Heading */}
+          
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white max-w-4xl">
 
@@ -203,18 +203,18 @@ const Hero = () => {
 
           </h1>
 
-          {/* Paragraph */}
+          
 
           <p className="mt-8 max-w-3xl text-lg md:text-xl leading-8 text-blue-100">
             {t("aboutHero.description")}
           </p>
 
-          {/* Features */}
+          
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-10 max-w-4xl">
 
 
-                      {/* Feature 1 */}
+             
 
             <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-5">
 
@@ -228,7 +228,7 @@ const Hero = () => {
 
             </div>
 
-            {/* Feature 2 */}
+            
 
             <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-5">
 
@@ -242,7 +242,6 @@ const Hero = () => {
 
             </div>
 
-            {/* Feature 3 */}
 
             <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-5">
 
@@ -258,7 +257,7 @@ const Hero = () => {
 
           </div>
 
-          {/* Buttons */}
+        
 
           <div className="flex flex-wrap gap-5 mt-12">
 
@@ -284,7 +283,7 @@ const Hero = () => {
 
         </div>
 
-        {/* Bottom Curve */}
+       
 
         <div className="absolute bottom-0 left-0 w-full">
           <svg
@@ -297,7 +296,7 @@ const Hero = () => {
 
       </section>
 
-      {/* NEXT SECTION STARTS HERE */}
+      
 
     </div>
   );

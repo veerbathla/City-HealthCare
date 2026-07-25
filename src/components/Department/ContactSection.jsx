@@ -16,7 +16,7 @@ const ContactSection = ({ contact }) => {
     <section className="py-2 bg-[#0096D6]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
+       
         <div className="text-center text-white mb-14">
           <span className="uppercase tracking-[3px] text-blue-100 font-semibold">
             Contact Us
@@ -33,11 +33,11 @@ const ContactSection = ({ contact }) => {
           </p>
         </div>
 
-        {/* Contact Cards */}
+        
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 
-          {/* Hospital */}
+        
 
           <div className="bg-white rounded-3xl p-8 shadow-lg">
             <div className="h-14 w-14 rounded-2xl bg-[#EAF7FD] flex items-center justify-center">
@@ -53,7 +53,7 @@ const ContactSection = ({ contact }) => {
             </p>
           </div>
 
-          {/* Phone */}
+          
 
           <div className="bg-white rounded-3xl p-8 shadow-lg">
             <div className="h-14 w-14 rounded-2xl bg-[#EAF7FD] flex items-center justify-center">
@@ -72,7 +72,7 @@ const ContactSection = ({ contact }) => {
             </a>
           </div>
 
-          {/* Email */}
+          
 
           <div className="bg-white rounded-3xl p-8 shadow-lg">
             <div className="h-14 w-14 rounded-2xl bg-[#EAF7FD] flex items-center justify-center">
@@ -91,7 +91,7 @@ const ContactSection = ({ contact }) => {
             </a>
           </div>
 
-          {/* Address */}
+        
 
           <div className="bg-white rounded-3xl p-8 shadow-lg">
             <div className="h-14 w-14 rounded-2xl bg-[#EAF7FD] flex items-center justify-center">
@@ -109,7 +109,7 @@ const ContactSection = ({ contact }) => {
 
         </div>
 
-        {/* OPD Timing */}
+        
 
         {(contact.opdTimings || contact.emergency) && (
           <div className="mt-8 bg-white rounded-3xl p-8 shadow-lg flex flex-col lg:flex-row justify-between gap-8">

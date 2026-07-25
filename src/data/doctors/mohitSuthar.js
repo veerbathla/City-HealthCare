@@ -395,9 +395,7 @@ const mohitSuthar = {
   doctorSlug: "dr-mohit-suthar",
   slug: "pathology",
 
-  // ==========================
-  // Basic Information
-  // ==========================
+
   name: "Dr. Mohit Suthar",
   image: mohit,
   designation: "Consultant Pathologist",
@@ -412,14 +410,10 @@ const mohitSuthar = {
 
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Mohit Suthar is a Consultant Pathologist at City HealthCare Neuro Research and Infertility Centre, Sirsa. He specializes in laboratory medicine, histopathology, cytopathology, and advanced diagnostic services. He is committed to delivering accurate, reliable, and timely diagnostic reports that support clinicians in making informed treatment decisions.`,
 
-  // ==========================
-  // Education
-  // ==========================
+  
   education: [
     {
       degree: "PDCC Gastro Pathology",
@@ -435,23 +429,17 @@ const mohitSuthar = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [
     "Advanced Histopathology",
     "Clinical Pathology",
     "Cytopathology",
   ],
 
-  // ==========================
-  // Publications
-  // ==========================
+  
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+ 
   expertise: [
     {
       title: "Histopathology",
@@ -480,9 +468,7 @@ const mohitSuthar = {
     },
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Anemia",
     "Infections",
@@ -494,9 +480,7 @@ const mohitSuthar = {
     "Hormonal Disorders",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+ 
   procedures: [
     "FNAC",
     "Histopathology",
@@ -507,9 +491,7 @@ const mohitSuthar = {
     "Blood Investigations",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+ 
   highlights: [
     "Consultant Pathologist at City HealthCare",
     "Expert in Histopathology & Cytopathology",
@@ -517,14 +499,10 @@ const mohitSuthar = {
     "Accurate & Timely Reporting",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+ 
   memberships: [],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+  
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -534,9 +512,7 @@ const mohitSuthar = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title: "Dr. Mohit Suthar | Best Pathologist in Sirsa",
     description:

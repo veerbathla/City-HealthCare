@@ -64,7 +64,7 @@ const LocationReviews = () => {
   return (
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
+       
         <div className="flex flex-col items-center mb-12">
           <img
             src="logo1.png"
@@ -95,9 +95,9 @@ const LocationReviews = () => {
           </div>
         </div>
 
-        {/* Content */}
+       
         <div className="grid lg:grid-cols-2 gap-10">
-          {/* Google Map */}
+          
           <div className="rounded-3xl overflow-hidden shadow-xl h-[500px]">
             <iframe
               title="City Healthcare Hospital"
@@ -111,7 +111,7 @@ const LocationReviews = () => {
             />
           </div>
 
-          {/* Google Reviews */}
+          
           <div className="bg-white rounded-3xl shadow-xl p-6 h-[500px] overflow-y-auto">
             <h3 className="text-2xl font-semibold text-[#009CD0]">
               Google Reviews

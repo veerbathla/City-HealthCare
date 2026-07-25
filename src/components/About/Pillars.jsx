@@ -14,12 +14,12 @@ const Pillars = () => {
   return (
     <div>
 
-{/* ================= PILLARS OF OUR CARE ================= */}
+
 
 <section className="py-24 bg-white">
   <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-    {/* Heading */}
+    
 
     <div className="text-center max-w-3xl mx-auto">
 
@@ -40,11 +40,11 @@ const Pillars = () => {
 
     </div>
 
-    {/* Cards */}
+    
 
     <div className="grid lg:grid-cols-3 gap-8 mt-20">
 
-      {/* Card 1 */}
+      
 
       <div className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white border">
 
@@ -96,7 +96,7 @@ const Pillars = () => {
 
       </div>
 
-      {/* Card 2 */}
+   
 
       <div className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white border">
 
@@ -147,7 +147,7 @@ const Pillars = () => {
 
       </div>
 
-      {/* Card 3 */}
+    
 
       <div className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white border">
 
@@ -199,7 +199,7 @@ const Pillars = () => {
 
     </div>
 
-    {/* Bottom Quote */}
+    
 
     <div className="mt-20 rounded-3xl bg-gradient-to-r from-slate-900 via-blue-900 to-cyan-800 p-12 text-center">
 

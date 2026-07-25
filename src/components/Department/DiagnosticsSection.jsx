@@ -22,8 +22,7 @@ const DiagnosticsSection = ({ diagnostics }) => {
     <section className="py-2 bg-[#F8FCFE]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
-
+        
         <div className="text-center mb-14">
 
           <span className="uppercase tracking-[3px] text-[#0096D6] font-semibold">
@@ -44,7 +43,7 @@ const DiagnosticsSection = ({ diagnostics }) => {
 
         </div>
 
-        {/* Grid */}
+        
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 

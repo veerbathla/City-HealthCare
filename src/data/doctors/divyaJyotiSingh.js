@@ -4,9 +4,7 @@ const divyaJyotiSingh = {
   id: 2,
   doctorSlug: "dr-divya-jyoti-singh",
   slug: "obstetrics-gynaecology",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
   name: "Dr. Divya Jyoti Singh",
   image: divya,
   designation:
@@ -20,14 +18,10 @@ const divyaJyotiSingh = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Divya Jyoti Singh is a highly accomplished and compassionate Gynaecologist, Obstetrician, and Infertility Specialist dedicated to women’s comprehensive health. With advanced qualifications including the prestigious  MRCOG-1 from London, she brings international medical standards and modern, evidence-based treatments to Sirsa. Dr. Divya believes that a woman’s health is the foundation of a happy family. She is widely trusted for her expertise in turning high-risk pregnancies into safe deliveries, helping couples overcome infertility through accurate medical treatments without rushing into IVF, and managing complex gynaecological conditions. `,
 
-  // ==========================
-  // Education
-  // ==========================
+ 
   education: [
     {
       degree: "MRCOG-1",
@@ -44,24 +38,18 @@ const divyaJyotiSingh = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [
     "Advanced Laparoscopic Gynaecological Surgery",
     "Reproductive Medicine",
   ],
 
-  // ==========================
-  // Publications
-  // ==========================
+ 
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+ 
   expertise: [
-    // Maternity & High-Risk Pregnancy Care
+    
    
     {
       title: "24/7 Delivery Services",
@@ -79,14 +67,14 @@ const divyaJyotiSingh = {
         "Specialized medical support for post-pregnancy weakness and structural or physiological intimate health issues (dryness, pain, or infections).",
     },
 
-    // Advanced Infertility Clinic
+    
     {
       title: "Natural Conception First",
       description:
         "Focused on accurate diagnostics and customized medication to help couples conceive naturally. IVF is not the only option—discover hope through targeted medical therapies.",
     },
 
-    // Advanced Gynae Surgeries & Conditions
+   
     {
       title: "Laparoscopic (Keyhole) Surgery",
       description:
@@ -109,9 +97,7 @@ const divyaJyotiSingh = {
     },
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+ 
   conditionsTreated: [
     "High-Risk Pregnancy",
     "Infertility",
@@ -127,9 +113,7 @@ const divyaJyotiSingh = {
     "Postpartum Recovery",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+ 
   procedures: [
     "Normal Delivery",
     "Caesarean Section (C-Section)",
@@ -142,9 +126,7 @@ const divyaJyotiSingh = {
     "Infertility Evaluation & Treatment",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+ 
   highlights: [
     "MRCOG-1 Qualified (London)",
     "Expert in High-Risk Pregnancy Care",
@@ -154,16 +136,12 @@ const divyaJyotiSingh = {
     "24×7 Delivery Services",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+  
   memberships: [
     "Associate Member, Royal College of Obstetricians and Gynaecologists (RCOG), London",
   ],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+  
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -173,9 +151,7 @@ const divyaJyotiSingh = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title:
       "Dr. Divya Jyoti Singh | Best Gynaecologist & Obstetrician in Sirsa",

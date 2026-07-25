@@ -8,7 +8,7 @@ const TreatmentsSection = ({ treatments }) => {
     <section className="py-2 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
+        
 
         <div className="text-center mb-14">
           <span className="uppercase tracking-[3px] text-[#0096D6] font-semibold">
@@ -28,7 +28,7 @@ const TreatmentsSection = ({ treatments }) => {
           </p>
         </div>
 
-        {/* Cards */}
+        
 
         <div className="grid gap-8 lg:grid-cols-2">
 
@@ -38,7 +38,7 @@ const TreatmentsSection = ({ treatments }) => {
               className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-md hover:shadow-xl transition-all duration-300"
             >
 
-              {/* Header */}
+              
 
               <div className="bg-[#0096D6] px-8 py-5">
                 <h3 className="text-2xl font-semibold text-white">
@@ -46,7 +46,7 @@ const TreatmentsSection = ({ treatments }) => {
                 </h3>
               </div>
 
-              {/* Body */}
+            
 
               <div className="p-8">
 

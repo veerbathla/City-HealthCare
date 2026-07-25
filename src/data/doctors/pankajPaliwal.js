@@ -4,9 +4,7 @@ const pankajPaliwal = {
   id: 4,
   doctorSlug: "dr-pankaj-paliwal",
    slug: "internal-medicine",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
   name: "Dr. Pankaj Paliwal",
   image: pankaj,
   designation:
@@ -19,14 +17,10 @@ const pankajPaliwal = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+ 
   about: `Dr. Pankaj Paliwal is an extensively trained and deeply dedicated Consultant Physician specializing in General Medicine and Critical Care at City HealthCare Multispeciality Hospital, Sirsa. He serves as the primary shield for adult healthcare, managing a comprehensive spectrum of acute illnesses, chronic lifestyle disorders, and complex medical emergencies. Beyond routine internal medicine, Dr. Paliwal holds a highly specialized reputation in the region as a life-saving  Snake Bite & Poisoning Expert. His rapid diagnostic skills and mastery over emergency toxicological protocols make him a crucial lifeline during critical, time-sensitive medical emergencies. Dr. Paliwal is committed to delivering evidence-based, compassionate care to ensure the complete recovery and long-term wellness of his patients. `,
 
-  // ==========================
-  // Education
-  // ==========================
+  
   education: [
     {
       degree: "MD (General Medicine)",
@@ -38,19 +32,13 @@ const pankajPaliwal = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [],
 
-  // ==========================
-  // Publications
-  // ==========================
+  
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+  
   expertise: [
    { title:"Snake Bite Management",
     description:" Advanced, protocol-driven administration of anti-snake venom (ASV) and ventilator support for neurotoxic and haemotoxic bites. "
@@ -82,9 +70,7 @@ const pankajPaliwal = {
 
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Diabetes",
     "Hypertension",
@@ -110,9 +96,7 @@ const pankajPaliwal = {
     "General Weakness",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+  
   procedures: [
     "Critical Care Management",
     "Anti Snake Venom (ASV) Therapy",
@@ -123,9 +107,7 @@ const pankajPaliwal = {
     "Preventive Health Consultation",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+  
   highlights: [
     "Expert in General Medicine & Critical Care",
     "Snake Bite & Poisoning Specialist",
@@ -134,15 +116,10 @@ const pankajPaliwal = {
     "Experienced in Emergency Toxicology",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+  
   memberships: [],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
-  appointment: {
+ appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
     timings: "Monday - Saturday | 10:00 AM - 06:00 PM",
@@ -151,9 +128,7 @@ const pankajPaliwal = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title:
       "Dr. Pankaj Paliwal | Best General Physician & Internal Medicine Specialist in Sirsa",

@@ -40,11 +40,11 @@ const WhyChooseUs = () => {
 
     </div>
 
-    {/* Cards */}
+
 
     <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
 
-      {/* Card 1 */}
+     
 
       <div className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
 
@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
 
       </div>
 
-      {/* Card 2 */}
+      
 
       <div className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
 
@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
 
       </div>
 
-      {/* Card 3 */}
+      
 
       <div className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
 
@@ -108,7 +108,7 @@ const WhyChooseUs = () => {
 
       </div>
 
-      {/* Card 4 */}
+      
 
       <div className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
 
@@ -131,7 +131,7 @@ const WhyChooseUs = () => {
 
     </div>
 
-    {/* Bottom Banner */}
+    
 
     <div className="mt-20 bg-gradient-to-r from-blue-700 to-cyan-600 rounded-3xl p-10 lg:p-14">
 

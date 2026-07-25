@@ -31,14 +31,14 @@ const MainNavbar = () => {
   ];
 
 const specialityDropdown = [
-  // Neurosurgery
+  
   doctorDepartments.find((d) => d.slug === "neurosurgery"),
 
-  // Full departments
+  
   departments.find((d) => d.slug === "obstetrics-gynaecology"),
   departments.find((d) => d.slug === "orthopaedics"),
 
-  // Doctor departments
+  
   doctorDepartments.find((d) => d.slug === "internal-medicine"),
   doctorDepartments.find((d) => d.slug === "maxillo-facial-and-dental"),
   doctorDepartments.find((d) => d.slug === "plastic-surgery"),
@@ -47,7 +47,7 @@ const specialityDropdown = [
   doctorDepartments.find((d) => d.slug === "anaesthesiology"),
   doctorDepartments.find((d) => d.slug === "endocrinology"), // ✅ Updated
 
-  // Full departments
+ 
   departments.find((d) => d.slug === "pathology"),
   departments.find((d) => d.slug === "radiology-clinical-imaging"),
   departments.find(
@@ -64,7 +64,7 @@ console.log(doctorDepartments.map(d => d.slug));
 
   return (
     <>
-      {/* ===================== DESKTOP NAVBAR ===================== */}
+      
 
       <nav className="hidden lg:block sticky top-20 z-40 bg-[#0096D6] shadow-md">
         <div className="max-w-7xl mx-auto px-6">
@@ -144,7 +144,7 @@ console.log(doctorDepartments.map(d => d.slug));
           </ul>
         </div>
       </nav>
-            {/* ===================== MOBILE DRAWER ===================== */}
+           
 
       <div
         className={`lg:hidden fixed left-0 right-0 bottom-20 bg-white shadow-2xl z-40 transition-all duration-300 overflow-hidden ${
@@ -250,12 +250,11 @@ console.log(doctorDepartments.map(d => d.slug));
 
         </div>
       </div>
-            {/* ===================== MOBILE BOTTOM NAV ===================== */}
-
+            {/* mobile bottom nav  */}
       <nav className="lg:hidden fixed bottom-3 left-3 right-3 z-50">
         <div className="grid grid-cols-5 bg-[#0096D6] rounded-2xl shadow-2xl h-14 overflow-hidden">
 
-          {/* Menu */}
+          
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="flex flex-col items-center justify-center text-white text-[10px]"
@@ -266,7 +265,7 @@ console.log(doctorDepartments.map(d => d.slug));
 
          
 
-          {/* Speciality */}
+         
           <NavLink
             to="/departments"
             className={({ isActive }) =>
@@ -278,7 +277,7 @@ console.log(doctorDepartments.map(d => d.slug));
             <FaStethoscope size={17} />
             <span className="mt-1">{t("speciality")}</span>
           </NavLink>
-           {/* WhatsApp */}
+          
           <a
             href="https://wa.me/919728375033"
             target="_blank"
@@ -289,7 +288,7 @@ console.log(doctorDepartments.map(d => d.slug));
             <span className="mt-1">{t("whatsapp")}</span>
           </a>
 
-          {/* Doctors */}
+         
           <NavLink
             to="/doctors"
             className={({ isActive }) =>
@@ -302,7 +301,7 @@ console.log(doctorDepartments.map(d => d.slug));
             <span className="mt-1">{t("doctors")}</span>
           </NavLink>
 
-          {/* Home */}
+         
           <NavLink
             to="/"
             className={({ isActive }) =>

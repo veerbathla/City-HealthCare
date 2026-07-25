@@ -4,9 +4,7 @@ const harpreetSingh = {
   id: 7,
   doctorSlug: "dr-harpreet-singh",
   slug: "physiotherapy",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
   name: "Dr. Harpreet Singh",
   image: harpreet,
   designation: "Consultant Physiotherapist & Rehabilitation Specialist",
@@ -17,14 +15,10 @@ const harpreetSingh = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Harpreet Singh is a highly dedicated and advanced Consultant Physiotherapist at City HealthCare Multispeciality Hospital, Sirsa. Holding Bachelor’s degree in Physical Therapy (BPT), he specializes in restoring movement, improving physical function, and enhancing the overall quality of life for patients recovering from debilitating injuries, chronic pain, and surgeries. Dr. Singh incorporates evidence-based manual therapy, structural exercises, and high-end electrotherapy modalities to provide customized recovery blueprints. His patient-centric philosophy focuses not just on temporary pain relief, but on long-term physical conditioning, functional independence, and injury prevention. `,
 
-  // ==========================
-  // Education
-  // ==========================
+ 
   education: [
     {
       degree: "BPT (Bachelor of Physiotherapy)",
@@ -32,9 +26,7 @@ const harpreetSingh = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [
     "Dry Needling – JP Rehab Academy",
     "NDT / Bobath (Hemiplegia) – Dr. SOOD Alpha Sports Physiocare & Shri Pran Nath Parnami Hospital",
@@ -43,14 +35,9 @@ const harpreetSingh = {
     "IASTM (Instrument Assisted Soft Tissue Mobilization)",
   ],
 
-  // ==========================
-  // Publications
-  // ==========================
+ 
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
    expertise: [
    { title:"Advanced Neurological Rehabilitation ",
     description:"Specialized physical therapy designed to retrain the brain and nervous system following major neurological events"},
@@ -83,9 +70,7 @@ const harpreetSingh = {
 
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Stroke",
     "Paralysis",
@@ -110,9 +95,7 @@ const harpreetSingh = {
     "Rotator Cuff Injury",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+ 
   procedures: [
     "Neurological Rehabilitation",
     "Post Joint Replacement Rehabilitation",
@@ -135,9 +118,7 @@ const harpreetSingh = {
     "Long Wave Diathermy (LWD)",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+  
   highlights: [
     "Specialist in Neuro Rehabilitation",
     "Advanced Orthopaedic Rehabilitation",
@@ -147,14 +128,10 @@ const harpreetSingh = {
     "Evidence-Based Physiotherapy Care",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+ 
   memberships: [],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+ 
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -164,9 +141,7 @@ const harpreetSingh = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+ 
   seo: {
     title:
       "Dr. Harpreet Singh | Best Physiotherapist & Rehabilitation Specialist in Sirsa",

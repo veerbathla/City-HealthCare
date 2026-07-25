@@ -55,18 +55,18 @@ const TopNavbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-3 lg:px-8">
-        {/* Navbar */}
+       
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+          
           <img
             src="/CityhealthCare.jpg"
             alt="City Healthcare"
             className="h-10 lg:h-14 object-contain"
           />
 
-          {/* Right Side */}
+         
           <div className="flex items-center gap-2 lg:gap-5 flex-1 justify-end">
-            {/* Desktop Search */}
+            
             <div className="hidden lg:block relative flex-1 max-w-2xl mr-6">
               <input
                 type="text"
@@ -114,7 +114,7 @@ const TopNavbar = () => {
               <FaSearch className="absolute left-4 top-3.5 text-gray-500" />
             </div>
 
-            {/* Mobile Search Icon */}
+            
             <button
               onClick={() => setSearchOpen(true)}
               className="lg:hidden w-10 h-10 rounded-full border flex items-center justify-center hover:bg-gray-100"
@@ -122,7 +122,7 @@ const TopNavbar = () => {
               <FaSearch />
             </button>
 
-            {/* Call */}
+         
             <a
               href="tel:+919728375033"
               className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-gray-100"
@@ -130,7 +130,7 @@ const TopNavbar = () => {
               <FaPhoneAlt />
             </a>
 
-            {/* Emergency */}
+            
             <div className="text-center leading-none">
               <p className="text-[10px] text-gray-500 hidden sm:block">
                 Emergency
@@ -144,7 +144,7 @@ const TopNavbar = () => {
               </a>
             </div>
 
-            {/* Language */}
+            
             <div className="flex items-center border rounded-full px-2 lg:px-4 py-2">
               <FaGlobe className="text-sm" />
               <select
@@ -161,7 +161,7 @@ const TopNavbar = () => {
               </select>
             </div>
 
-            {/* Ambulance */}
+            
             <button className="bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center gap-2 px-3 lg:px-6 py-2.5 transition">
               <FaAmbulance />
 
@@ -171,7 +171,7 @@ const TopNavbar = () => {
         </div>
       </div>
 
-      {/* Mobile Search Overlay */}
+     
       {searchOpen && (
         <div className="lg:hidden border-t bg-white p-3">
           <div className="relative">

@@ -4,9 +4,7 @@ const abhishekSingh = {
   id: 1,
   doctorSlug: "dr-abhishek-singh",
   slug: "neurosurgery",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
   name: "Dr. Abhishek Singh",
   image: abhishek,
   designation: "Consultant Neurosurgeon & Director",
@@ -19,14 +17,10 @@ const abhishekSingh = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Abhishek Singh is a highly advanced and extensively experienced Neurosurgeon dedicated to providing world-class neurological and spine care to the people of Haryana. As the Director and Chief Neurosurgeon at City HealthCare Neuro Research and Infertility Centre, Sirsa, he has established himself as a trusted pioneer in advanced surgical interventions. He holds the distinct reputation of being Haryana’s exclusive (Monoportal) Endoscopic Spine Surgeon (हरियाणा के एकमात्र मोनोपोर्टल एंडोस्कोपपक स्पाइन सर्टन), bringing minimally invasive, cutting-edge spinal care to the region. He also hold the record of Awake Craniotomy for brain tumor patient in Haryana. His global perspective and commitment to international medical standards are backed by his prestigious membership in the British Association of Spine Surgeons (BASS), London. `,
 
-  // ==========================
-  // Education
-  // ==========================
+  
   education: [
     {
       degree: "MCh (Neurosurgery)",
@@ -42,25 +36,19 @@ const abhishekSingh = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [
     "Fellowship in Endoscopic Spine Surgery",
     "Minimally Invasive Brain Surgery",
   ],
 
-  // ==========================
-  // Publications
-  // ==========================
+  
   publications: [
     "Author of various National Journals",
     "Author of various International Journals",
   ],
 
-  // ==========================
-  // Expertise
-  // ==========================
+
   expertise: [
    { title:"Endoscopic Spine Surgery",
     description:" Minimally invasive treatment for slipped discs, sciatica, and spinal stenosis with faster recovery times."
@@ -79,9 +67,7 @@ const abhishekSingh = {
     }
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+
   conditionsTreated: [
     "Slipped Disc",
     "Sciatica",
@@ -94,9 +80,7 @@ const abhishekSingh = {
     "Peripheral Nerve Disorders",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+ 
   procedures: [
     "Endoscopic Spine Surgery",
     "Microscopic Brain Surgery",
@@ -107,9 +91,7 @@ const abhishekSingh = {
     "Peripheral Nerve Surgery",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+ 
   highlights: [
     "Director of City HealthCare Neuro Research & Infertility Centre",
     "Haryana's Exclusive Monoportal Endoscopic Spine Surgeon",
@@ -118,17 +100,13 @@ const abhishekSingh = {
     "International Member of British Association of Spine Surgeons (BASS), London",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+ 
   memberships: [
     "British Association of Spine Surgeons (BASS), London",
     "European Association of Neurosurgeries",
   ],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+  
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -138,9 +116,7 @@ const abhishekSingh = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title: "Dr. Abhishek Singh | Best Neurosurgeon in Sirsa",
     description:

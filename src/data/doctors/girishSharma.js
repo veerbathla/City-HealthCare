@@ -4,9 +4,8 @@ const girishSharma = {
   id: 8,
   doctorSlug: "dr-girish-sharma",
   slug: "anaesthesiology",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
+
   name: "Dr. Girish Sharma",
   image: girish,
   designation: "Consultant Anesthesiologist & Critical Care Specialist",
@@ -18,14 +17,10 @@ const girishSharma = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Girish Sharma is a highly skilled Consultant Anesthesiologist and Critical Care Specialist at City HealthCare Neuro Research and Infertility Centre, Sirsa. Holding an advanced MD in Anesthesia, he plays a pivotal role in ensuring patient safety, comfort, and pain relief before, during, and after surgical procedures. With expertise in administering personalized anesthesia for complex brain, spine, orthopaedic, trauma, laparoscopic, and obstetric surgeries, Dr. Sharma is an integral part of the hospital's multidisciplinary surgical team. His proficiency in perioperative care, advanced airway management, intensive care monitoring, emergency resuscitation, and pain management ensures the highest standards of care for critically ill and surgical patients. His commitment to patient safety, precision, and rapid recovery makes him one of the leading anesthesia and critical care specialists in the region.`,
 
-  // ==========================
-  // Education
-  // ==========================
+ 
   education: [
     {
       degree: "MD (Anesthesia)",
@@ -37,9 +32,7 @@ const girishSharma = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [
     "ACC (Anesthesia Care Consultants)",
     "BLL (Blood Lactate Level)",
@@ -47,14 +40,10 @@ const girishSharma = {
     "Critical Care Specialist Training",
   ],
 
-  // ==========================
-  // Publications
-  // ==========================
+  
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+  
   expertise: [
     {
       title: "Advanced General & Regional Anesthesia",
@@ -78,9 +67,7 @@ const girishSharma = {
     },
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Critically Ill Patients",
     "Trauma Emergencies",
@@ -95,9 +82,7 @@ const girishSharma = {
     "Patients Requiring Ventilator Support",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+ 
   procedures: [
     "General Anesthesia",
     "Regional Anesthesia",
@@ -113,9 +98,7 @@ const girishSharma = {
     "Labor Analgesia (Painless Delivery)",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+  
   highlights: [
     "Expert in General & Regional Anesthesia",
     "Critical Care & ICU Specialist",
@@ -125,16 +108,12 @@ const girishSharma = {
     "Painless Delivery (Labor Analgesia)",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+  
   memberships: [
     "Indian Society of Anesthesiologists (ISA)",
   ],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+ 
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -144,9 +123,7 @@ const girishSharma = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title:
       "Dr. Girish Sharma | Best Anesthesiologist & Critical Care Specialist in Sirsa",

@@ -10,12 +10,9 @@ const AdvancedInfrastructure = () => {
     <div>
 
 
-{/* ================= ADVANCED INFRASTRUCTURE ================= */}
-
 <section className="py-24 bg-slate-50">
   <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-    {/* Heading */}
 
     <div className="text-center max-w-3xl mx-auto">
 
@@ -37,11 +34,11 @@ const AdvancedInfrastructure = () => {
 
     </div>
 
-    {/* Cards */}
+   
 
     <div className="grid lg:grid-cols-3 gap-8 mt-20">
 
-      {/* Neurophysiology */}
+    
 
       <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
 
@@ -82,7 +79,7 @@ const AdvancedInfrastructure = () => {
 
       </div>
 
-      {/* Radiology */}
+      
 
       <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
 
@@ -123,7 +120,7 @@ const AdvancedInfrastructure = () => {
 
       </div>
 
-      {/* Pathology */}
+     
 
       <div className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
 
@@ -166,7 +163,7 @@ const AdvancedInfrastructure = () => {
 
     </div>
 
-    {/* Bottom Banner */}
+   
 
     <div className="mt-20 rounded-3xl overflow-hidden bg-gradient-to-r from-blue-700 via-blue-800 to-cyan-700">
 

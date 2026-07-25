@@ -5,9 +5,7 @@ const rajivPakhetra = {
   doctorSlug: "dr-rajiv-pakhetra",
   slug: "endocrinology",
 
-  // ==========================
-  // Basic Information
-  // ==========================
+
   name: "Dr. Rajiv Pakhetra",
   image: rajiv, 
   designation: "Visiting Consultant Endocrinologist",
@@ -20,14 +18,10 @@ const rajivPakhetra = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+ 
   about: `The Department of Endocrinology & Metabolism led by visiting Consultant Dr. Rajiv Pakhetra (Sarvesh Hospitral, Hisar) at City HealthCare is a specialized center dedicated to the comprehensive diagnosis, management, and long-term treatment of disorders related to hormones, endocrine glands, and complex metabolic systems. Hormones regulate vital bodily functions—including metabolism, reproduction, growth, and energy levels— meaning even a minor imbalance can significantly impact a patient's daily life and overall health. Our department combines expert clinical acumen with advanced diagnostic tools to manage chronic lifestyle conditions, glandular tumors, and hormonal issues. We focus on delivering personalized, evidence-based care plans designed to restore hormonal balance, prevent long-term systemic complications, and help patients reclaim their health.`,
 
-  // ==========================
-  // Education
-  // ==========================
+  
   education: [
     {
       degree: "PGDCC (Endocrinology)",
@@ -43,23 +37,17 @@ const rajivPakhetra = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [
     "Advanced Diabetes Management",
     "Clinical Endocrinology",
     "Hormonal & Metabolic Disorders",
   ],
 
-  // ==========================
-  // Publications
-  // ==========================
+  
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+  
   expertise: [
 
     
@@ -129,9 +117,7 @@ const rajivPakhetra = {
     },
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Type 1 Diabetes",
     "Type 2 Diabetes",
@@ -160,9 +146,7 @@ const rajivPakhetra = {
     "Delayed Puberty",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+  
   procedures: [
     "Comprehensive Diabetes Management",
     "Continuous Glucose Monitoring",
@@ -176,9 +160,7 @@ const rajivPakhetra = {
     "Growth & Puberty Evaluation",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+  
   highlights: [
     "Visiting Consultant Endocrinologist at City HealthCare",
     "Expert in Diabetes & Hormonal Disorders",
@@ -187,14 +169,10 @@ const rajivPakhetra = {
     "Advanced In-House Hormonal Diagnostic Support",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+  
   memberships: [],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+ 
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -204,9 +182,7 @@ const rajivPakhetra = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+ 
   seo: {
     title: "Dr. Rajiv Pakhetra | Best Endocrinologist in Sirsa",
     description:

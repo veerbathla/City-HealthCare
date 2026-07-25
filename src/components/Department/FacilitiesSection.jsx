@@ -28,7 +28,7 @@ const FacilitiesSection = ({ facilities = [] }) => {
     <section className="py-2 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
+        
 
         <div className="text-center mb-14">
           <span className="uppercase tracking-[3px] text-[#0096D6] font-semibold">
@@ -48,7 +48,7 @@ const FacilitiesSection = ({ facilities = [] }) => {
           </p>
         </div>
 
-        {/* Facilities Grid */}
+       
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 

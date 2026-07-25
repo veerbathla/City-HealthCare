@@ -3,13 +3,13 @@ import { Search, BookOpen, Stethoscope } from "lucide-react";
 const BlogHero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-cyan-50">
-      {/* Background Blur */}
+      
       <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-sky-200/30 blur-3xl"></div>
       <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-200/30 blur-3xl"></div>
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 py-24 lg:flex-row lg:justify-between">
 
-        {/* Left */}
+     
         <div className="max-w-2xl">
 
           <span className="inline-flex items-center gap-2 rounded-full bg-sky-100 px-4 py-2 text-sm font-semibold text-sky-700">
@@ -34,7 +34,7 @@ const BlogHero = () => {
 
           
 
-          {/* Stats */}
+         
 
           <div className="mt-12 flex flex-wrap gap-8">
 
@@ -69,7 +69,7 @@ const BlogHero = () => {
 
         </div>
 
-        {/* Right */}
+       
 
         <div className="relative">
 
@@ -79,8 +79,7 @@ const BlogHero = () => {
             className="w-full max-w-xl"
           />
 
-          {/* Floating Card */}
-
+         
           <div className="absolute -left-10 top-10 rounded-2xl bg-white p-5 shadow-xl">
 
             <div className="flex items-center gap-3">

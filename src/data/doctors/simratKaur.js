@@ -4,9 +4,7 @@ const simratKaur = {
   id: 5,
   doctorSlug: "dr-simrat-kaur",
   slug: "maxillo-facial-and-dental",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
   name: "Dr. Simrat Kaur",
  image: simrat,
   designation:
@@ -20,14 +18,10 @@ const simratKaur = {
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Simrat Kaur is a highly qualified and exceptionally skilled Oral and Maxillofacial Surgeon practicing at City HealthCare Multispeciality Hospital, Sirsa. She bridges the gap between medicine and dentistry, specializing in the diagnosis, surgical treatment, and reconstruction of diseases, injuries, and defects involving both the functional and aesthetic aspects of the mouth, teeth, jaws, and face. As a prestigious Fellow of the Association of Oral and Maxillofacial Surgeons of India (FAOMSI), Dr. Kaur brings advanced surgical expertise to the region. Whether treating critical facial fractures from severe trauma or performing delicate root canals and cosmetic smile makeovers, she is dedicated to delivering precise, pain-free treatments utilizing the highest clinical standards. `,
 
-  // ==========================
-  // Education
-  // ==========================
+ 
   education: [
     {
       degree: "FAOMSI",
@@ -46,22 +40,16 @@ const simratKaur = {
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+  
   training: [
     "Facial Trauma Surgery",
     "Dental Implantology",
   ],
 
-  // ==========================
-  // Publications
-  // ==========================
+  
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+  
     expertise: [
    { title:"Facial Trauma & Injury Management",
     description:"Emergency treatment and surgical fixation of jaw fractures, cheekbone fractures, orbital (eye socket) injuries, and facial lacerations. "
@@ -100,9 +88,7 @@ const simratKaur = {
     
     ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Jaw Fractures",
     "Facial Injuries",
@@ -118,9 +104,7 @@ const simratKaur = {
     "Receding Gums",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+  
   procedures: [
     "Dental Implants",
     "Root Canal Treatment (RCT)",
@@ -138,9 +122,7 @@ const simratKaur = {
     "Flap Surgery",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+  
   highlights: [
     "FAOMSI Fellow",
     "Facial Trauma Specialist",
@@ -150,16 +132,12 @@ const simratKaur = {
     "Integrated Trauma Care with Neurosurgery & Orthopaedics",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+  
   memberships: [
     "Association of Oral and Maxillofacial Surgeons of India (AOMSI)",
   ],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+  
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -169,9 +147,7 @@ const simratKaur = {
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title:
       "Dr. Simrat Kaur | Best Oral & Maxillofacial Surgeon in Sirsa",

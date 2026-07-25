@@ -9,14 +9,14 @@ import {
 const CallToAction = () => {
   return (
     <div>
-      {/* ================= FINAL CALL TO ACTION ================= */}
+     
 
       <section className="relative py-24 overflow-hidden">
-        {/* Background */}
+        
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#003B73] via-[#005EA8] to-[#00A6C8]"></div>
 
-        {/* Decorative Blur */}
+        
 
         <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-300/20 rounded-full blur-3xl"></div>
 
@@ -25,7 +25,7 @@ const CallToAction = () => {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-[40px] p-10 lg:p-16">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              {/* Left */}
+            
 
               <div>
                 <span className="inline-block px-4 py-2 rounded-full bg-white/20 text-cyan-200 text-sm font-semibold tracking-wide">
@@ -63,7 +63,7 @@ const CallToAction = () => {
                 </div>
               </div>
 
-              {/* Right */}
+             
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-3xl p-8 text-center shadow-xl">

@@ -4,9 +4,7 @@ const kshiteejDhull = {
   id: 6,
   doctorSlug: "dr-kshiteej-dhull",
 slug: "plastic-surgery",
-  // ==========================
-  // Basic Information
-  // ==========================
+  
   name: "Dr. Kshiteej Dhull",
   image: dhull,
   designation: "Consultant Plastic, Reconstructive & Aesthetic Surgeon",
@@ -19,14 +17,10 @@ slug: "plastic-surgery",
   ],
   experience: "Highly Experienced",
 
-  // ==========================
-  // About
-  // ==========================
+  
   about: `Dr. Kshiteej Dhull is a highly accomplished and extensively trained Consultant Plastic Surgeon at City HealthCare Multispeciality Hospital, Sirsa. Holding advanced degrees in surgery (MS) and the highest super-specialty qualification in plastic surgery (MCh), he brings supreme technical precision, scientific innovation, and artistic vision to the region. Dr. Dhull’s clinical focus encompasses the entire spectrum of modern plastic surgery—ranging from critical, life-altering reconstructive surgeries for facial trauma to high-end aesthetic and cosmetic enhancements. Known for his meticulous surgical technique and compassionate patient care, he is dedicated to restoring both optimal physical function and natural aesthetic appearance to his patients. `,
 
-  // ==========================
-  // Education
-  // ==========================
+  
   education: [
     {
       degree: "MCh (Plastic Surgery)",
@@ -42,19 +36,13 @@ slug: "plastic-surgery",
     },
   ],
 
-  // ==========================
-  // Fellowship & Training
-  // ==========================
+ 
   training: [],
 
-  // ==========================
-  // Publications
-  // ==========================
+ 
   publications: [],
 
-  // ==========================
-  // Expertise
-  // ==========================
+ 
   expertise: [
    { title:"Facial Trauma & Soft Tissue Injury Care:",
     description:"Expert repair of complex facial cuts, lacerations, and soft tissue loss from road accidents or injuries, focusing on minimal scar visibility. "},
@@ -84,9 +72,7 @@ slug: "plastic-surgery",
 
   ],
 
-  // ==========================
-  // Conditions Treated
-  // ==========================
+  
   conditionsTreated: [
     "Facial Injuries",
     "Soft Tissue Injuries",
@@ -103,9 +89,7 @@ slug: "plastic-surgery",
     "Gynecomastia",
   ],
 
-  // ==========================
-  // Procedures
-  // ==========================
+  
   procedures: [
     "Facial Trauma Reconstruction",
     "Burn Reconstruction",
@@ -129,9 +113,7 @@ slug: "plastic-surgery",
     "Skin Rejuvenation Treatments",
   ],
 
-  // ==========================
-  // Highlights
-  // ==========================
+  
   highlights: [
     "Expert in Plastic & Reconstructive Surgery",
     "Advanced Cosmetic & Aesthetic Surgeon",
@@ -141,14 +123,10 @@ slug: "plastic-surgery",
     "Integrated Trauma Care with Neurosurgery, Orthopaedics & Maxillofacial Surgery",
   ],
 
-  // ==========================
-  // Memberships
-  // ==========================
+  
   memberships: [],
 
-  // ==========================
-  // Appointment Information
-  // ==========================
+  
   appointment: {
     hospital: "City HealthCare Neuro Research and Infertility Centre",
     address: "Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa",
@@ -158,9 +136,7 @@ slug: "plastic-surgery",
     email: "cityhealthcaresirsa@gmail.com",
   },
 
-  // ==========================
-  // SEO
-  // ==========================
+  
   seo: {
     title:
       "Dr. Kshiteej Dhull | Best Plastic & Cosmetic Surgeon in Sirsa",

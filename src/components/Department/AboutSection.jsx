@@ -8,7 +8,7 @@ const AboutSection = ({ about }) => {
     <section className="bg-white pb-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
+        
         <div className="mb-14 text-center">
           <span className="text-[#0096D6] font-semibold uppercase tracking-widest">
             About Department
@@ -21,7 +21,7 @@ const AboutSection = ({ about }) => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* Left Content */}
+         
           <div>
             {about.description?.map((para, index) => (
               <p
@@ -33,7 +33,7 @@ const AboutSection = ({ about }) => {
             ))}
           </div>
 
-          {/* Right Image */}
+          
           <div>
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img

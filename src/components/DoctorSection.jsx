@@ -115,7 +115,7 @@ const DoctorSection = () => {
   return (
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-5">
-        {/* Heading */}
+       
         <div className="flex items-center justify-between mb-12">
           <div>
             <p className="text-[#009CD0] uppercase tracking-widest font-semibold">
@@ -139,7 +139,7 @@ const DoctorSection = () => {
           </NavLink>
         </div>
 
-        {/* Swiper */}
+        
         <Swiper
           onSwiper={setSwiper}
           modules={[Autoplay]}
@@ -174,7 +174,7 @@ const DoctorSection = () => {
           ))}
         </Swiper>
 
-        {/* Navigation Buttons */}
+       
         <div className="flex justify-center items-center gap-4 mt-8">
           <button
             onClick={() => swiper?.slidePrev()}
@@ -191,7 +191,7 @@ const DoctorSection = () => {
           </button>
         </div>
 
-        {/* Mobile Button */}
+       
         <div className="mt-10 flex justify-center md:hidden">
           <NavLink
             to="/doctors"

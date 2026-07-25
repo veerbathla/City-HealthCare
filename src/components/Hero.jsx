@@ -192,7 +192,7 @@ const Hero = () => {
 
   return (
     <section className="relative w-full bg-white overflow-hidden">
-      {/* Images */}
+     
       {images.map((image, index) => (
         <img
           key={index}
@@ -205,7 +205,7 @@ const Hero = () => {
         />
       ))}
 
-      {/* Invisible image to maintain height */}
+     
       <img
         src={images[currentImage]}
         alt=""

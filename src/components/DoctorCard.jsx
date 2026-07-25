@@ -68,7 +68,7 @@ const DoctorCard = ({ doctor }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full shadow-sm hover:shadow-xl transition duration-300">
       <div className="flex flex-col items-center px-8 py-8 h-full">
-        {/* Doctor Image */}
+       
         <div className="w-56 h-72 flex items-end justify-center">
           <img
             src={doctor.image}
@@ -77,23 +77,22 @@ const DoctorCard = ({ doctor }) => {
           />
         </div>
 
-        {/* Doctor Name */}
         <h2 className="mt-6 text-2xl font-bold text-center text-gray-800">
           {doctor.name}
         </h2>
 
-        {/* Designation */}
+       
         <p className="mt-2 text-center text-[#009CD0] font-medium leading-relaxed">
           {doctor.designation}
         </p>
 
-        {/* Hospital */}
+       
         <div className="flex items-center gap-2 mt-5 text-gray-600">
           <FaHospital className="text-[#009CD0]" />
           <span>{t("hospitalName")}</span>
         </div>
 
-        {/* Buttons */}
+       
         <div className="w-full mt-8 space-y-4">
           <Link
             to={`/doctors/${doctor.doctorSlug}`}

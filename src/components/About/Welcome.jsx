@@ -129,12 +129,12 @@ const Welcome = () => {
 
   return (
     <div>
-      {/* ================= WELCOME SECTION ================= */}
+      
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-2">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Images */}
+           
 
             <div className="relative">
               <div className="relative">
@@ -149,7 +149,7 @@ const Welcome = () => {
                 </div>
               </div>
 
-              {/* Floating Card */}
+          
 
               <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 lg:-bottom-8 lg:left-0 bg-white rounded-xl lg:rounded-2xl shadow-xl px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 w-fit">
                 <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#0096D6] leading-none">
@@ -158,7 +158,7 @@ const Welcome = () => {
               </div>
             </div>
 
-            {/* Right Content */}
+          
 
             <div>
               <span className="inline-block bg-blue-50 text-[#0096D6] font-semibold px-4 py-2 rounded-full text-sm tracking-wide">
@@ -182,7 +182,7 @@ const Welcome = () => {
                 {t("welcome.para3")}
               </p>
 
-              {/* Feature Cards */}
+             
 
               <div className="grid sm:grid-cols-2 gap-5 mt-10">
                 <div className="bg-blue-50 rounded-2xl p-6">

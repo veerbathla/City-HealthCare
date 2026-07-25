@@ -11,13 +11,13 @@ const HospitalHighlights = () => {
 
 
 
-{/* ================= HOSPITAL HIGHLIGHTS ================= */}
+
 
 <section className="py-24 bg-slate-50">
 
   <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-    {/* Heading */}
+    
 
     <div className="text-center max-w-3xl mx-auto">
 
@@ -38,11 +38,11 @@ const HospitalHighlights = () => {
 
     </div>
 
-    {/* Stats */}
+    
 
     <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
 
-      {/* Card */}
+      
 
       <div className="bg-white rounded-3xl shadow-lg p-10 text-center hover:-translate-y-2 hover:shadow-2xl transition duration-500">
 
@@ -64,7 +64,7 @@ const HospitalHighlights = () => {
 
       </div>
 
-      {/* Card */}
+      
 
       <div className="bg-white rounded-3xl shadow-lg p-10 text-center hover:-translate-y-2 hover:shadow-2xl transition duration-500">
 
@@ -86,7 +86,7 @@ const HospitalHighlights = () => {
 
       </div>
 
-      {/* Card */}
+   
 
       <div className="bg-white rounded-3xl shadow-lg p-10 text-center hover:-translate-y-2 hover:shadow-2xl transition duration-500">
 
@@ -108,7 +108,7 @@ const HospitalHighlights = () => {
 
       </div>
 
-      {/* Card */}
+      
 
       <div className="bg-white rounded-3xl shadow-lg p-10 text-center hover:-translate-y-2 hover:shadow-2xl transition duration-500">
 
@@ -132,7 +132,7 @@ const HospitalHighlights = () => {
 
     </div>
 
-    {/* Bottom Strip */}
+   
 
     <div className="mt-20 bg-gradient-to-r from-blue-700 via-blue-800 to-cyan-700 rounded-3xl p-10">
 

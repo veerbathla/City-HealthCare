@@ -20,12 +20,12 @@ const SpecializedDeparments = () => {
 
 
 
-{/* ================= SPECIALIZED DEPARTMENTS ================= */}
+
 
 <section className="py-24 bg-white">
   <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-    {/* Heading */}
+   
 
     <div className="text-center max-w-3xl mx-auto">
 
@@ -46,11 +46,11 @@ const SpecializedDeparments = () => {
 
     </div>
 
-    {/* Departments */}
+    
 
     <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
 
-      {/* Neurosurgery */}
+      
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-blue-600 hover:shadow-2xl transition-all duration-500">
 
@@ -69,7 +69,7 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      {/* Gynaecology */}
+      
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-pink-500 hover:shadow-2xl transition-all duration-500">
 
@@ -88,7 +88,7 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      {/* Orthopaedics */}
+      
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-green-600 hover:shadow-2xl transition-all duration-500">
 
@@ -107,7 +107,7 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      {/* Medicine */}
+     
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-red-600 hover:shadow-2xl transition-all duration-500">
 
@@ -126,7 +126,7 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      {/* Plastic */}
+     
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-cyan-600 hover:shadow-2xl transition-all duration-500">
 
@@ -145,7 +145,7 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      {/* Maxillofacial */}
+      
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-yellow-500 hover:shadow-2xl transition-all duration-500">
 
@@ -164,7 +164,7 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      {/* General Surgery */}
+     
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-indigo-600 hover:shadow-2xl transition-all duration-500">
 
@@ -183,7 +183,7 @@ const SpecializedDeparments = () => {
 
       </div>
 
-      {/* Physiotherapy */}
+  
 
       <div className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-emerald-600 hover:shadow-2xl transition-all duration-500">
 
@@ -204,7 +204,7 @@ const SpecializedDeparments = () => {
 
     </div>
 
-    {/* Bottom CTA */}
+    
 
     <div className="mt-20 bg-gradient-to-r from-blue-700 to-cyan-700 rounded-3xl p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-8">
 

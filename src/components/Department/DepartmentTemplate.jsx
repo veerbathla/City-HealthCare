@@ -1,6 +1,6 @@
 import React from "react";
 
-// Components
+
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import WhyChooseUs from "./WhyChooseUs";
@@ -15,7 +15,7 @@ import ContactSection from "./ContactSection";
 const DepartmentTemplate = ({ department }) => {
   if (!department) return null;
 
-  // Normalize diagnostics from all department schemas
+  
   const diagnostics =
     department.diagnostics?.tests ||
     department.imagingServices ||
@@ -23,7 +23,7 @@ const DepartmentTemplate = ({ department }) => {
     department.diagnosticServices ||
     [];
 
-  // Normalize conditions
+
   const conditions =
     department.conditionsWeTreat ||
     department.investigationsFor ||
@@ -35,7 +35,7 @@ const DepartmentTemplate = ({ department }) => {
   return (
     <main className="bg-white overflow-hidden">
 
-      {/* Hero */}
+    
 
       <HeroSection
         hero={department.hero}
@@ -43,7 +43,7 @@ const DepartmentTemplate = ({ department }) => {
         contact={department.contact}
       />
 
-      {/* About */}
+      
 
       {department.overview && (
         <section className="relative py-24">
@@ -55,7 +55,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* Why Choose Us */}
+      
 
       {department.whyChooseUs && (
         <section className="py-24 bg-[#F8FCFE]">
@@ -65,8 +65,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* Treatments */}
-
+      
       {department.treatments?.length > 0 && (
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -77,7 +76,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* Services */}
+      
 
       {department.services?.length > 0 && (
         <section className="py-24 bg-[#F8FCFE]">
@@ -91,7 +90,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* Conditions */}
+      
 
       {conditions.length > 0 && (
         <section className="py-24 bg-white">
@@ -103,7 +102,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* Diagnostics */}
+     
 
       {diagnostics.length > 0 && (
         <section className="py-24 bg-[#F8FCFE]">
@@ -115,7 +114,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* Facilities */}
+      
 
       {department.facilities?.length > 0 && (
         <section className="py-24 bg-white">
@@ -127,7 +126,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* FAQs */}
+      
 
       {department.faqs?.length > 0 && (
         <section className="py-24 bg-[#F8FCFE]">
@@ -137,7 +136,7 @@ const DepartmentTemplate = ({ department }) => {
         </section>
       )}
 
-      {/* Contact */}
+      
 
       {department.contact && (
         <section className="pt-10 pb-24 bg-gradient-to-b from-[#F8FCFE] to-white">

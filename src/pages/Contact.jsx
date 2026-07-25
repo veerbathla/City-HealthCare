@@ -33,7 +33,7 @@ const Contact = () => {
     try {
       setLoading(true);
 
-      // 🔥 Change this API later
+      //change api key later
       await axios.post("/api/contact", formData);
 
       alert("Message sent successfully!");
@@ -56,7 +56,7 @@ const Contact = () => {
     <section className="bg-[#F8FCFE] py-20">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Heading */}
+        
 
         <div className="text-center mb-14">
           <span className="uppercase tracking-[3px] text-[#0096D6] font-semibold">
@@ -75,7 +75,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-3 gap-10">
 
-          {/* Left */}
+          
 
           <div className="space-y-6">
 
@@ -146,7 +146,7 @@ const Contact = () => {
 
           </div>
 
-          {/* Right */}
+          
 
           <div className="lg:col-span-2 bg-white rounded-3xl shadow p-8">
 
@@ -223,7 +223,7 @@ const Contact = () => {
 
         </div>
 
-        {/* Map */}
+        
 
 <div className="mt-16 overflow-hidden rounded-3xl shadow-lg">
   <iframe

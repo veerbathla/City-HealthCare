@@ -31,7 +31,7 @@ const WhyChooseUs = ({ data, whyChooseUs }) => {
     <section className="pt-0  pb-2 bg-[#F8FCFE]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Heading */}
+      
 
         <div className="text-center mb-8">
 
@@ -47,7 +47,7 @@ const WhyChooseUs = ({ data, whyChooseUs }) => {
 
         </div>
 
-        {/* Cards */}
+       
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
