@@ -128,11 +128,31 @@ export default function VideoShowcase() {
     <section className="relative w-full overflow-hidden bg-white py-12 md:py-20">
 
       <div className="mx-auto max-w-7xl px-4">
+        {/* Section Heading */}
+<div className="mb-12 text-center">
+  <span className="inline-block rounded-full bg-sky-100 px-4 py-1 text-sm font-semibold tracking-wide text-sky-600">
+    Patient Stories
+  </span>
+
+  <h2 className="mt-4 text-3xl font-bold text-gray-900 md:text-5xl">
+    Our Reviews
+  </h2>
+
+  <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-sky-500"></div>
+
+  <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-gray-600 md:text-lg">
+    Hear directly from our patients about their healthcare journey, treatment
+    experience, and the compassionate care they received at{" "}
+    <span className="font-semibold text-sky-600">
+      City Healthcare
+    </span>.
+  </p>
+</div>
 
         <div className="flex items-center justify-center gap-3">
 
   
-
+        
           <button
             onClick={goPrev}
             className="z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-xl transition hover:scale-105"
