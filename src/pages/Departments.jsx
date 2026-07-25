@@ -7,35 +7,30 @@ import { doctorDepartments } from "../data/doctorDepartments";
 import hero3 from "../assets/hero/hero3.jpg";
 
 const Departments = () => {
-  const allDepartments = [
-    // Doctor Departments
-    doctorDepartments.find((d) => d.slug === "neurosurgery"),
-    doctorDepartments.find((d) => d.slug === "internal-medicine"),
-    doctorDepartments.find((d) => d.slug === "maxillo-facial-and-dental"),
-    doctorDepartments.find((d) => d.slug === "plastic-surgery"),
-    doctorDepartments.find((d) => d.slug === "physiotherapy"),
-    doctorDepartments.find((d) => d.slug === "general-laparoscopic-surgery"),
-    doctorDepartments.find((d) => d.slug === "anaesthesiology"),
-    doctorDepartments.find((d) => d.slug === "pathology"),
-    doctorDepartments.find((d) => d.slug === "obstetrics-gynaecology"),
-    doctorDepartments.find((d) => d.slug === "orthopaedics"),
+  const mergedDepartments = [...doctorDepartments, ...departments];
 
-    // Full Departments
-    
-    departments.find((d) => d.slug === "radiology-clinical-imaging"),
+  const order = [
+    "neurosurgery",
+    "obstetrics-gynaecology",
+    "orthopaedics",
+    "internal-medicine",
+    "plastic-surgery",
+    "maxillo-facial-and-dental",
+    "physiotherapy",
+    "anaesthesiology",
+    "general-laparoscopic-surgery",
+    "endocrinology",
+    "radiology-clinical-imaging",
+    "pathology",
+    "neurology",
+    "neuro-investigation-clinical-neurophysiology",
+  ];
 
-    // Doctor Department
-    doctorDepartments.find((d) => d.slug === "endocrinology"),
-
-    // Full Departments
-    departments.find((d) => d.slug === "neurology"),
-    departments.find(
-      (d) => d.slug === "neuro-investigation-clinical-neurophysiology"
-    ),
-  ].filter(Boolean);
-
-
-  console.log(doctorDepartments.map((d) => d.slug));
+  const allDepartments = order
+    .map((slug) =>
+      mergedDepartments.find((department) => department.slug === slug)
+    )
+    .filter(Boolean);
 
 
   return (

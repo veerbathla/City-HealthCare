@@ -1,7 +1,6 @@
 import { anaesthesiologyDepartment } from "./anaesthesiologyDepartment";
 import { dermatologyDepartment } from "./dermatologyDepartment";
 import { endocrinologyDepartment } from "./endocrinologyDepartment";
-import { generalSurgeryDepartment } from "./generalSurgeryDepartment";
 import { internalMedicineDepartment } from "./internalMedicineDepartment";
 import { neurosurgeryDepartment } from "./neurosurgeryDepartment";
 import { obstetricsGynaecologyDepartment } from "./obstetricsGynaecologyDepartment";
@@ -12,15 +11,14 @@ import {pathologyDepartment} from "./pathologyDepartment";
 
 
 export const doctorDepartments = [
-  anaesthesiologyDepartment,
-  dermatologyDepartment,
-  endocrinologyDepartment,
-  generalSurgeryDepartment,
-  internalMedicineDepartment,
   neurosurgeryDepartment,
-  physiotherapyDepartment,
-  plasticSurgeryDepartment,
   obstetricsGynaecologyDepartment,
   orthopaedicsDepartment,
+  plasticSurgeryDepartment,
+  dermatologyDepartment,
+  physiotherapyDepartment,
+  anaesthesiologyDepartment,
+  endocrinologyDepartment,
+  internalMedicineDepartment,
   pathologyDepartment
 ];
