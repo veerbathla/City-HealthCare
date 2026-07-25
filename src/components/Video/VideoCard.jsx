@@ -7,60 +7,25 @@ export default function VideoCard({
   distance,
   onClick,
 }) {
-
   const positions = {
-    "-2": {
-      x: -340,
-      scale: 0.72,
-      rotate: 24,
-      opacity: 0.35,
-      z: 1,
-    },
-
-    "-1": {
-      x: -190,
-      scale: 0.88,
-      rotate: 12,
-      opacity: 0.8,
-      z: 5,
-    },
-
-    "0": {
-      x: 0,
-      scale: 1,
-      rotate: 0,
-      opacity: 1,
-      z: 20,
-    },
-
-    "1": {
-      x: 190,
-      scale: 0.88,
-      rotate: -12,
-      opacity: 0.8,
-      z: 5,
-    },
-
-    "2": {
-      x: 340,
-      scale: 0.72,
-      rotate: -24,
-      opacity: 0.35,
-      z: 1,
-    },
+    "-2": { x: -340, scale: 0.72, rotate: 24, opacity: 0.35, z: 1 },
+    "-1": { x: -190, scale: 0.88, rotate: 12, opacity: 0.8, z: 5 },
+    "0": { x: 0, scale: 1, rotate: 0, opacity: 1, z: 20 },
+    "1": { x: 190, scale: 0.88, rotate: -12, opacity: 0.8, z: 5 },
+    "2": { x: 340, scale: 0.72, rotate: -24, opacity: 0.35, z: 1 },
   };
-
-  const config =
-    positions[String(distance)] || positions["0"];
+  const config = positions[String(distance)] || positions["0"];
 
   return (
     <div
       onClick={onClick}
+      // touch-manipulation: mobile pe click ka 300ms delay/ghost-click issue hata deta hai
       className="
         absolute
         left-1/2
         top-1/2
         cursor-pointer
+        touch-manipulation
         transition-all
         duration-500
         ease-in-out
@@ -94,14 +59,12 @@ export default function VideoCard({
         <img
           src={thumbnail}
           alt={title}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover pointer-events-none select-none"
+          draggable="false"
         />
-
         <div className="absolute inset-0 bg-black/15" />
-
         {active && (
           <div className="absolute inset-0 flex items-center justify-center">
-
             <div
               className="
                 flex
@@ -116,20 +79,13 @@ export default function VideoCard({
                 lg:h-20
               "
             >
-              <svg
-                viewBox="0 0 24 24"
-                className="w-8 h-8 fill-sky-600 ml-1"
-              >
+              <svg viewBox="0 0 24 24" className="w-8 h-8 fill-sky-600 ml-1">
                 <path d="M8 5v14l11-7z" />
               </svg>
-
             </div>
-
           </div>
         )}
-
       </div>
-
     </div>
   );
 }

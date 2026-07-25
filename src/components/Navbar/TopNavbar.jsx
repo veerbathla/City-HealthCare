@@ -53,7 +53,7 @@ const TopNavbar = () => {
       })),
     ]);
   };
-
+ 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
 
@@ -195,7 +195,7 @@ const TopNavbar = () => {
                 }}
                 className="ml-2 bg-transparent text-sm outline-none"
               >
-                <option value="en">EN</option>
+                <option value="en">English</option>
                 <option value="hi">हिन्दी</option>
                 <option value="pa">ਪੰਜਾਬੀ</option>
               </select>

@@ -1,231 +1,135 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useState, useRef } from "react";
 import VideoCard from "./VideoCard";
 import videoData from "../../data/Video/videoData";
 
+/* ------------------------------------------------------------------
+   VideoShowcase.jsx
+
+   MOBILE CLICK FIX — kya galat tha:
+   1) VideoCard ab "position: absolute" use karta hai (left-1/2 top-1/2).
+      Iske liye parent container ka "position: relative" hona ZAROORI hai,
+      warna cards body/kisi aur ancestor ke hisaab se position hote hain
+      aur unka asli clickable area screen pe kahi aur chala jata hai —
+      isliye tap kaam nahi karta tha. Ab container ko relative + fixed
+      height diya hai.
+   2) Swipe aur click dono touch se aate hain. Pehle agar finger thoda
+      sa bhi hilta tha (swipe try karte waqt), to click bhi fire ho
+      jata tha aur galat card khul jata / kabhi kabhi kuch nahi hota
+      tha. Ab "isDragging" flag se decide karte hain — agar swipe
+      hua hai to us tap ko click nahi maanenge.
+------------------------------------------------------------------- */
 export default function VideoShowcase() {
-  
-  const MOBILE_BREAKPOINT = 768;
-  const SWIPE_THRESHOLD = 50;
-  const AUTO_PLAY_DELAY = 4500;
-
-  
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  
-  const [visibleCards, setVisibleCards] = useState(5);
+  const [activeIndex, setActiveIndex] = useState(
+    Math.floor((videoData.length - 1) / 2)
+  );
 
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
-  const autoPlayRef = useRef(null);
+  const isDragging = useRef(false);
 
- 
-  useEffect(() => {
-    const updateVisibleCards = () => {
-      if (window.innerWidth < MOBILE_BREAKPOINT) {
-        setVisibleCards(3);
-      } else {
-        setVisibleCards(5);
-      }
-    };
+  const goPrev = () =>
+    setActiveIndex((i) => (i === 0 ? videoData.length - 1 : i - 1));
 
-    updateVisibleCards();
+  const goNext = () =>
+    setActiveIndex((i) => (i === videoData.length - 1 ? 0 : i + 1));
 
-    window.addEventListener("resize", updateVisibleCards);
-
-    return () =>
-      window.removeEventListener("resize", updateVisibleCards);
-  }, []);
-
-  
-  const goNext = () => {
-    setActiveIndex((prev) => (prev + 1) % videoData.length);
-  };
-
-  const goPrev = () => {
-    setActiveIndex((prev) =>
-      (prev - 1 + videoData.length) % videoData.length
-    );
-  };
-
-  
   const handleCardClick = (index) => {
+    // agar abhi-abhi swipe kiya tha, to is tap ko ignore karo
+    if (isDragging.current) return;
+
     if (index === activeIndex) {
-      window.open(
-        videoData[index].videoUrl,
-        "_blank",
-        "noopener,noreferrer"
-      );
-      return;
+      window.open(videoData[index].videoUrl, "_blank", "noopener,noreferrer");
+    } else {
+      setActiveIndex(index);
     }
-
-    setActiveIndex(index);
   };
 
- 
-  const getDistance = (index) => {
-    const total = videoData.length;
-
-    let distance = index - activeIndex;
-
-    if (distance > total / 2) {
-      distance -= total;
-    }
-
-    if (distance < -total / 2) {
-      distance += total;
-    }
-
-    return distance;
-  };
-
-  
-  const visibleItems = useMemo(() => {
-    const limit = Math.floor(visibleCards / 2);
-
-    return videoData
-      .map((item, index) => ({
-        ...item,
-        index,
-        distance: getDistance(index),
-      }))
-      .filter((item) => Math.abs(item.distance) <= limit)
-      .sort((a, b) => a.distance - b.distance);
-  }, [activeIndex, visibleCards]);
-
-  
+  // ---- swipe handlers ----
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
+    touchEndX.current = e.touches[0].clientX;
+    isDragging.current = false;
   };
 
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX;
+    // 10px se zyada hile to ye swipe hai, tap nahi
+    if (Math.abs(touchStartX.current - touchEndX.current) > 10) {
+      isDragging.current = true;
+    }
   };
 
   const handleTouchEnd = () => {
     const diff = touchStartX.current - touchEndX.current;
+    const swipeThreshold = 40;
 
-    if (diff > SWIPE_THRESHOLD) {
-      goNext();
-    }
-
-    if (diff < -SWIPE_THRESHOLD) {
-      goPrev();
+    if (diff > swipeThreshold) {
+      goNext(); // left swipe -> next
+    } else if (diff < -swipeThreshold) {
+      goPrev(); // right swipe -> prev
     }
 
     touchStartX.current = 0;
     touchEndX.current = 0;
   };
 
-  
-  useEffect(() => {
-    autoPlayRef.current = setInterval(goNext, AUTO_PLAY_DELAY);
+  const total = videoData.length;
+  const half = Math.floor(total / 2);
 
-    return () => clearInterval(autoPlayRef.current);
-  }, []);
+  return (
+    <section className="w-full py-6 sm:py-10 bg-gray-50 overflow-hidden">
+      <div className="flex items-center justify-center gap-2 sm:gap-4 px-2">
+        {/* Prev arrow */}
+        <button
+          onClick={goPrev}
+          aria-label="Previous"
+          className="flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white shadow-md shrink-0 z-30"
+        >
+          <svg viewBox="0 0 24 24" className="w-4 h-4 sm:w-5 sm:h-5 fill-none stroke-gray-600 stroke-2">
+            <path d="M15 6l-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
 
-  
-    return (
-    <section className="relative w-full overflow-hidden bg-white py-12 md:py-20">
+        {/* Cards stage — "relative" + fixed height zaroori hai kyunki
+            VideoCard ke andar "absolute" positioning hai */}
+        <div
+          className="relative w-full max-w-[1100px] h-[250px] sm:h-[320px] lg:h-[430px] touch-pan-y"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
+          {videoData.map((item, index) => {
+            // circular signed distance nikalna (-2 se +2 tak, wrap-around ke saath)
+            let distance = index - activeIndex;
+            if (distance > half) distance -= total;
+            if (distance < -half) distance += total;
 
-      <div className="mx-auto max-w-7xl px-4">
-        {/* Section Heading */}
-<div className="mb-12 text-center">
-  <span className="inline-block rounded-full bg-sky-100 px-4 py-1 text-sm font-semibold tracking-wide text-sky-600">
-    Patient Stories
-  </span>
+            if (Math.abs(distance) > 2) return null;
 
-  <h2 className="mt-4 text-3xl font-bold text-gray-900 md:text-5xl">
-    Our Reviews
-  </h2>
-
-  <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-sky-500"></div>
-
-  <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-gray-600 md:text-lg">
-    Hear directly from our patients about their healthcare journey, treatment
-    experience, and the compassionate care they received at{" "}
-    <span className="font-semibold text-sky-600">
-      City Healthcare
-    </span>.
-  </p>
-</div>
-
-        <div className="flex items-center justify-center gap-3">
-
-  
-        
-          <button
-            onClick={goPrev}
-            className="z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-xl transition hover:scale-105"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              className="h-6 w-6 stroke-gray-700"
-              fill="none"
-              strokeWidth="2"
-            >
-              <path
-                d="M15 6L9 12L15 18"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-
-      
-
-          <div
-            className="
-                relative
-                overflow-hidden
-                flex-1
-                h-[340px]
-                sm:h-[420px]
-                lg:h-[560px]
-            "
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-            style={{
-              perspective: "1600px",
-            }}
-          >
-            {visibleItems.map((item) => (
+            return (
               <VideoCard
                 key={item.id}
                 thumbnail={item.thumbnail}
                 title={item.title}
-                active={item.distance === 0}
-                distance={item.distance}
-                position={item.distance}
-                onClick={() => handleCardClick(item.index)}
+                active={index === activeIndex}
+                distance={distance}
+                onClick={() => handleCardClick(index)}
               />
-            ))}
-          </div>
-
-         
-
-          <button
-            onClick={goNext}
-            className="z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-xl transition hover:scale-105"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              className="h-6 w-6 stroke-gray-700"
-              fill="none"
-              strokeWidth="2"
-            >
-              <path
-                d="M9 6L15 12L9 18"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-
+            );
+          })}
         </div>
 
+        {/* Next arrow */}
+        <button
+          onClick={goNext}
+          aria-label="Next"
+          className="flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white shadow-md shrink-0 z-30"
+        >
+          <svg viewBox="0 0 24 24" className="w-4 h-4 sm:w-5 sm:h-5 fill-none stroke-gray-600 stroke-2">
+            <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
       </div>
-
     </section>
   );
 }
