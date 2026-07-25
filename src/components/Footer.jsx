@@ -369,7 +369,7 @@ const Footer = () => {
               <div className="flex gap-4">
                 <FaAmbulance className="mt-1" />
 
-                <span>{t("emergency")} : 108</span>
+                <span>{t("emergency")} : +91 97283-75033</span>
               </div>
 
               <a
