@@ -62,6 +62,7 @@ const divyaJyotiSingh = {
   // ==========================
   expertise: [
     // Maternity & High-Risk Pregnancy Care
+   
     {
       title: "24/7 Delivery Services",
       description:
@@ -147,7 +148,7 @@ const divyaJyotiSingh = {
   highlights: [
     "MRCOG-1 Qualified (London)",
     "Expert in High-Risk Pregnancy Care",
-    "Natural Conception Focus Before IVF",
+    "Focus on Natural Conception before IVF:\n Not Every Fertility Journey Need IVF, Start with Natural Conception.",
     "Advanced Laparoscopic Gynaecological Surgeon",
     "Integrated Neuro & Obstetric Emergency Care",
     "24×7 Delivery Services",
