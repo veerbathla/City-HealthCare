@@ -3,29 +3,22 @@ import VideoCard from "./VideoCard";
 import videoData from "../../data/Video/videoData";
 
 export default function VideoShowcase() {
-  // -------------------------
-  // Settings
-  // -------------------------
+  
   const MOBILE_BREAKPOINT = 768;
   const SWIPE_THRESHOLD = 50;
   const AUTO_PLAY_DELAY = 4500;
 
-  // -------------------------
-  // States
-  // -------------------------
+  
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // desktop = 5
-  // mobile = 3
+  
   const [visibleCards, setVisibleCards] = useState(5);
 
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
   const autoPlayRef = useRef(null);
 
-  // -------------------------
-  // Responsive
-  // -------------------------
+ 
   useEffect(() => {
     const updateVisibleCards = () => {
       if (window.innerWidth < MOBILE_BREAKPOINT) {
@@ -43,9 +36,7 @@ export default function VideoShowcase() {
       window.removeEventListener("resize", updateVisibleCards);
   }, []);
 
-  // -------------------------
-  // Navigation
-  // -------------------------
+  
   const goNext = () => {
     setActiveIndex((prev) => (prev + 1) % videoData.length);
   };
@@ -56,9 +47,7 @@ export default function VideoShowcase() {
     );
   };
 
-  // -------------------------
-  // Card Click
-  // -------------------------
+  
   const handleCardClick = (index) => {
     if (index === activeIndex) {
       window.open(
@@ -72,9 +61,7 @@ export default function VideoShowcase() {
     setActiveIndex(index);
   };
 
-  // -------------------------
-  // Circular Distance
-  // -------------------------
+ 
   const getDistance = (index) => {
     const total = videoData.length;
 
@@ -91,9 +78,7 @@ export default function VideoShowcase() {
     return distance;
   };
 
-  // -------------------------
-  // Visible Cards
-  // -------------------------
+  
   const visibleItems = useMemo(() => {
     const limit = Math.floor(visibleCards / 2);
 
@@ -107,9 +92,7 @@ export default function VideoShowcase() {
       .sort((a, b) => a.distance - b.distance);
   }, [activeIndex, visibleCards]);
 
-  // -------------------------
-  // Swipe
-  // -------------------------
+  
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -133,16 +116,14 @@ export default function VideoShowcase() {
     touchEndX.current = 0;
   };
 
-  // -------------------------
-  // Auto Play
-  // -------------------------
+  
   useEffect(() => {
     autoPlayRef.current = setInterval(goNext, AUTO_PLAY_DELAY);
 
     return () => clearInterval(autoPlayRef.current);
   }, []);
 
-  // JSX Part 1B me aayega
+  
     return (
     <section className="relative w-full overflow-hidden bg-white py-12 md:py-20">
 
@@ -150,7 +131,7 @@ export default function VideoShowcase() {
 
         <div className="flex items-center justify-center gap-3">
 
-          {/* LEFT BUTTON */}
+  
 
           <button
             onClick={goPrev}
@@ -170,7 +151,7 @@ export default function VideoShowcase() {
             </svg>
           </button>
 
-          {/* CAROUSEL */}
+      
 
           <div
             className="
@@ -201,7 +182,7 @@ export default function VideoShowcase() {
             ))}
           </div>
 
-          {/* RIGHT BUTTON */}
+         
 
           <button
             onClick={goNext}
