@@ -343,20 +343,21 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3">
-
-              <li>{t("cardiology")}</li>
-
-              <li>{t("neurology")}</li>
-
-              <li>{t("orthopedics")}</li>
-
-              <li>{t("gynecology")}</li>
-
-              <li>{t("pediatrics")}</li>
-
-              <li>{t("generalMedicine")}</li>
-
-            </ul>
+  <li>{t("neurosurgery")}</li>
+  <li>{t("gynecology")}</li>
+  <li>{t("orthopedics")}</li>
+  <li>{t("generalMedicine")}</li>
+  <li>{t("maxillofacialAndDental")}</li>
+  <li>{t("plasticSurgery")}</li>
+  <li>{t("physiotherapy")}</li>
+  <li>{t("anaesthesiology")}</li>
+  <li>{t("generalSurgery")}</li>
+  <li>{t("endocrinology")}</li>
+  <li>{t("radiology")}</li>
+  <li>{t("pathology")}</li>
+  <li>{t("neurology")}</li>
+  <li>{t("neuroInvestigation")}</li>
+</ul>
 
           </div>
 
