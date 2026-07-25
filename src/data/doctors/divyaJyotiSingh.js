@@ -131,6 +131,7 @@ const divyaJyotiSingh = {
     "MRCOG-1 Qualified (London)",
     "Expert in High-Risk Pregnancy Care",
     "Focus on Natural Conception before IVF:\n Not Every Fertility Journey Need IVF, Start with Natural Conception.",
+    "We Encourage Normal Vaginal Delivery, with Caesarean Reserved for Medical Necessity.",
     "Advanced Laparoscopic Gynaecological Surgeon",
     "Integrated Neuro & Obstetric Emergency Care",
     "24×7 Delivery Services",
