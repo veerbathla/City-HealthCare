@@ -1,10 +1,10 @@
-import video1 from "../assets/video/video1.jpg";
-import video2 from "../assets/video/video2.jpg";
-import video3 from "../assets/video/video3.jpg";
-import video4 from "../assets/video/video4.jpg";
-import video5 from "../assets/video/video5.jpg";
-import video6 from "../assets/video/video6.jpg";
-import video7 from "../assets/video/video7.jpg";
+import video1 from "../../assets/video/video1.jpg";
+import video2 from "../../assets/video/video2.jpg";
+import video3 from "../../assets/video/video3.jpg";
+import video4 from "../../assets/video/video4.jpg";
+import video5 from "../../assets/video/video5.jpg";
+import video6 from "../../assets/video/video6.jpg";
+import video7 from "../../assets/video/video7.jpg";
 
 const videoData = [
   {
@@ -46,7 +46,7 @@ const videoData = [
   {
     id: 7,
     thumbnail:video7,
-    videoUrl: "https://www.instagram.com/reel/BBBBBBBBBBB/",
+    videoUrl: " https://www.instagram.com/reel/DXRdjneB2S8/?igsh=MXBhMHRnb2Z1OTZ0Zw==",
     title: "Patient testimonial 5",
   },
 ];

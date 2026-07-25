@@ -1,36 +1,135 @@
 import React from "react";
 
-export default function VideoCard({ thumbnail, title = "", active, onClick }) {
+export default function VideoCard({
+  thumbnail,
+  title = "",
+  active,
+  distance,
+  onClick,
+}) {
+
+  const positions = {
+    "-2": {
+      x: -340,
+      scale: 0.72,
+      rotate: 24,
+      opacity: 0.35,
+      z: 1,
+    },
+
+    "-1": {
+      x: -190,
+      scale: 0.88,
+      rotate: 12,
+      opacity: 0.8,
+      z: 5,
+    },
+
+    "0": {
+      x: 0,
+      scale: 1,
+      rotate: 0,
+      opacity: 1,
+      z: 20,
+    },
+
+    "1": {
+      x: 190,
+      scale: 0.88,
+      rotate: -12,
+      opacity: 0.8,
+      z: 5,
+    },
+
+    "2": {
+      x: 340,
+      scale: 0.72,
+      rotate: -24,
+      opacity: 0.35,
+      z: 1,
+    },
+  };
+
+  const config =
+    positions[String(distance)] || positions["0"];
+
   return (
     <div
       onClick={onClick}
-      className={`relative shrink-0 cursor-pointer rounded-2xl overflow-hidden
-        transition-all duration-300 ease-out
-        ${active
-          ? "w-[260px] h-[380px] scale-100 opacity-100 z-10"
-          : "w-[190px] h-[330px] scale-95 opacity-60"}
-      `}
+      className="
+        absolute
+        left-1/2
+        top-1/2
+        cursor-pointer
+        transition-all
+        duration-500
+        ease-in-out
+      "
+      style={{
+        zIndex: config.z,
+        opacity: config.opacity,
+        transform: `
+          translate(-50%, -50%)
+          translateX(${config.x}px)
+          scale(${config.scale})
+          rotateY(${config.rotate}deg)
+        `,
+        transformStyle: "preserve-3d",
+      }}
     >
-      {/* Thumbnail image */}
-      <img src={thumbnail} alt={title} className="w-full h-full object-cover" />
- 
-      {/* halka overlay taaki play button clearly dikhe */}
-      <div className="absolute inset-0 bg-black/10" />
- 
-      {/* Play button */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div
-          className={`flex items-center justify-center rounded-full bg-white shadow-md
-            ${active ? "w-16 h-16" : "w-10 h-10"}`}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            className={`${active ? "w-6 h-6" : "w-4 h-4"} text-teal-600 fill-current`}
-          >
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </div>
+      <div
+        className="
+          relative
+          overflow-hidden
+          rounded-[28px]
+          shadow-2xl
+          w-[170px]
+          h-[250px]
+          sm:w-[220px]
+          sm:h-[320px]
+          lg:w-[300px]
+          lg:h-[430px]
+        "
+      >
+        <img
+          src={thumbnail}
+          alt={title}
+          className="h-full w-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/15" />
+
+        {active && (
+          <div className="absolute inset-0 flex items-center justify-center">
+
+            <div
+              className="
+                flex
+                items-center
+                justify-center
+                rounded-full
+                bg-white
+                shadow-xl
+                w-16
+                h-16
+                lg:w-20
+                lg:h-20
+              "
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="w-8 h-8 fill-sky-600 ml-1"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+
+            </div>
+
+          </div>
+        )}
+
       </div>
+
     </div>
   );
 }

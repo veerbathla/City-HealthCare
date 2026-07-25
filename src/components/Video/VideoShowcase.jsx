@@ -1,74 +1,230 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import VideoCard from "./VideoCard";
 import videoData from "../../data/Video/videoData";
- 
 
 export default function VideoShowcase() {
-  const [activeIndex, setActiveIndex] = useState(
-    Math.floor((videoData.length - 1) / 2)
-  );
- 
-  const goPrev = () =>
-    setActiveIndex((i) => (i === 0 ? videoData.length - 1 : i - 1));
- 
-  const goNext = () =>
-    setActiveIndex((i) => (i === videoData.length - 1 ? 0 : i + 1));
- 
+  // -------------------------
+  // Settings
+  // -------------------------
+  const MOBILE_BREAKPOINT = 768;
+  const SWIPE_THRESHOLD = 50;
+  const AUTO_PLAY_DELAY = 4500;
+
+  // -------------------------
+  // States
+  // -------------------------
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // desktop = 5
+  // mobile = 3
+  const [visibleCards, setVisibleCards] = useState(5);
+
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const autoPlayRef = useRef(null);
+
+  // -------------------------
+  // Responsive
+  // -------------------------
+  useEffect(() => {
+    const updateVisibleCards = () => {
+      if (window.innerWidth < MOBILE_BREAKPOINT) {
+        setVisibleCards(3);
+      } else {
+        setVisibleCards(5);
+      }
+    };
+
+    updateVisibleCards();
+
+    window.addEventListener("resize", updateVisibleCards);
+
+    return () =>
+      window.removeEventListener("resize", updateVisibleCards);
+  }, []);
+
+  // -------------------------
+  // Navigation
+  // -------------------------
+  const goNext = () => {
+    setActiveIndex((prev) => (prev + 1) % videoData.length);
+  };
+
+  const goPrev = () => {
+    setActiveIndex((prev) =>
+      (prev - 1 + videoData.length) % videoData.length
+    );
+  };
+
+  // -------------------------
+  // Card Click
+  // -------------------------
   const handleCardClick = (index) => {
     if (index === activeIndex) {
-      window.open(videoData[index].videoUrl, "_blank", "noopener,noreferrer");
-    } else {
-      setActiveIndex(index);
+      window.open(
+        videoData[index].videoUrl,
+        "_blank",
+        "noopener,noreferrer"
+      );
+      return;
     }
+
+    setActiveIndex(index);
   };
- 
-  return (
-    <section className="w-full py-10 bg-gray-50">
-      <div className="flex items-center justify-center gap-4">
-        {/* Prev arrow */}
-        <button
-          onClick={goPrev}
-          aria-label="Previous"
-          className="flex items-center justify-center w-11 h-11 rounded-full bg-white shadow-md shrink-0"
-        >
-          <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-gray-600 stroke-2">
-            <path d="M15 6l-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
- 
-        {/* Cards row — sirf active ke aas paas 2-2 card dikhte hain */}
-        <div className="flex items-end gap-3 overflow-hidden">
-          {videoData.map((item, index) => {
-            const distance = Math.min(
-              Math.abs(index - activeIndex),
-              videoData.length - Math.abs(index - activeIndex)
-            );
-            if (distance > 2) return null;
- 
-            return (
+
+  // -------------------------
+  // Circular Distance
+  // -------------------------
+  const getDistance = (index) => {
+    const total = videoData.length;
+
+    let distance = index - activeIndex;
+
+    if (distance > total / 2) {
+      distance -= total;
+    }
+
+    if (distance < -total / 2) {
+      distance += total;
+    }
+
+    return distance;
+  };
+
+  // -------------------------
+  // Visible Cards
+  // -------------------------
+  const visibleItems = useMemo(() => {
+    const limit = Math.floor(visibleCards / 2);
+
+    return videoData
+      .map((item, index) => ({
+        ...item,
+        index,
+        distance: getDistance(index),
+      }))
+      .filter((item) => Math.abs(item.distance) <= limit)
+      .sort((a, b) => a.distance - b.distance);
+  }, [activeIndex, visibleCards]);
+
+  // -------------------------
+  // Swipe
+  // -------------------------
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const diff = touchStartX.current - touchEndX.current;
+
+    if (diff > SWIPE_THRESHOLD) {
+      goNext();
+    }
+
+    if (diff < -SWIPE_THRESHOLD) {
+      goPrev();
+    }
+
+    touchStartX.current = 0;
+    touchEndX.current = 0;
+  };
+
+  // -------------------------
+  // Auto Play
+  // -------------------------
+  useEffect(() => {
+    autoPlayRef.current = setInterval(goNext, AUTO_PLAY_DELAY);
+
+    return () => clearInterval(autoPlayRef.current);
+  }, []);
+
+  // JSX Part 1B me aayega
+    return (
+    <section className="relative w-full overflow-hidden bg-white py-12 md:py-20">
+
+      <div className="mx-auto max-w-7xl px-4">
+
+        <div className="flex items-center justify-center gap-3">
+
+          {/* LEFT BUTTON */}
+
+          <button
+            onClick={goPrev}
+            className="z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-xl transition hover:scale-105"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              className="h-6 w-6 stroke-gray-700"
+              fill="none"
+              strokeWidth="2"
+            >
+              <path
+                d="M15 6L9 12L15 18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+
+          {/* CAROUSEL */}
+
+          <div
+            className="
+                relative
+                overflow-hidden
+                flex-1
+                h-[340px]
+                sm:h-[420px]
+                lg:h-[560px]
+            "
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            style={{
+              perspective: "1600px",
+            }}
+          >
+            {visibleItems.map((item) => (
               <VideoCard
                 key={item.id}
                 thumbnail={item.thumbnail}
                 title={item.title}
-                active={index === activeIndex}
-                onClick={() => handleCardClick(index)}
+                active={item.distance === 0}
+                distance={item.distance}
+                position={item.distance}
+                onClick={() => handleCardClick(item.index)}
               />
-            );
-          })}
+            ))}
+          </div>
+
+          {/* RIGHT BUTTON */}
+
+          <button
+            onClick={goNext}
+            className="z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-xl transition hover:scale-105"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              className="h-6 w-6 stroke-gray-700"
+              fill="none"
+              strokeWidth="2"
+            >
+              <path
+                d="M9 6L15 12L9 18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+
         </div>
- 
-        {/* Next arrow */}
-        <button
-          onClick={goNext}
-          aria-label="Next"
-          className="flex items-center justify-center w-11 h-11 rounded-full bg-white shadow-md shrink-0"
-        >
-          <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-gray-600 stroke-2">
-            <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
+
       </div>
+
     </section>
   );
 }
- 
