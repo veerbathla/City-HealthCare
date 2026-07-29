@@ -34,19 +34,7 @@ const videoData = [
   {
     id: 5,
     thumbnail:video5,
-    videoUrl: "https://www.instagram.com/reel/DVC5lxKga8l/?igsh=MThoanhnOHcxbWlmcA==",
-    title: "Patient testimonial 5",
-  },
-  {
-    id: 6,
-    thumbnail:video6,
-    videoUrl: "  https://www.instagram.com/reel/DXRdjneB2S8/?igsh=MXBhMHRnb2Z1OTZ0Zw==",
-    title: "Patient testimonial 5",
-  },
-  {
-    id: 7,
-    thumbnail:video7,
-    videoUrl: " https://www.instagram.com/reel/DXRdjneB2S8/?igsh=MXBhMHRnb2Z1OTZ0Zw==",
+    videoUrl: "https://www.instagram.com/reel/DXRdjneB2S8/?igsh=MXBhMHRnb2Z1OTZ0Zw==",
     title: "Patient testimonial 5",
   },
 ];
