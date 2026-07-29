@@ -28,7 +28,7 @@ const videoData = [
   {
     id: 4,
     thumbnail:video4,
-    videoUrl: "https://www.facebook.com/share/r/1UVRJW1ssx/",
+    videoUrl: "https://www.instagram.com/reel/DTpqnnzgcNs/?igsh=cGZ4bDlzYmY0ZDFs",
     title: "Patient testimonial 4",
   },
   {
