@@ -10,7 +10,7 @@ const videoData = [
   {
     id: 1,
     thumbnail: video1,
-    videoUrl: "  https://www.instagram.com/reel/DSnDmQyAS6J/?igsh=MTdpbjZ2eGdkdHAxdQ==",
+    videoUrl: "https://www.instagram.com/reel/DaejFjzhaeq/?igsh=eGtmdzE5MGU1MjNx",
     title: "Patient testimonial 1",
   },
   {
