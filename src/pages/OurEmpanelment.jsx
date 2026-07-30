@@ -8,6 +8,7 @@ import WhyChoose from "../components/empanelment/WhyChoose";
 import CashlessProcess from "../components/empanelment/CashlessProcess";
 import EmpanelmentCTA from "../components/empanelment/EmpanelmentCTA";
 
+
 const OurEmpanelment = () => {
   return (
     <main className="bg-white">
