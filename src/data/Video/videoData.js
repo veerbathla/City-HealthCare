@@ -5,6 +5,7 @@ import video4 from "../../assets/video/video4.jpg";
 import video5 from "../../assets/video/video5.jpg";
 import video6 from "../../assets/video/video6.jpg";
 import video7 from "../../assets/video/video7.jpg";
+import video8 from "../../assets/video/video8.jpg";
 
 const videoData = [
   {
