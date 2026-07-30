@@ -97,9 +97,9 @@ const Departments = () => {
             and ensure you receive the best possible care.
           </p>
 
-          <a>
+          <a
             href="/contact"
-            className="inline-flex items-center mt-10 px-8 py-4 rounded-full bg-white text-[#0096D6] font-semibold hover:bg-gray-100 transition"
+            className="inline-flex items-center mt-10 px-8 py-4 rounded-full bg-white text-[#0096D6] font-semibold hover:bg-gray-100 transition">
           
             Contact Us
           </a>
