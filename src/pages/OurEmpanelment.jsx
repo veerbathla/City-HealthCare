@@ -6,7 +6,7 @@ import CashlessHighlight from "../components/Empanelment/CashlessHighlight";
 import InsuranceGrid from "../components/Empanelment/InsuranceGrid";
 import WhyChoose from "../components/Empanelment/WhyChoose";
 import CashlessProcess from "../components/Empanelment/CashlessProcess";
-import EmpanelmentCTA from "../components/Empanelment/EmpanelmentCTA";
+
 
 
 const OurEmpanelment = () => {
@@ -25,7 +25,6 @@ const OurEmpanelment = () => {
 
       <CashlessProcess />
 
-      <EmpanelmentCTA />
 
     </main>
   );
