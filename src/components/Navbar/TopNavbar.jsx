@@ -222,8 +222,13 @@ const TopNavbar = () => {
               <FaAmbulance className="text-lg" />
 
               <span className="hidden md:inline">
-                Ambulance
-              </span>
+  <a
+    href="tel:+919728375033"
+    className="hover:text-[#0096D6] transition"
+  >
+    Ambulance
+  </a>
+</span>
             </button>
 
           </div>
