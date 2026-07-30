@@ -127,7 +127,12 @@ const videoData = [
     videoUrl: "https://www.instagram.com/reel/DZhsneaBrFC/?igsh=aDI4bGhjZnhuZDF5",
     title: "Patient testimonial 20",
   },
-
+  {
+    id: 21,
+    thumbnail:video21,
+    videoUrl: "https://www.instagram.com/reel/DWGtwmfhOc3/?igsh=MWNyZjgwd2FzajV6OQ==",
+    title: "Patient testimonial 21",
+  },
 ];
  
 export default videoData;
