@@ -6,6 +6,19 @@ import video5 from "../../assets/video/video5.jpg";
 import video6 from "../../assets/video/video6.jpg";
 import video7 from "../../assets/video/video7.jpg";
 import video8 from "../../assets/video/video8.jpg";
+import video9 from "../../assets/video/video9.jpg";
+import video10 from "../../assets/video/video10.jpg";
+import video11 from "../../assets/video/video11.jpg";
+import video12 from "../../assets/video/video12.jpg";
+import video13 from "../../assets/video/video13.jpg";
+import video14 from "../../assets/video/video14.jpg";
+import video15 from "../../assets/video/video15.jpg";
+import video16 from "../../assets/video/video16.jpg";
+import video17 from "../../assets/video/video17.jpg";
+import video18 from "../../assets/video/video18.jpg";
+import video19 from "../../assets/video/video19.jpg";
+import video20 from "../../assets/video/video20.jpg";
+import video21 from "../../assets/video/video21.jpg";
 
 const videoData = [
   {
