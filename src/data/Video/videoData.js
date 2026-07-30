@@ -37,6 +37,60 @@ const videoData = [
     videoUrl: "https://www.instagram.com/reel/DXRdjneB2S8/?igsh=MXBhMHRnb2Z1OTZ0Zw==",
     title: "Patient testimonial 5",
   },
+  {
+    id: 6,
+    thumbnail:video6,
+    videoUrl: "",
+    title: "Patient testimonial 6",
+  },
+  {
+    id: 7,
+    thumbnail:video7,
+    videoUrl: "",
+    title: "Patient testimonial 7",
+  },
+  {
+    id: 8,
+    thumbnail:video8,
+    videoUrl: "",
+    title: "Patient testimonial 8",
+  },
+  {
+    id: 9,
+    thumbnail:video9,
+    videoUrl: "",
+    title: "Patient testimonial 9",
+  },
+  {
+    id: 10,
+    thumbnail:video10,
+    videoUrl: "",
+    title: "Patient testimonial 10",
+  },
+  {
+    id: 11,
+    thumbnail:video11,
+    videoUrl: "",
+    title: "Patient testimonial 11",
+  },
+  {
+    id: 12,
+    thumbnail:video12,
+    videoUrl: "",
+    title: "Patient testimonial 12",
+  },
+  {
+    id: 13,
+    thumbnail:video13,
+    videoUrl: "",
+    title: "Patient testimonial 13",
+  },
+  {
+    id: 14,
+    thumbnail:video14,
+    videoUrl: "",
+    title: "Patient testimonial 14",
+  },
 ];
  
 export default videoData;
