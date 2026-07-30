@@ -28,6 +28,7 @@ const MainNavbar = () => {
     { key: "doctors", path: "/doctors" },
     { key: "blog", path: "/blog" },
     { key: "contact", path: "/contact" },
+    { key: "Our Empanelment", path: "/empanelment" },
   ];
 
 const specialityDropdown = [

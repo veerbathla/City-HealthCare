@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import BlogPage from "./pages/BlogPage";
 
 import "./i18n";
+import OurEmpanelment from "./pages/OurEmpanelment";
 
 function App() {
   return (
@@ -54,6 +55,8 @@ function App() {
 
           {/* 404 */}
           <Route path="*" element={<Home />} />
+
+          <Route path="/empanelment" element={<OurEmpanelment/>}/>
 
         </Routes>
       </main>
