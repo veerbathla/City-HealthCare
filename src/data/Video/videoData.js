@@ -88,7 +88,7 @@ const videoData = [
   {
     id: 14,
     thumbnail:video14,
-    videoUrl: "",
+    videoUrl: "https://www.instagram.com/reel/DOi48acgfxZ/?igsh=cmp0ajJ2MTU4dnFn",
     title: "Patient testimonial 14",
   },
 ];
