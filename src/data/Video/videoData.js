@@ -94,19 +94,19 @@ const videoData = [
    {
     id:15 ,
     thumbnail:video15,
-    videoUrl: "",
+    videoUrl: "https://www.instagram.com/reel/DJJOoUPhgOY/?igsh=MWltYzh4aHhjOGw5MA==",
     title: "Patient testimonial  15",
   },
   {
     id: 16,
     thumbnail:video16,
-    videoUrl: "",
+    videoUrl: "https://www.instagram.com/reel/DYrX0Yvh0NB/?igsh=MWU2ZHdhaXY4cHR0ag==",
     title: "Patient testimonial 16",
   },
   {
     id: 17,
     thumbnail:video17,
-    videoUrl: "",
+    videoUrl: "https://www.instagram.com/reel/DRn0EkJAQng/?igsh=MXJtbmtxOHVyMjV0cw==",
     title: "Patient testimonial 17",
   },
   {
