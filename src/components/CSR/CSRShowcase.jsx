@@ -213,8 +213,10 @@ import VideoCard from "../Video/VideoCard";
 import csrData from "../../data/CSR/csrData";
 
 export default function CSRShowcase() {
+  const initialIndex = csrData.findIndex((item) => item.id === 14);
+
   const [activeIndex, setActiveIndex] = useState(
-    Math.floor(csrData.length / 2)
+    initialIndex !== -1 ? initialIndex : Math.floor(csrData.length / 2)
   );
 
   const touchStartX = useRef(0);
@@ -293,6 +295,7 @@ export default function CSRShowcase() {
     "Health Talks & Educational Seminars",
     "Support for Underprivileged Patients",
   ];
+  
 
   return (
     <section className="overflow-x-hidden bg-gradient-to-b from-white via-sky-50 to-white py-20">

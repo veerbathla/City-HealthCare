@@ -20,13 +20,13 @@ import csr19 from "../../assets/CSR/csr19.jpg";
 import csr20 from "../../assets/CSR/csr20.jpg";
 
 const csrData = [
-  {
+ 
+     {
     id: 14,
     thumbnail:csr14,
     videoUrl: "https://www.instagram.com/reel/DYO3rWQge1s/?igsh=b21nZDkxdDVscHFk",
     title: "CSR 14",
   },
-
    {
     id: 15,
     thumbnail:csr15,
@@ -45,6 +45,7 @@ const csrData = [
     videoUrl: "https://www.instagram.com/reel/DLPpsiUTf3H/?igsh=Z2pjOTNnbzlrYjh2",
     title: "CSR 17",
   },
+ 
    {
     id: 18,
     thumbnail:csr18,
