@@ -17,7 +17,7 @@ const csrData = [
   {
     id: 1,
     thumbnail: csr1,
-    videoUrl: "https://www.instagram.com/reel/DaejFjzhaeq/?igsh=eGtmdzE5MGU1MjNx",
+    videoUrl: "https://www.instagram.com/reel/DNADEt6Bqc3/?igsh=cWM3NjZoNXJtem51",
     title: "CSR 1",
   },
   {
