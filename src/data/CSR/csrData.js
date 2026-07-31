@@ -53,7 +53,7 @@ const csrData = [
   {
     id: 7,
     thumbnail:csr7,
-    videoUrl: "https://www.facebook.com/share/r/18cwvE5PkG/",
+    videoUrl: "https://www.instagram.com/reel/C-Pgbqtx--P/?igsh=M215bXA2NXN2eDN4",
     title: "CSR 7",
   },
   {
