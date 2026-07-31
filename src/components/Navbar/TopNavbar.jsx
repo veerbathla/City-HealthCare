@@ -202,34 +202,26 @@ const TopNavbar = () => {
 
             </div>
                        
-
-            <button
-              className="
-                flex items-center gap-2
-                rounded-full
-                bg-red-600
-                px-3
-                lg:px-5
-                py-2.5
-                text-white
-                font-medium
-                transition-all
-                duration-300
-                hover:bg-red-700
-                hover:shadow-lg
-              "
-            >
-              <FaAmbulance className="text-lg" />
-
-              <span className="hidden md:inline">
-  <a
-    href="tel:+919728375033"
-    className="hover:text-[#0096D6] transition"
-  >
-    Ambulance
-  </a>
-</span>
-            </button>
+<a
+  href="tel:+919728375033"
+  className="
+    flex items-center gap-2
+    rounded-full
+    bg-red-600
+    px-3
+    lg:px-5
+    py-2.5
+    text-white
+    font-medium
+    transition-all
+    duration-300
+    hover:bg-red-700
+    hover:shadow-lg
+  "
+>
+  <FaAmbulance className="text-lg" />
+  <span className="hidden md:inline">Ambulance</span>
+</a>
 
           </div>
 
