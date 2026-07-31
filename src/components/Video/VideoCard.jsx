@@ -19,7 +19,7 @@ export default function VideoCard({
   return (
     <div
       onClick={onClick}
-      // touch-manipulation: mobile pe click ka 300ms delay/ghost-click issue hata deta hai
+      
       className="
         absolute
         left-1/2
