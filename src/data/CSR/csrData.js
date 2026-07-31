@@ -65,7 +65,7 @@ const csrData = [
   {
     id: 9,
     thumbnail:csr9,
-    videoUrl: "https://www.instagram.com/reel/DUMxn0QgV7D/?igsh=aHk4ZzV1djYxY2lh",
+    videoUrl: "https://www.instagram.com/reel/DLCe9oLqpbX/?igsh=cW9laGVxNzJwdHRx",
     title: "CSR 9",
   },
   {
