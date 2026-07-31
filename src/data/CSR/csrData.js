@@ -13,7 +13,7 @@ import csr12 from "../../assets/video/csr12.jpg";
 import csr13 from "../../assets/video/csr13.jpg";
 
 
-const videoData = [
+const csrData = [
   {
     id: 1,
     thumbnail: csr1,
