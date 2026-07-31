@@ -89,56 +89,8 @@ const csrData = [
   {
     id: 13,
     thumbnail:csr13,
-    videoUrl: "https://www.instagram.com/reel/DVQOa8-DZxS/?igsh=ZWYwOHFlaWQ1cDI1",
+    videoUrl: "https://www.instagram.com/reel/DNfMd7NSM2z/?igsh=ZDIwNTJjeXhxcnVz",
     title: "CSR 13",
-  },
-  {
-    id: 14,
-    thumbnail:csr14,
-    videoUrl: "https://www.instagram.com/reel/DOi48acgfxZ/?igsh=cmp0ajJ2MTU4dnFn",
-    title: "CSR 14",
-  },
-   {
-    id:15 ,
-    thumbnail:csr15,
-    videoUrl: "https://www.instagram.com/reel/DJJOoUPhgOY/?igsh=MWltYzh4aHhjOGw5MA==",
-    title: "CSR  15",
-  },
-  {
-    id: 16,
-    thumbnail:csr16,
-    videoUrl: "https://www.instagram.com/reel/DYrX0Yvh0NB/?igsh=MWU2ZHdhaXY4cHR0ag==",
-    title: "CSR 16",
-  },
-  {
-    id: 17,
-    thumbnail:csr17,
-    videoUrl: "https://www.instagram.com/reel/DRn0EkJAQng/?igsh=MXJtbmtxOHVyMjV0cw==",
-    title: "CSR 17",
-  },
-  {
-    id: 18,
-    thumbnail:csr18,
-    videoUrl: "https://www.instagram.com/reel/DZHUp74kYOf/?igsh=MWxyb3Bld3lrN2I1ZQ==",
-    title: "CSR 18",
-  },
-  {
-    id: 19,
-    thumbnail:csr19,
-    videoUrl: "https://www.instagram.com/reel/DZBvoaXBLFf/?igsh=MTZhaXAya3hyYXdxMQ==",
-    title: "CSR 19",
-  },
-  {
-    id: 20,
-    thumbnail:csr20,
-    videoUrl: "https://www.instagram.com/reel/DZhsneaBrFC/?igsh=aDI4bGhjZnhuZDF5",
-    title: "CSR 20",
-  },
-  {
-    id: 21,
-    thumbnail:csr21,
-    videoUrl: "https://www.instagram.com/reel/DWGtwmfhOc3/?igsh=MWNyZjgwd2FzajV6OQ==",
-    title: "CSR 21",
   },
 ];
  
