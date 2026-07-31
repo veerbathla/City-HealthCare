@@ -2,22 +2,6 @@ import React, { useState, useRef } from "react";
 import VideoCard from "./VideoCard";
 import videoData from "../../data/Video/videoData";
 
-/* ------------------------------------------------------------------
-   VideoShowcase.jsx
-
-   MOBILE CLICK FIX — kya galat tha:
-   1) VideoCard ab "position: absolute" use karta hai (left-1/2 top-1/2).
-      Iske liye parent container ka "position: relative" hona ZAROORI hai,
-      warna cards body/kisi aur ancestor ke hisaab se position hote hain
-      aur unka asli clickable area screen pe kahi aur chala jata hai —
-      isliye tap kaam nahi karta tha. Ab container ko relative + fixed
-      height diya hai.
-   2) Swipe aur click dono touch se aate hain. Pehle agar finger thoda
-      sa bhi hilta tha (swipe try karte waqt), to click bhi fire ho
-      jata tha aur galat card khul jata / kabhi kabhi kuch nahi hota
-      tha. Ab "isDragging" flag se decide karte hain — agar swipe
-      hua hai to us tap ko click nahi maanenge.
-------------------------------------------------------------------- */
 export default function VideoShowcase() {
   const [activeIndex, setActiveIndex] = useState(
     Math.floor((videoData.length - 1) / 2)
@@ -34,7 +18,7 @@ export default function VideoShowcase() {
     setActiveIndex((i) => (i === videoData.length - 1 ? 0 : i + 1));
 
   const handleCardClick = (index) => {
-    // agar abhi-abhi swipe kiya tha, to is tap ko ignore karo
+    
     if (isDragging.current) return;
 
     if (index === activeIndex) {
@@ -44,7 +28,7 @@ export default function VideoShowcase() {
     }
   };
 
-  // ---- swipe handlers ----
+  
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
     touchEndX.current = e.touches[0].clientX;
@@ -53,7 +37,7 @@ export default function VideoShowcase() {
 
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX;
-    // 10px se zyada hile to ye swipe hai, tap nahi
+    
     if (Math.abs(touchStartX.current - touchEndX.current) > 10) {
       isDragging.current = true;
     }
@@ -90,8 +74,7 @@ export default function VideoShowcase() {
           </svg>
         </button>
 
-        {/* Cards stage — "relative" + fixed height zaroori hai kyunki
-            VideoCard ke andar "absolute" positioning hai */}
+        
         <div
           className="relative w-full max-w-[1100px] h-[250px] sm:h-[320px] lg:h-[430px] touch-pan-y"
           onTouchStart={handleTouchStart}

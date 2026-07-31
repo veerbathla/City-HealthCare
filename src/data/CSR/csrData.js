@@ -1,19 +1,68 @@
-import csr1 from "../../assets/video/csr1.jpg";
-import csr2 from "../../assets/video/csr2.jpg";
-import csr3 from "../../assets/video/csr3.jpg";
-import csr4 from "../../assets/video/csr4.jpg";
-import csr5 from "../../assets/video/csr5.jpg";
-import csr6 from "../../assets/video/csr6.jpg";
-import csr7 from "../../assets/video/csr7.jpg";
-import csr8 from "../../assets/video/csr8.jpg";
-import csr9 from "../../assets/video/csr9.jpg";
-import csr10 from "../../assets/video/csr10.jpg";
-import csr11 from "../../assets/video/csr11.jpg";
-import csr12 from "../../assets/video/csr12.jpg";
-import csr13 from "../../assets/video/csr13.jpg";
-
+import csr1 from "../../assets/CSR/csr1.jpg";
+import csr2 from "../../assets/CSR/csr2.jpg";
+import csr3 from "../../assets/CSR/csr3.jpg";
+import csr4 from "../../assets/CSR/csr4.jpg";
+import csr5 from "../../assets/CSR/csr5.jpg";
+import csr6 from "../../assets/CSR/csr6.jpg";
+import csr7 from "../../assets/CSR/csr7.jpg";
+import csr8 from "../../assets/CSR/csr8.jpg";
+import csr9 from "../../assets/CSR/csr9.jpg";
+import csr10 from "../../assets/CSR/csr10.jpg";
+import csr11 from "../../assets/CSR/csr11.jpg";
+import csr12 from "../../assets/CSR/csr12.jpg";
+import csr13 from "../../assets/CSR/csr13.jpg";
+import csr14 from "../../assets/CSR/csr14.jpg";
+import csr15 from "../../assets/CSR/csr15.jpg";
+import csr16 from "../../assets/CSR/csr16.jpg";
+import csr17 from "../../assets/CSR/csr17.jpg";
+import csr18 from "../../assets/CSR/csr18.jpg";
+import csr19 from "../../assets/CSR/csr19.jpg";
+import csr20 from "../../assets/CSR/csr20.jpg";
 
 const csrData = [
+  {
+    id: 14,
+    thumbnail:csr14,
+    videoUrl: "https://www.instagram.com/reel/DYO3rWQge1s/?igsh=b21nZDkxdDVscHFk",
+    title: "CSR 14",
+  },
+
+   {
+    id: 15,
+    thumbnail:csr15,
+    videoUrl: "https://www.instagram.com/reel/DXBaULgkWli/?igsh=NzVyaGR4azc2bWxo",
+    title: "CSR 15",
+  },
+   {
+    id: 16,
+    thumbnail:csr16,
+    videoUrl: "https://www.instagram.com/reel/DW1ZKEIDmzc/?igsh=OHY2cWZodHA5ZjI0",
+    title: "CSR 16",
+  },
+   {
+    id: 17,
+    thumbnail:csr17,
+    videoUrl: "https://www.instagram.com/reel/DLPpsiUTf3H/?igsh=Z2pjOTNnbzlrYjh2",
+    title: "CSR 17",
+  },
+   {
+    id: 18,
+    thumbnail:csr18,
+    videoUrl: "https://www.instagram.com/reel/DZpa2HBG3bV/?igsh=MThud2t1MmE0bGJ3aA==",
+    title: "CSR 18",
+  },
+   {
+    id: 19,
+    thumbnail:csr19,
+    videoUrl: "https://www.instagram.com/reel/DX0eYhthKjx/?igsh=MW1ncHlreWhtd3dmcg==",
+    title: "CSR 19",
+  },
+   {
+    id: 20,
+    thumbnail:csr20,
+    videoUrl: "https://www.instagram.com/reel/DXNziryBAAq/?igsh=MWFraWpvYmU2M2FuNQ==",
+    title: "CSR 20",
+  },
   {
     id: 1,
     thumbnail: csr1,
@@ -92,6 +141,8 @@ const csrData = [
     videoUrl: "https://www.instagram.com/reel/DNfMd7NSM2z/?igsh=ZDIwNTJjeXhxcnVz",
     title: "CSR 13",
   },
+
+  
 ];
  
-export default videoData;
+export default csrData;

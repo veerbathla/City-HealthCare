@@ -4,6 +4,7 @@ import DoctorSection from "../components/DoctorSection";
 import DiagnosticSection from "../components/diagnostic/DiagnosticSection";
 import VideoShowcase from "../components/Video/VideoShowcase";
 import OurEmpanelment from "./OurEmpanelment";
+import CSRShowcase from "../components/CSR/CSRShowcase";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <DoctorSection />
       <DiagnosticSection/>
       <VideoShowcase />
-      
+      <CSRShowcase />
     </>
   );
 };
