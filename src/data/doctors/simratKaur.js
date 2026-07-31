@@ -65,9 +65,6 @@ const simratKaur = {
     },
      {title:"Advanced Dental Implants",
       description:"Permanent and natural-looking replacement of missing teeth using premium implant systems. ",},
-     {title:"Respiratory & Lung Disorders",
-      description:"Advanced care for Asthma, Chronic Obstructive Pulmonary Disease (COPD), Bronchitis, and severe respiratory tract infections. "
-    },
      {title:"Root Canal Treatment (RCT)",
       description:"Painless, automated root canal therapies to save decayed or infected teeth. "},
      {title:"Cosmetic Dentistry & Smile Designing",

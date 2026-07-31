@@ -18,7 +18,7 @@ const pankajPaliwal = {
   experience: "Highly Experienced",
 
  
-  about: `Dr. Pankaj Paliwal is an extensively trained and deeply dedicated Consultant Physician specializing in General Medicine and Critical Care at City HealthCare Multispeciality Hospital, Sirsa. He serves as the primary shield for adult healthcare, managing a comprehensive spectrum of acute illnesses, chronic lifestyle disorders, and complex medical emergencies. Beyond routine internal medicine, Dr. Paliwal holds a highly specialized reputation in the region as a life-saving  Snake Bite & Poisoning Expert. His rapid diagnostic skills and mastery over emergency toxicological protocols make him a crucial lifeline during critical, time-sensitive medical emergencies. Dr. Paliwal is committed to delivering evidence-based, compassionate care to ensure the complete recovery and long-term wellness of his patients. `,
+  about: `Dr. Pankaj Paliwal is an extensively trained and deeply dedicated Consultant Physician specializing in General Medicine and Critical Care at City HealthCare Multispeciality Hospital, Sirsa. He serves as the primary shield for adult healthcare, managing a comprehensive spectrum of acute illnesses, chronic lifestyle disorders, and complex medical emergencies. Beyond routine internal medicine, Dr. Paliwal holds a highly specialized reputation in the region as a life-saving  Snake Bite & Poisoning Management Expert. His rapid diagnostic skills and mastery over emergency toxicological protocols make him a crucial lifeline during critical, time-sensitive medical emergencies. Dr. Paliwal is committed to delivering evidence-based, compassionate care to ensure the complete recovery and long-term wellness of his patients. `,
 
   
   education: [

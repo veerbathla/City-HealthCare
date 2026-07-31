@@ -257,19 +257,9 @@ const Footer = () => {
                 <FaInstagram />
               </a>
 
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-white text-[#0096D6] flex items-center justify-center hover:scale-110 transition"
-              >
-                <FaLinkedinIn />
-              </a>
+              
 
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-white text-[#0096D6] flex items-center justify-center hover:scale-110 transition"
-              >
-                <FaYoutube />
-              </a>
+              
             </div>
           </div>
 
@@ -303,11 +293,11 @@ const Footer = () => {
                 </NavLink>
               </li>
 
-              <li>
+              {/* <li>
                 <NavLink to="/blog" className="hover:underline">
                   {t("blog")}
                 </NavLink>
-              </li>
+              </li> */}
 
               <li>
                 <NavLink to="/contact" className="hover:underline">
@@ -323,20 +313,20 @@ const Footer = () => {
             <h3 className="text-2xl font-semibold mb-5">{t("departments")}</h3>
 
             <ul className="space-y-3">
-              <li>{t("neurosurgery")}</li>
-              <li>{t("gynecology")}</li>
-              <li>{t("orthopedics")}</li>
-              <li>{t("generalMedicine")}</li>
-              <li>{t("maxillofacialAndDental")}</li>
-              <li>{t("plasticSurgery")}</li>
-              <li>{t("physiotherapy")}</li>
-              <li>{t("anaesthesiology")}</li>
-              <li>{t("generalSurgery")}</li>
-              <li>{t("endocrinology")}</li>
-              <li>{t("radiology")}</li>
-              <li>{t("pathology")}</li>
-              <li>{t("neurology")}</li>
-              <li>{t("neuroInvestigation")}</li>
+              <li>{t("Neurosurgery")}</li>
+              <li>{t("Gynecology")}</li>
+              <li>{t("Orthopedics")}</li>
+              <li>{t("GeneralMedicine")}</li>
+              <li>{t("MaxillofacialAndDental")}</li>
+              <li>{t("PlasticSurgery")}</li>
+              <li>{t("Physiotherapy")}</li>
+              <li>{t("Anaesthesiology")}</li>
+              <li>{t("GeneralSurgery")}</li>
+              <li>{t("Endocrinology")}</li>
+              <li>{t("Radiology")}</li>
+              <li>{t("Pathology")}</li>
+              <li>{t("Neurology")}</li>
+              <li>{t("NeuroInvestigation")}</li>
             </ul>
           </div>
 
