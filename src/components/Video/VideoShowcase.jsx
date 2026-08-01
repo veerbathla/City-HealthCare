@@ -3,10 +3,11 @@ import VideoCard from "./VideoCard";
 import videoData from "../../data/Video/videoData";
 
 export default function VideoShowcase() {
-  const [activeIndex, setActiveIndex] = useState(
-    Math.floor((videoData.length - 1) / 2)
-  );
+   const initialIndex = videoData.findIndex((item) => item.id === 3);
 
+const [activeIndex, setActiveIndex] = useState(
+  initialIndex !== -1 ? initialIndex : Math.floor(videoData.length / 2)
+);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
   const isDragging = useRef(false);
