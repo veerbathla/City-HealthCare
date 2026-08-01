@@ -58,9 +58,21 @@ import { useTranslation } from "react-i18next";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { useEffect } from "react";
 
 const LocationReviews = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+  const script = document.createElement("script");
+  script.src = "https://elfsightcdn.com/platform.js";
+  script.async = true;
+
+  document.body.appendChild(script);
+
+  return () => {
+    document.body.removeChild(script);
+  };
+}, []);
 
   return (
     <section className="py-20 bg-slate-50">
@@ -103,33 +115,29 @@ const LocationReviews = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10">
-          <div className="rounded-3xl overflow-hidden shadow-xl h-[500px]">
-            <iframe
-              title="City Healthcare Hospital"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.0616514396233!2d75.02626267499109!3d29.54369884212313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39114d7b8a04995b%3A0x99b4abdf5c661ca9!2sCity%20health%20care%20%26%20Neuro%20Research%20Centre%20-%20Neurologist%2FSpine%20Surgeon%2FGynaecologist%2FBest%20Hospital%20in%20Sirsa!5e0!3m2!1sen!2sin!4v1782901026126!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-            />
-          </div>
+<section className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4">
 
-          <div className="bg-white rounded-3xl shadow-xl p-6 h-[500px] overflow-y-auto">
-            <h3 className="text-2xl font-semibold text-[#009CD0]">
-              Google Reviews
-            </h3>
+    {/* Your Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold text-gray-900">
+        What Our Patients Say
+      </h2>
+      <p className="mt-3 text-gray-600">
+        Real experiences shared by our patients and their families.
+      </p>
+    </div>
 
-            <script src="https://elfsightcdn.com/platform.js" async></script>
+    {/* Elfsight Widget */}
+    <div className="rounded-3xl overflow-hidden shadow-xl bg-white p-4">
+      <div
+        className="elfsight-app-5b68d072-134e-4f0e-8391-7a0ae0ebd383"
+        data-elfsight-app-lazy
+      />
+    </div>
 
-            <div
-              className="elfsight-app-5b68d072-134e-4f0e-8391-7a0ae0ebd383"
-              data-elfsight-app-lazy
-            ></div>
-          </div>
-        </div>
+  </div>
+</section>
       </div>
     </section>
   );
