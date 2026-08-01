@@ -65,7 +65,7 @@ export default function VideoShowcase() {
     {/* Heading */}
     <div className="text-center mb-6 sm:mb-10 px-4">
       <span className="inline-block text-xs sm:text-sm font-semibold tracking-wider text-[#0096D6] uppercase mb-2">
-        What our customers say
+        What our happy Patients say
       </span>
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
         Real Reviews, <span className="text-[#0096D6]">Real Experiences</span>
