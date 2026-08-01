@@ -55,6 +55,7 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
@@ -64,7 +65,6 @@ const LocationReviews = () => {
   return (
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-       
         <div className="flex flex-col items-center mb-12">
           <img
             src="logo1.png"
@@ -92,12 +92,18 @@ const LocationReviews = () => {
             >
               <FaInstagram />
             </a>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=City+Health+Care+%26+Neuro+Research+Centre+Sirsa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-14 h-14 rounded-full bg-[#34A853] text-white flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition duration-300"
+            >
+              <FaMapMarkerAlt />
+            </a>
           </div>
         </div>
 
-       
         <div className="grid lg:grid-cols-2 gap-10">
-          
           <div className="rounded-3xl overflow-hidden shadow-xl h-[500px]">
             <iframe
               title="City Healthcare Hospital"
@@ -111,7 +117,6 @@ const LocationReviews = () => {
             />
           </div>
 
-          
           <div className="bg-white rounded-3xl shadow-xl p-6 h-[500px] overflow-y-auto">
             <h3 className="text-2xl font-semibold text-[#009CD0]">
               Google Reviews
