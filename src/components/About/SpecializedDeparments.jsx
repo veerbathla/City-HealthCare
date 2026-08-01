@@ -82,8 +82,7 @@ const SpecializedDeparments = () => {
         </h3>
 
         <p className="mt-4 text-gray-600 leading-7">
-          High-risk pregnancy management, infertility care, Advance Gynaecological Laproscopic Treatment,
-          women's wellness, and advanced gynecological treatments.
+          High-risk pregnancy management, infertility care, women's wellness, and advanced Laparoscopic gynecological treatments.
         </p>
 
       </div>

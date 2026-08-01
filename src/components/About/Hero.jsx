@@ -152,6 +152,7 @@ import {
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
+
 const Hero = () => {
   const { t } = useTranslation();
 
@@ -163,8 +164,8 @@ const Hero = () => {
 
        
         <img
-          src="/images/about-hero.jpg"
-          alt="City HealthCare"
+          src=""
+          alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
 
