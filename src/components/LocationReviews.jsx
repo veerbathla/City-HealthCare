@@ -121,7 +121,7 @@ const LocationReviews = () => {
     {/* Your Heading */}
     <div className="text-center mb-12">
       <h2 className="text-4xl font-bold text-gray-900">
-        What Our Patients Say
+        What Our Happy Patients Say
       </h2>
       <p className="mt-3 text-gray-600">
         Real experiences shared by our patients and their families.
