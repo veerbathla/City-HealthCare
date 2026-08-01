@@ -4,7 +4,7 @@ const divyaJyotiSingh = {
   id: 2,
   doctorSlug: "dr-divya-jyoti-singh",
   slug: "obstetrics-gynaecology",
-  
+  shortDegree:"MRCOG-1,MS,MBBS",
   name: "Dr. Divya Jyoti Singh",
   image: divya,
   designation:

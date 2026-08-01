@@ -4,7 +4,7 @@ const kshiteejDhull = {
   id: 6,
   doctorSlug: "dr-kshiteej-dhull",
 slug: "plastic-surgery",
-  
+  shortDegree:"MBBS,MS,MCH",
   name: "Dr. Kshiteej Dhull",
   image: dhull,
   designation: "Consultant Plastic, Reconstructive & Aesthetic Surgeon",

@@ -394,7 +394,7 @@ const mohitSuthar = {
   id: 10,
   doctorSlug: "dr-mohit-suthar",
   slug: "pathology",
-
+  shortDegree:"PDCC,MD,MBBS",
 
   name: "Dr. Mohit Suthar",
   image: mohit,

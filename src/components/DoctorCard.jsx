@@ -61,14 +61,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaHospital, FaArrowRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-
+import { FaGraduationCap } from "react-icons/fa";
 const DoctorCard = ({ doctor }) => {
   const { t } = useTranslation();
 
   return (
     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full shadow-sm hover:shadow-xl transition duration-300">
       <div className="flex flex-col items-center px-8 py-8 h-full">
-       
         <div className="w-56 h-72 flex items-end justify-center">
           <img
             src={doctor.image}
@@ -81,32 +80,25 @@ const DoctorCard = ({ doctor }) => {
           {doctor.name}
         </h2>
 
-       
         <p className="mt-2 text-center text-[#009CD0] font-medium leading-relaxed">
           {doctor.designation}
         </p>
 
-       
-        <div className="flex items-center gap-2 mt-5 text-gray-600">
-          <FaHospital className="text-[#009CD0]" />
-          <span>{t("hospitalName")}</span>
+        <div className="flex items-start gap-2 mt-5 text-gray-600">
+          <FaGraduationCap className="text-[#009CD0] mt-1" />
+          <div>
+            <p>{doctor.qualifications.join(" • ")}</p>
+          </div>
         </div>
 
-       
         <div className="w-full mt-8 space-y-4">
-          <Link
-            to={`/doctors/${doctor.doctorSlug}`}
-            className="block"
-          >
+          <Link to={`/doctors/${doctor.doctorSlug}`} className="block">
             <button className="w-full bg-[#009CD0] hover:bg-[#0083af] text-white font-semibold py-3 rounded-lg transition">
               {t("appointment")}
             </button>
           </Link>
 
-          <Link
-            to={`/doctors/${doctor.doctorSlug}`}
-            className="block"
-          >
+          <Link to={`/doctors/${doctor.doctorSlug}`} className="block">
             <button className="w-full border border-[#009CD0] text-[#009CD0] hover:bg-[#009CD0] hover:text-white font-semibold py-3 rounded-lg transition flex items-center justify-center gap-2">
               {t("viewProfile")}
               <FaArrowRight size={13} />

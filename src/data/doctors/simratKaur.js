@@ -4,7 +4,7 @@ const simratKaur = {
   id: 5,
   doctorSlug: "dr-simrat-kaur",
   slug: "maxillo-facial-and-dental",
-  
+  shortDegree:"BDS,MDS,FAOMSI",
   name: "Dr. Simrat Kaur",
  image: simrat,
   designation:

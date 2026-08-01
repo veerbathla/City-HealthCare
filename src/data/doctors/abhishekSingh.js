@@ -4,6 +4,7 @@ const abhishekSingh = {
   id: 1,
   doctorSlug: "dr-abhishek-singh",
   slug: "neurosurgery",
+  shortDegree:"MCH,MS,MBBS",
   
   name: "Dr. Abhishek Singh",
   image: abhishek,

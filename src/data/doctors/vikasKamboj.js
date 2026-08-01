@@ -4,7 +4,7 @@ const vikasKamboj = {
   id: 3,
   doctorSlug: "dr-vikas-kamboj",
   slug: "orthopaedics",
-  
+  shortDegree:"MBBS,D-Ortho,DNB-Ortho,MNAMS",
   name: "Dr. Vikas Kamboj",
   image: vikas,
   designation: "Consultant Orthopaedic, Trauma & Joint Replacement Surgeon",

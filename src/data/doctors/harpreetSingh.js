@@ -4,7 +4,7 @@ const harpreetSingh = {
   id: 7,
   doctorSlug: "dr-harpreet-singh",
   slug: "physiotherapy",
-  
+  shortDegree:"BPT",
   name: "Dr. Harpreet Singh",
   image: harpreet,
   designation: "Consultant Physiotherapist & Rehabilitation Specialist",

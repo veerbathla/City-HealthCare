@@ -4,7 +4,7 @@ const pankajPaliwal = {
   id: 4,
   doctorSlug: "dr-pankaj-paliwal",
    slug: "internal-medicine",
-  
+   shortDegree:"MD,MBBS",
   name: "Dr. Pankaj Paliwal",
   image: pankaj,
   designation:

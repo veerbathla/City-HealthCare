@@ -4,7 +4,7 @@ const rajivPakhetra = {
   id: 2,
   doctorSlug: "dr-rajiv-pakhetra",
   slug: "endocrinology",
-
+  shortDegree:"PGDCC,MD,MBBS",
 
   name: "Dr. Rajiv Pakhetra",
   image: rajiv, 

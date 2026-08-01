@@ -4,7 +4,7 @@ const girishSharma = {
   id: 8,
   doctorSlug: "dr-girish-sharma",
   slug: "anaesthesiology",
-  
+  shortDegree:"MD,MBBS",
 
   name: "Dr. Girish Sharma",
   image: girish,
