@@ -34,8 +34,8 @@ const girishSharma = {
 
   
   training: [
-    "ACC (Anesthesia Care Consultants)",
-    "BLL (Blood Lactate Level)",
+    "ACLS (Advanced Cardiac Life Support)",
+    "BLS (Basic Life Support)",
     "Advanced Pain Management",
     "Critical Care Specialist Training",
   ],
