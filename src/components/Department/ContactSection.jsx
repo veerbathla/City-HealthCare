@@ -147,11 +147,15 @@ const ContactSection = ({ contact }) => {
                 Call Now
               </a>
 
-              <button className="flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#0096D6] text-[#0096D6] font-semibold hover:bg-[#0096D6] hover:text-white transition">
-                <CalendarCheck size={20} />
-                Book Appointment
-              </button>
-
+             <a
+  href="https://wa.me/919728375033?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#0096D6] text-[#0096D6] font-semibold hover:bg-[#0096D6] hover:text-white transition"
+>
+  <CalendarCheck size={20} />
+  Book Appointment
+</a>
             </div>
 
           </div>

@@ -7,6 +7,7 @@
   "ambulance": "Ambulance",
   "emergency": "Emergency",
   "department": "Department",
+  "empanelment": "Our Empanelment",
 
   "speciality": "Speciality",
   "doctors": "Doctors",
@@ -39,6 +40,16 @@
 
 
 
+"locationReviews": {
+  "tagline1": "Trusted Healthcare with",
+  "tagline2": "Excellent Patient Satisfaction",
+  "title": "What Our Patients Say",
+  "description": "Real experiences shared by our patients and their families."
+},
+
+
+
+
 
 
 "meetOurSpecialists": "Meet Our Specialists",
@@ -49,6 +60,15 @@
 
 "hospitalName": "City Healthcare Hospital",
 "viewProfile": "View Profile",
+
+
+
+"diagnosticSection": {
+  "badge": "Diagnostics",
+  "title1": "Advanced Diagnostic",
+  "title2": "Services",
+  "description": "Accurate diagnosis is the foundation of effective treatment. City HealthCare offers modern diagnostic facilities with advanced technology and expert professionals to ensure reliable, timely, and precise results for every patient."
+},
 
 
 "aboutHero": {
@@ -65,6 +85,56 @@
   "emergencyContact": "Emergency Contact"
 },
 
+
+
+"diagnosticCard": {
+  "bookTest": "Book Test"
+},
+
+
+"videoShowcase": {
+  "badge": "What Our Happy Patients Say",
+  "title1": "Real Reviews,",
+  "title2": "Real Experiences"
+},
+
+
+"csrShowcase": {
+  "badge": "Community First",
+
+  "hero": {
+    "title1": "CSR &",
+    "title2": "Social Activities",
+    "description": "At City HealthCare Neuro Research & Infertility Centre, Sirsa we believe healthcare extends beyond hospital walls. Through awareness campaigns, blood donation drives, medical camps, school health programmes and community outreach initiatives, we strive to create a healthier and stronger society."
+  },
+
+  "initiatives": {
+    "title": "Our Social Initiatives",
+    "description": "Every initiative reflects our commitment towards preventive healthcare, education, compassion and community service.",
+    "items": [
+      "Free Health Check-up Camps",
+      "Blood Donation Camps",
+      "Stroke & Brain Health Awareness",
+      "Women's Health & Infertility Awareness",
+      "Anti-Drug Awareness Campaigns",
+      "School & College Health Education",
+      "Disaster & Emergency Relief",
+      "Public Awareness Campaigns",
+      "Health Talks & Educational Seminars",
+      "Support for Underprivileged Patients"
+    ]
+  },
+
+  "gallery": {
+    "title": "Glimpses of Our CSR Activities",
+    "description": "Click the highlighted card to watch the complete video."
+  },
+
+  "quote": {
+    "title": "Healthcare Beyond Hospital Walls",
+    "description": "We don't just treat patients—we strengthen communities. Every awareness campaign, health camp, blood donation drive and outreach activity reflects our commitment to building a healthier and happier society."
+  }
+},
 
 
 "welcome": {

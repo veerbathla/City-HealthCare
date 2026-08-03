@@ -92,11 +92,14 @@ const DoctorCard = ({ doctor }) => {
         </div>
 
         <div className="w-full mt-8 space-y-4">
-          <Link to={`/doctors/${doctor.doctorSlug}`} className="block">
-            <button className="w-full bg-[#009CD0] hover:bg-[#0083af] text-white font-semibold py-3 rounded-lg transition">
-              {t("appointment")}
-            </button>
-          </Link>
+         <a
+  href="https://wa.me/919728375033?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block w-full bg-[#009CD0] hover:bg-[#0083af] text-white font-semibold py-3 rounded-lg transition text-center"
+>
+  {t("appointment")}
+</a>
 
           <Link to={`/doctors/${doctor.doctorSlug}`} className="block">
             <button className="w-full border border-[#009CD0] text-[#009CD0] hover:bg-[#009CD0] hover:text-white font-semibold py-3 rounded-lg transition flex items-center justify-center gap-2">

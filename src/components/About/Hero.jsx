@@ -264,14 +264,15 @@ const Hero = () => {
 
 
 
-                      <Link
-              to="/appointment"
-              className="inline-flex items-center gap-3 bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-semibold px-7 py-4 rounded-xl transition-all duration-300"
-            >
-              {t("appointment")}
-              <FaArrowRight />
-            </Link>
-
+                      <a
+  href="https://wa.me/919728375033?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-3 bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-semibold px-7 py-4 rounded-xl transition-all duration-300"
+>
+  {t("appointment")}
+  <FaArrowRight />
+</a>
             <a
               href="tel:+911234567890"
               className="inline-flex items-center gap-3 border border-white/30 backdrop-blur-md hover:bg-white hover:text-slate-900 text-white px-7 py-4 rounded-xl transition-all duration-300"

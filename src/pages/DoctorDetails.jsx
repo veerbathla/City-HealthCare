@@ -669,12 +669,15 @@ const DoctorDetails = () => {
                     Call Now
                   </a>
 
-                  <a
-                    href={`mailto:${doctor.appointment.email}`}
-                    className="border-2 border-[#0096D6] text-[#0096D6] px-6 py-3 rounded-xl font-semibold hover:bg-[#0096D6] hover:text-white transition"
-                  >
-                    Email Us
-                  </a>
+                 <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=cityhealthcaresirsa@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => console.log("clicked")}
+  className="border-2 border-[#0096D6] text-[#0096D6] px-6 py-3 rounded-xl font-semibold hover:bg-[#0096D6] hover:text-white transition"
+>
+  Email Us
+</a>
 
                 </div>
 

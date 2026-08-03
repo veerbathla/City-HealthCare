@@ -85,9 +85,9 @@ const LocationReviews = () => {
           />
 
           <p className="mt-5 text-center text-lg sm:text-xl md:text-2xl font-medium text-gray-700">
-            Trusted Healthcare with <br />
+             {t("locationReviews.tagline1")} <br />
             <span className="text-[#0096D6] font-semibold">
-              Excellent Patient Satisfaction
+              {t("locationReviews.tagline2")}
             </span>
           </p>
           <div className="flex justify-center items-center gap-6 mt-6">
@@ -121,10 +121,10 @@ const LocationReviews = () => {
     {/* Your Heading */}
     <div className="text-center mb-12">
       <h2 className="text-4xl font-bold text-gray-900">
-        What Our Patients Say
+         {t("locationReviews.title")}
       </h2>
       <p className="mt-3 text-gray-600">
-        Real experiences shared by our patients and their families.
+        {t("locationReviews.description")}
       </p>
     </div>
 

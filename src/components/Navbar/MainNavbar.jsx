@@ -26,7 +26,7 @@ const MainNavbar = () => {
     { key: "about", path: "/about" },
     { key: "speciality", path: "/departments" },
     { key: "doctors", path: "/doctors" },
-    { key: "Our Empanelment", path: "/empanelment" },
+    { key: "empanelment", path: "/empanelment" },
     // { key: "blog", path: "/blog" },
     { key: "contact", path: "/contact" },
   ];
@@ -46,7 +46,7 @@ const specialityDropdown = [
   doctorDepartments.find((d) => d.slug === "physiotherapy"),
   doctorDepartments.find((d) => d.slug === "general-laparoscopic-surgery"),
   doctorDepartments.find((d) => d.slug === "anaesthesiology"),
-  doctorDepartments.find((d) => d.slug === "endocrinology"), // ✅ Updated
+  doctorDepartments.find((d) => d.slug === "endocrinology"), 
 
  
   departments.find((d) => d.slug === "pathology"),

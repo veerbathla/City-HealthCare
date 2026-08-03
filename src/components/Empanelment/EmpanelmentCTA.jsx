@@ -30,13 +30,15 @@ const EmpanelmentCTA = () => {
             Call Now
           </a>
 
-          <Link
-            to="/contact"
-            className="inline-flex items-center justify-center gap-3 rounded-full border border-white px-8 py-4 font-semibold text-white hover:bg-white hover:text-[#0096D6] transition"
-          >
-            <CalendarDays size={20} />
-            Book Appointment
-          </Link>
+         <a
+  href="https://wa.me/919728375033?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center gap-3 rounded-full border border-white px-8 py-4 font-semibold text-white hover:bg-white hover:text-[#0096D6] transition"
+>
+  <CalendarDays size={20} />
+  Book Appointment
+</a>
 
         </div>
 

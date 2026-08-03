@@ -1,8 +1,11 @@
 import React, { useState, useRef } from "react";
 import VideoCard from "./VideoCard";
 import videoData from "../../data/Video/videoData";
+import { useTranslation } from "react-i18next";
+
 
 export default function VideoShowcase() {
+  const { t } = useTranslation();
    const initialIndex = videoData.findIndex((item) => item.id === 3);
 
 const [activeIndex, setActiveIndex] = useState(
@@ -49,9 +52,9 @@ const [activeIndex, setActiveIndex] = useState(
     const swipeThreshold = 40;
 
     if (diff > swipeThreshold) {
-      goNext(); // left swipe -> next
+      goNext(); 
     } else if (diff < -swipeThreshold) {
-      goPrev(); // right swipe -> prev
+      goPrev(); 
     }
 
     touchStartX.current = 0;
@@ -66,10 +69,10 @@ const [activeIndex, setActiveIndex] = useState(
     {/* Heading */}
     <div className="text-center mb-6 sm:mb-10 px-4">
       <span className="inline-block text-xs sm:text-sm font-semibold tracking-wider text-[#0096D6] uppercase mb-2">
-        What our happy Patients say
+        {t("videoShowcase.badge")}
       </span>
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
-        Real Reviews, <span className="text-[#0096D6]">Real Experiences</span>
+        {t("videoShowcase.title1")}{" "} <span className="text-[#0096D6]">{t("videoShowcase.title2")}</span>
       </h2>
       <div className="w-16 h-1 bg-[#0096D6] mx-auto mt-3 rounded-full" />
     </div>
@@ -112,7 +115,7 @@ const [activeIndex, setActiveIndex] = useState(
         })}
       </div>
 
-      {/* Next arrow */}
+    
       <button
         onClick={goNext}
         aria-label="Next"

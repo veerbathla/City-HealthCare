@@ -45,14 +45,15 @@ const CallToAction = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-5 mt-10">
-                  <Link
-                    to="/appointment"
-                    className="bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold flex items-center gap-3 hover:bg-slate-100 transition"
-                  >
-                    <FaCalendarCheck />
-                    Book Appointment
-                  </Link>
-
+                 <a
+  href="https://wa.me/919728375033?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-blue-700 px-8 py-4 rounded-xl font-semibold flex items-center gap-3 hover:bg-slate-100 transition"
+>
+  <FaCalendarCheck />
+  Book Appointment
+</a>
                   <a
                     href="tel:+911234567890"
                     className="border border-white/30 text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-3 hover:bg-white hover:text-blue-700 transition"

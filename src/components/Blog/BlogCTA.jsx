@@ -24,10 +24,15 @@ const BlogCTA = () => {
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
-                <button className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-sky-700 transition hover:bg-sky-100">
-                  <CalendarPlus size={20} />
-                  Book Appointment
-                </button>
+               <a
+  href="https://wa.me/919728375033?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-sky-700 transition hover:bg-sky-100"
+>
+  <CalendarPlus size={20} />
+  Book Appointment
+</a>
 
                 <button className="inline-flex items-center gap-2 rounded-xl border border-white px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-sky-700">
                   <PhoneCall size={20} />

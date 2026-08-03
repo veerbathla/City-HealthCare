@@ -1,7 +1,8 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
-
+import { useTranslation } from "react-i18next";
 const DiagnosticCard = ({ service }) => {
+  const {t}=useTranslation();
   const { image, title, description, bookingLink } = service;
 
   return (
@@ -31,7 +32,7 @@ const DiagnosticCard = ({ service }) => {
           rel="noopener noreferrer"
           className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-[#0096D6] px-5 py-3 font-semibold text-white transition hover:bg-[#007bb3]"
         >
-          Book Test
+          {t("diagnosticCard.bookTest")}
           <ArrowUpRight size={18} />
         </a>
       </div>
