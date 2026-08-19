@@ -18,6 +18,7 @@ import BlogPage from "./pages/BlogPage";
 
 import "./i18n";
 import OurEmpanelment from "./pages/OurEmpanelment";
+import AppointPage from "./pages/AppointPage";
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
           <Route path="*" element={<Home />} />
 
           <Route path="/empanelment" element={<OurEmpanelment/>}/>
+
+          {/* Appointment Terms / Privacy / Refund Policy */}
+          <Route path="/appointment" element={<AppointPage />} />
 
         </Routes>
       </main>

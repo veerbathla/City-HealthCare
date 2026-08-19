@@ -27,6 +27,7 @@ const MainNavbar = () => {
     { key: "speciality", path: "/departments" },
     { key: "doctors", path: "/doctors" },
     { key: "empanelment", path: "/empanelment" },
+    { key: "appointment", path: "/appointment" },
     // { key: "blog", path: "/blog" },
     { key: "contact", path: "/contact" },
   ];
