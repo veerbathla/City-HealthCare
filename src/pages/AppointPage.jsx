@@ -15,8 +15,8 @@ import React, { useState } from "react";
 const TERMS_CONTENT = `
 # TERMS & CONDITIONS
 
-**Effective Date:** [Insert Date]
-**Last Updated:** [Insert Date]
+**Effective Date:** 19-08-2026
+**Last Updated:** 19-08-2026
 
 ## City Healthcare Neuro Research & Infertility Centre, Sirsa
 
@@ -475,8 +475,8 @@ For appointment-related questions, payment issues, rescheduling requests, or oth
 const PRIVACY_CONTENT = `
 # PRIVACY POLICY
 
-**Effective Date:** [Insert Date]
-**Last Updated:** [Insert Date]
+**Effective Date:** 14-08-26 
+**Last Updated:** 20-08-26
 
 ## 1. Introduction
 
@@ -794,7 +794,7 @@ If you have a concern, complaint, or grievance regarding the collection, use, st
 **City Healthcare Neuro Research & Infertility Centre, Sirsa**
 Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa, Haryana, India
 **Phone:** 9728375033
-**Email:** [Insert Official Privacy/Grievance Email]
+**Email:** [cityhealthcaresirsa@gmail.com](mailto:cityhealthcaresirsa@gmail.com)
 
 We will make reasonable efforts to review and address privacy-related concerns in accordance with applicable law and Hospital procedures.
 
@@ -824,7 +824,7 @@ For questions regarding this Privacy Policy or the handling of personal informat
 **Trauma Centre & Multispeciality Hospital**
 Near ICICI Bank, Deep Tower, Dabwali Road, Sirsa, Haryana, India
 **Phone:** 9728375033
-**Email:** [Insert Official Hospital Email]
+**Email:** [cityhealthcaresirsa@gmail.com](mailto:cityhealthcaresirsa@gmail.com)
 **Website:** [https://www.cityhealthcaresirsa.in/](https://www.cityhealthcaresirsa.in/)
 
 ---
@@ -841,8 +841,8 @@ const REFUND_CONTENT = `
 
 ### Online Appointment Booking
 
-**Effective Date:** [Insert Date]
-**Last Updated:** [Insert Date]
+**Effective Date:** 14-08-26 
+**Last Updated:** 20-08-26
 
 ## City Healthcare Neuro Research & Infertility Centre, Sirsa
 

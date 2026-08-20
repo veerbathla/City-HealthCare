@@ -298,6 +298,11 @@ const Footer = () => {
                   {t("blog")}
                 </NavLink>
               </li> */}
+              <li>
+                <NavLink to="/appointment" className="hover:underline">
+                  {t("book appointment")}
+                </NavLink>
+              </li>
 
               <li>
                 <NavLink to="/contact" className="hover:underline">
