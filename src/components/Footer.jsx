@@ -85,7 +85,7 @@
 
 //               <li><NavLink to="/blog" className="hover:underline">Blogs</NavLink></li>
 
-//               <li><NavLink to="/blog" className="hover:underline">Blogs</NavLink></li>
+
 //               <li><NavLink to="/contact" className="hover:underline">Contact</NavLink></li>
 
 //             </ul>
