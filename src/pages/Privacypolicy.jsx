@@ -1386,7 +1386,7 @@ const TABS = [
   { id: "refund", label: "Refund & Cancellation", content: REFUND_CONTENT },
 ];
 
-export default function AppointPage() {
+export default function Privacypolicy() {
   const [activeTab, setActiveTab] = useState(TABS[0].id);
   const active = TABS.find((t) => t.id === activeTab);
 
