@@ -299,21 +299,21 @@ const Footer = () => {
                   {t("blog")}
                 </NavLink>
               </li> */}
-              <li>
+             {/* <li>
                 <NavLink to="/appointment" className="hover:underline">
                   {t("book appointment")}
                 </NavLink>
-              </li>
-             <li>
+              </li>*/}
+             {/* <li>
                 <NavLink to="/privacypolicy" className="hover:underline">
                   {t("Privacy Policys")}
                 </NavLink>
-              </li>  
- <li>
+              </li>  */}
+ {/* <li>
                 <NavLink to="/termsconditions" className="hover:underline">
                   {t("Terms & Conditions")}
                 </NavLink>
-              </li>  
+              </li>  */}
                <NavLink to="/refundpolicy" className="hover:underline">
                   {t("Refund Policy")}
                 </NavLink>
