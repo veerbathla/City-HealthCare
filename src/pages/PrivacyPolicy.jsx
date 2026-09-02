@@ -529,7 +529,7 @@ const TABS = [
   { id: "refund", label: "Refund & Cancellation", content: REFUND_CONTENT },
 ];
 
-export default function Privacypolicy() {
+export default function PrivacyPolicy() {
   const [activeTab, setActiveTab] = useState(TABS[0].id);
   const active = TABS.find((t) => t.id === activeTab);
 
