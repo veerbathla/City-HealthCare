@@ -65,7 +65,7 @@ function App() {
           <Route path="/appointment" element={<AppointPage />} />
             <Route path="/privatepolicy" element={<PrivatePolicy/>}/>
  <Route path="/termsconditions" element={<TermsConditions/>}/>
-<Route path="/refundpolicy" element={<refundpolicy/>}/>
+<Route path="/refundpolicy" element={<RefundPolicy/>}/>
 
         </Routes>
       </main>
