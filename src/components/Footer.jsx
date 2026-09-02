@@ -88,7 +88,7 @@
 
 //               <li><NavLink to="/termsconditions" className="hover:underline">Terms & Conditions</NavLink></li>
 
-//               <li><NavLink to="/Refund Policy" className="hover:underline">refundpolicy</NavLink></li>
+//               <li><NavLink to="/refundpolicy" className="hover:underline">Refund Policy</NavLink></li>
 
 //               <li><NavLink to="/contact" className="hover:underline">Contact</NavLink></li>
 
