@@ -84,11 +84,7 @@
 //               <li><NavLink to="/doctors" className="hover:underline">Doctors</NavLink></li>
 
 //               <li><NavLink to="/blog" className="hover:underline">Blogs</NavLink></li>
-//               <li><NavLink to="/privacypolicy" className="hover:underline">Privacy Policys</NavLink></li>
 
-//               <li><NavLink to="/termsconditions" className="hover:underline">Terms & Conditions</NavLink></li>
-
-//               <li><NavLink to="/refundpolicy" className="hover:underline">Refund Policy</NavLink></li>
 
 //               <li><NavLink to="/contact" className="hover:underline">Contact</NavLink></li>
 
@@ -308,7 +304,20 @@ const Footer = () => {
                   {t("book appointment")}
                 </NavLink>
               </li>
-
+             <li>
+                <NavLink to="/privacypolicy" className="hover:underline">
+                  {t("Privacy Policys")}
+                </NavLink>
+              </li>  
+ <li>
+                <NavLink to="/termsconditions" className="hover:underline">
+                  {t("Terms & Conditions")}
+                </NavLink>
+              </li>  
+               <NavLink to="/refundpolicy" className="hover:underline">
+                  {t("Refund Policy")}
+                </NavLink>
+              </li> 
               <li>
                 <NavLink to="/contact" className="hover:underline">
                   {t("contact")}
