@@ -19,7 +19,9 @@ import BlogPage from "./pages/BlogPage";
 import "./i18n";
 import OurEmpanelment from "./pages/OurEmpanelment";
 import AppointPage from "./pages/AppointPage";
-
+import Privatepolicy from "./pages/privatepolicy";
+import termsconditions from "./pages/termsconditions";
+import refundpolicy from "./pages/refundpolicy";
 function App() {
   return (
     <>
