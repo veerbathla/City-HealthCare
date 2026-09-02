@@ -234,7 +234,7 @@ const Footer = () => {
     <footer className="bg-[#0096D6] text-white mt-20">
       <div className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
-          
+
 
           <div>
             <h2 className="text-3xl font-bold">City Healthcare</h2>
@@ -257,14 +257,9 @@ const Footer = () => {
               >
                 <FaInstagram />
               </a>
-
-              
-
-              
             </div>
           </div>
 
-          
 
           <div>
             <h3 className="text-2xl font-semibold mb-5">{t("quickLinks")}</h3>
@@ -294,30 +289,36 @@ const Footer = () => {
                 </NavLink>
               </li>
 
-               <li>
+              <li>
                 <NavLink to="/blog" className="hover:underline">
                   {t("blog")}
                 </NavLink>
               </li>
-           <li>
+
+              <li>
                 <NavLink to="/appointment" className="hover:underline">
                   {t("book appointment")}
                 </NavLink>
               </li>
-             <li>
+
+              <li>
                 <NavLink to="/privacypolicy" className="hover:underline">
                   {t("Privacy Policys")}
                 </NavLink>
-              </li>  
- <li>
+              </li>
+
+              <li>
                 <NavLink to="/termsconditions" className="hover:underline">
                   {t("Terms & Conditions")}
                 </NavLink>
-              </li> 
-               <NavLink to="/refundpolicy" className="hover:underline">
+              </li>
+
+              <li>
+                <NavLink to="/refundpolicy" className="hover:underline">
                   {t("Refund Policy")}
                 </NavLink>
-              </li> 
+              </li>
+
               <li>
                 <NavLink to="/contact" className="hover:underline">
                   {t("contact")}
@@ -326,7 +327,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          
 
           <div>
             <h3 className="text-2xl font-semibold mb-5">{t("departments")}</h3>
@@ -349,7 +349,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          
 
           <div>
             <h3 className="text-2xl font-semibold mb-5">{t("contactUs")}</h3>
@@ -394,7 +393,6 @@ const Footer = () => {
         </div>
       </div>
 
-     
 
       <div className="border-t border-white/20">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
