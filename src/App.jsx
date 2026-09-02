@@ -19,9 +19,9 @@ import BlogPage from "./pages/BlogPage";
 import "./i18n";
 import OurEmpanelment from "./pages/OurEmpanelment";
 import AppointPage from "./pages/AppointPage";
-import Privacypolicy from "./pages/Privacypolicy";
-import TermsConditions from "./pages/termsconditions";
-import RefundPolicy from "./pages/Refundpolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import RefundPolicy from "./pages/RefundPolicy";
 function App() {
   return (
     <>
@@ -59,7 +59,7 @@ function App() {
 
           {/* Appointment Terms / Privacy / Refund Policy */}
           <Route path="/appointment" element={<AppointPage />} />
-          <Route path="/privacypolicy" element={<Privacypolicy />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/termsconditions" element={<TermsConditions />} />
 <Route path="/refundpolicy" element={<RefundPolicy />} />
         </Routes>
