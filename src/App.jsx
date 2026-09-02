@@ -21,7 +21,7 @@ import OurEmpanelment from "./pages/OurEmpanelment";
 import AppointPage from "./pages/AppointPage";
 import Privacypolicy from "./pages/Privacypolicy";
 import termsconditions from "./pages/termsconditions";
-import refundpolicy from "./pages/Refundpolicy";
+import Refundpolicy from "./pages/Refundpolicy";
 function App() {
   return (
     <>
