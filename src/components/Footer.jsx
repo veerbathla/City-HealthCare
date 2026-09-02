@@ -84,6 +84,11 @@
 //               <li><NavLink to="/doctors" className="hover:underline">Doctors</NavLink></li>
 
 //               <li><NavLink to="/blog" className="hover:underline">Blogs</NavLink></li>
+//               <li><NavLink to="/privacypolicy" className="hover:underline">Privacy Policys</NavLink></li>
+
+//               <li><NavLink to="/termsconditions" className="hover:underline">Terms & Conditions</NavLink></li>
+
+//               <li><NavLink to="/Refund Policy" className="hover:underline">refundpolicy</NavLink></li>
 
 //               <li><NavLink to="/contact" className="hover:underline">Contact</NavLink></li>
 
