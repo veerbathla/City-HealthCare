@@ -20,8 +20,8 @@ import "./i18n";
 import OurEmpanelment from "./pages/OurEmpanelment";
 import AppointPage from "./pages/AppointPage";
 import Privacypolicy from "./pages/Privacypolicy";
-import termsconditions from "./pages/termsconditions";
-import Refundpolicy from "./pages/Refundpolicy";
+import TermsConditions from "./pages/termsconditions";
+import RefundPolicy from "./pages/Refundpolicy";
 function App() {
   return (
     <>
@@ -30,7 +30,6 @@ function App() {
 
       <main className="pb-16 lg:pb-0">
         <Routes>
-
           {/* Home */}
           <Route path="/" element={<Home />} />
 
@@ -45,10 +44,7 @@ function App() {
           <Route path="/departments" element={<Departments />} />
 
           {/* Full Department Details */}
-          <Route
-            path="/speciality/:slug"
-            element={<DepartmentDetails />}
-          />
+          <Route path="/speciality/:slug" element={<DepartmentDetails />} />
 
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
@@ -59,14 +55,13 @@ function App() {
           {/* 404 */}
           <Route path="*" element={<Home />} />
 
-          <Route path="/empanelment" element={<OurEmpanelment/>}/>
+          <Route path="/empanelment" element={<OurEmpanelment />} />
 
           {/* Appointment Terms / Privacy / Refund Policy */}
           <Route path="/appointment" element={<AppointPage />} />
-            <Route path="/privacypolicy" element={<Privacypolicy/>}/>
- <Route path="/termsconditions" element={<TermsConditions/>}/>
-<Route path="/refundpolicy" element={<RefundPolicy/>}/>
-
+          <Route path="/privacypolicy" element={<Privacypolicy />} />
+        <Route path="/termsconditions" element={<TermsConditions />} />
+<Route path="/refundpolicy" element={<RefundPolicy />} />
         </Routes>
       </main>
 
