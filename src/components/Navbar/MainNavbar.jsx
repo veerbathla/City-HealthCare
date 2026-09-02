@@ -28,7 +28,7 @@ const MainNavbar = () => {
     { key: "doctors", path: "/doctors" },
     { key: "empanelment", path: "/empanelment" },
     { key: "appointment", path: "/appointment" },
-     { key: "Privacy Policy", path: "/privateypolicy" },
+     { key: "Privacy Policy", path: "/privacypolicy" },
      { key: "Terms & Conditions", path: "/termsconditions" },
      { key: "Refund Policy", path: "/refundpolicy" },
     // { key: "blog", path: "/blog" },
