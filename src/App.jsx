@@ -63,6 +63,9 @@ function App() {
 
           {/* Appointment Terms / Privacy / Refund Policy */}
           <Route path="/appointment" element={<AppointPage />} />
+            <Route path="/privatepolicy" element={<PrivatePolicy/>}/>
+ <Route path="/termsconditions" element={<TermsConditions/>}/>
+<Route path="/refundpolicy" element={<refundpolicy/>}/>
 
         </Routes>
       </main>
