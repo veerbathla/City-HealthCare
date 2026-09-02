@@ -10,7 +10,7 @@ import React, { useState } from "react";
    numbered lists (1.), blockquotes (>), bold (**text**), links [text](url)
    and horizontal rules (---) into clean HTML — stripping only the markdown
    *symbols*, never touching the actual words/content.
-   ============================================================================ */
+   ========================================================================== */
 
 
 
