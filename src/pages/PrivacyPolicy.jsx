@@ -524,9 +524,9 @@ function renderMarkdown(raw) {
    Page component
 ---------------------------------------------------------------------------- */
 const TABS = [
-  { id: "terms", label: "Terms & Conditions", content: TERMS_CONTENT },
+
   { id: "privacy", label: "Privacy Policy", content: PRIVACY_CONTENT },
-  { id: "refund", label: "Refund & Cancellation", content: REFUND_CONTENT },
+  
 ];
 
 export default function PrivacyPolicy() {
